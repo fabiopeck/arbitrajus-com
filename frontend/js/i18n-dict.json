@@ -420,14 +420,14 @@
     "es": "Sectores de actuación"
   },
   "nav.mega.setores.intro.title": {
-    "pt": "Experiência em disputas de alta complexidade",
-    "en": "Experience in highly complex disputes",
-    "es": "Experiencia en disputas de alta complejidad"
+    "pt": "Feito para startups e pequenos negócios",
+    "en": "Built for startups and small businesses",
+    "es": "Hecho para startups y pequeños negocios"
   },
   "nav.mega.setores.intro.text": {
-    "pt": "Atuamos em conflitos contratuais, societários e regulatórios com equipes especializadas por segmento.",
-    "en": "We handle contractual, corporate and regulatory conflicts with specialized teams by segment.",
-    "es": "Actuamos en conflictos contractuales, societarios y regulatorios con equipos especializados por segmento."
+    "pt": "Focamos em verticais digitais com disputas frequentes de pagamento e escopo — para resolver mais rápido, sem esperar meses por contratos enterprise.",
+    "en": "We focus on digital verticals with frequent payment and scope disputes—so you can resolve faster without waiting months for enterprise contracts.",
+    "es": "Nos enfocamos en verticales digitales con disputas frecuentes de pago y alcance — para resolver más rápido, sin esperar meses por contratos enterprise."
   },
   "nav.mega.setores.imobiliaria": {
     "pt": "Imobiliária",
@@ -460,14 +460,14 @@
     "es": "Contractual"
   },
   "nav.mega.setores.trabalhista": {
-    "pt": "Trabalhista",
-    "en": "Labor",
-    "es": "Laboral"
+    "pt": "SaaS & Freelancers",
+    "en": "SaaS & Freelancers",
+    "es": "SaaS & Freelancers"
   },
   "nav.mega.setores.adminPublica": {
-    "pt": "Administração pública",
-    "en": "Public administration",
-    "es": "Administración pública"
+    "pt": "Digital Agencies & IT Services",
+    "en": "Digital Agencies & IT Services",
+    "es": "Digital Agencies & IT Services"
   },
   "nav.mega.setores.franquias": {
     "pt": "Franquias",
@@ -500,9 +500,9 @@
     "es": "Administración pública"
   },
   "nav.mega.integracao.admin.desc": {
-    "pt": "Conciliação e mediação em demandas públicas",
-    "en": "Conciliation and mediation in public disputes",
-    "es": "Conciliación y mediación en demandas públicas"
+    "pt": "Disputas de assinatura e profissionais independentes",
+    "en": "Subscription and independent-contractor disputes",
+    "es": "Disputas de suscripción y contratistas independientes"
   },
   "nav.mega.integracao.convenios.title": {
     "pt": "Convênios institucionais",
@@ -1286,18 +1286,18 @@
   },
   "setores.eyebrow": {
     "pt": "Setores atendidos",
-    "en": "Sectors served",
-    "es": "Sectores atendidos"
+    "en": "Sectors we serve",
+    "es": "Sectores que atendemos"
   },
   "setores.title": {
-    "pt": "Possibilidades de atuação",
-    "en": "Areas of practice",
-    "es": "Posibilidades de actuación"
+    "pt": "Feito para negócios digitais",
+    "en": "Built for digital businesses",
+    "es": "Hecho para negocios digitales"
   },
   "setores.lead": {
-    "pt": "Procedimentos estruturados para os principais setores da economia brasileira.",
-    "en": "Structured procedures for the main sectors of the Brazilian economy.",
-    "es": "Procedimientos estructurados para los principales sectores de la economía brasileña."
+    "pt": "Procedimentos estruturados para startups e pequenos negócios que enfrentam calotes, disputas de escopo e chargebacks todos os dias.",
+    "en": "Structured procedures for startups and small businesses that face payment defaults, scope disputes and marketplace chargebacks every day.",
+    "es": "Procedimientos estructurados para startups y pequeños negocios que enfrentan impagos, disputas de alcance y chargebacks todos los días."
   },
   "setores.stat.label": {
     "pt": "áreas especializadas",
@@ -1535,14 +1535,14 @@
     "es": "Marina Hayes"
   },
   "equipe.card4.role": {
-    "pt": "Mediação trabalhista e franquias",
-    "en": "Labor and franchise mediation",
-    "es": "Mediación laboral y franquicias"
+    "pt": "SaaS & Freelance Mediation Specialist",
+    "en": "SaaS & Freelance Mediation Specialist",
+    "es": "SaaS & Freelance Mediation Specialist"
   },
   "equipe.card4.bio": {
-    "pt": "Mediadora em conflitos trabalhistas e de franquias, com histórico de acordos preservando continuidade operacional das partes.",
-    "en": "Mediator in labor and franchise conflicts, with a track record of agreements that preserve the parties' operational continuity.",
-    "es": "Mediadora en conflictos laborales y de franquicias, con historial de acuerdos que preservan la continuidad operativa de las partes."
+    "pt": "Mediadora em disputas de assinaturas SaaS e contratos freelance, com histórico de acordos que mantêm a operação em andamento.",
+    "en": "Mediator in SaaS subscription and freelance engagement disputes, with a track record of settlements that keep operations moving.",
+    "es": "Mediadora en disputas de suscripciones SaaS y contratos freelance, con historial de acuerdos que mantienen la operación en marcha."
   },
   "equipe.card4.tag1": {
     "pt": "Trabalhista",
@@ -2533,5 +2533,20 @@
     "pt": "Resolver uma disputa agora",
     "en": "Resolve a Dispute Now",
     "es": "Resolver una disputa ahora"
+  },
+  "nav.mega.setores.digitalAgencies": {
+    "pt": "Digital Agencies & IT Services",
+    "en": "Digital Agencies & IT Services",
+    "es": "Digital Agencies & IT Services"
+  },
+  "nav.mega.setores.ecommerce": {
+    "pt": "E-commerce & Marketplaces",
+    "en": "E-commerce & Marketplaces",
+    "es": "E-commerce & Marketplaces"
+  },
+  "nav.mega.setores.saasFreelancers": {
+    "pt": "SaaS & Freelancers",
+    "en": "SaaS & Freelancers",
+    "es": "SaaS & Freelancers"
   }
 }
