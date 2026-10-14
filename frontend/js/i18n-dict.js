@@ -895,9 +895,9 @@ export default {
     "es": "Acceder a la plataforma"
   },
   "hero.lead": {
-    "pt": "Conciliação, mediação e arbitragem 100% digitais, com a proximidade e o diálogo que o direito brasileiro exige.",
-    "en": "100% digital conciliation, mediation and arbitration, with the proximity and dialogue Brazilian law demands.",
-    "es": "Conciliación, mediación y arbitraje 100% digitales, con la cercanía y el diálogo que el derecho brasileño exige."
+    "pt": "Conciliação, mediação e arbitragem 100% digitais, com a proximidade e o diálogo que o direito dos EUA exige.",
+    "en": "100% digital conciliation, mediation and arbitration, with the proximity and dialogue U.S. law demands.",
+    "es": "Conciliación, mediación y arbitraje 100% digitales, con la cercanía y el diálogo que el derecho de EE. UU. exige."
   },
   "hero.rating": {
     "pt": "A satisfação dos clientes reflete<br>nosso compromisso com acordos justos",
