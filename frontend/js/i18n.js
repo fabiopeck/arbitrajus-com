@@ -1,5 +1,5 @@
 /**
- * ARBITRAJUS i18n — PT / EN / ES
+ * ARBITRAJUS i18n - PT / EN / ES
  * Markup: data-i18n | data-i18n-html | data-i18n-placeholder | data-i18n-aria | data-i18n-title | data-i18n-value | data-i18n-alt
  */
 import dict from './i18n-dict.js';

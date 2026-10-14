@@ -72,7 +72,7 @@ function initChatbot() {
       return 'Planos a partir de R$99/mês. Veja a seção Planos ou acesse o painel para contratar.';
     }
     if (m.includes('segur') || m.includes('legal')) {
-      return 'We operate under the Federal Arbitration Act (FAA) — 9 U.S.C. § 1, the Standard Commercial Mediation Framework, and GDPR & US Data Privacy Compliant standards (including CCPA), with encryption and audit trails.';
+      return 'We operate under the Federal Arbitration Act (FAA) - 9 U.S.C. § 1, the Standard Commercial Mediation Framework, and GDPR & US Data Privacy Compliant standards (including CCPA), with encryption and audit trails.';
     }
     return 'Pergunte sobre planos, como funciona, segurança jurídica ou fale com contact@arbitrajus.com.';
   }

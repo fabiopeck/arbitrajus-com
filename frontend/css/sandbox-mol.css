@@ -1,4 +1,4 @@
-/* ARBITRAJUS Sandbox — tema inspirado MOL (referencia: Captura de tela de MOL.png) */
+/* ARBITRAJUS Sandbox - tema inspirado MOL (referencia: Captura de tela de MOL.png) */
 
 :root {
   --mol-teal: #0d9eb8;
@@ -408,7 +408,7 @@
 
 .mol-tab-panel.active { display: block; }
 
-/* Minutas — downloads 3 formatos */
+/* Minutas - downloads 3 formatos */
 .mol-download-group {
   display: inline-flex;
   gap: 0.2rem;
