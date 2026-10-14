@@ -96,14 +96,7 @@ export function applyI18n(root = document) {
 
   document.documentElement.lang = LANG_HTML[lang];
   // PT = Brazilian market copy; EN/ES = U.S. market copy
-  const market = lang === 'pt' ? 'br' : 'us';
-  document.documentElement.dataset.market = market;
-  document.querySelectorAll('.arb-market-br, .arb-market-us').forEach((el) => {
-    const show =
-      (el.classList.contains('arb-market-br') && market === 'br') ||
-      (el.classList.contains('arb-market-us') && market === 'us');
-    el.toggleAttribute('hidden', !show);
-  });
+  document.documentElement.dataset.market = lang === 'pt' ? 'br' : 'us';
 }
 
 export function setLang(lang) {
