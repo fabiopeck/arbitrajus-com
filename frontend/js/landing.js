@@ -74,7 +74,7 @@ function initChatbot() {
     if (m.includes('segur') || m.includes('legal')) {
       return 'Operamos sob Lei 9.307/96, Lei 13.140/15 e LGPD, com criptografia e auditoria.';
     }
-    return 'Pergunte sobre planos, como funciona, segurança jurídica ou fale com contato@arbitrajus.com.';
+    return 'Pergunte sobre planos, como funciona, segurança jurídica ou fale com contact@arbitrajus.com.';
   }
 
   function sendMsg() {
