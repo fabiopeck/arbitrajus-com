@@ -1151,8 +1151,8 @@ export default {
   },
   "solucoes.arbitragem.p1": {
     "pt": "Resolução de conflitos em até 6 meses, com validade de título executivo judicial. Procedimento 100% digital na ARBITRAJUS.",
-    "en": "Conflict resolution in up to 6 months, with the force of a judicial enforceable title. 100% digital procedure on ARBITRAJUS.",
-    "es": "Resolución de conflictos en hasta 6 meses, con validez de título ejecutivo judicial. Procedimiento 100% digital en ARBITRAJUS."
+    "en": "Resolve disputes in weeks, not years. Fully digital arbitration with awards enforceable under the Federal Arbitration Act (FAA).",
+    "es": "Resuelva disputas en semanas, no en años. Arbitraje 100% digital con laudos ejecutables bajo el FAA."
   },
   "solucoes.arbitragem.fundamento": {
     "pt": "Fundamentada na Lei nº 9.307/1996, a arbitragem é método consensual de solução de controvérsias por meio de decisão imparcial de árbitros escolhidos pelas partes, com a mesma eficácia de sentença judicial quando cumpridos os requisitos legais.",
@@ -1160,9 +1160,9 @@ export default {
     "es": "Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. El arbitraje es un método consensual de resolución de disputas mediante decisión imparcial de árbitros elegidos por las partes. El laudo digital emitido por ARBITRAJUS tiene validez legal y puede ejecutarse en cortes federales de EE. UU."
   },
   "solucoes.arbitragem.cta.more": {
-    "pt": "saiba mais",
-    "en": "learn more",
-    "es": "más información"
+    "pt": "abrir procedimento",
+    "en": "Start a case",
+    "es": "Iniciar un caso"
   },
   "solucoes.arbitragem.cta.regulamento": {
     "pt": "acesse o regulamento",
@@ -1186,8 +1186,8 @@ export default {
   },
   "solucoes.mediacao.li1": {
     "pt": "Procedimento 100% digital, com sessões por videoconferência",
-    "en": "100% digital procedure, with video sessions",
-    "es": "Procedimiento 100% digital, con sesiones por videoconferencia"
+    "en": "100% digital procedure with video conference sessions",
+    "es": "Procedimiento 100% digital con sesiones por videoconferencia"
   },
   "solucoes.mediacao.li2": {
     "pt": "Mediadores neutros e capacitados",
@@ -1200,14 +1200,14 @@ export default {
     "es": "Ideal para preservar relaciones comerciales y societarias"
   },
   "solucoes.mediacao.cta.more": {
-    "pt": "saiba mais",
-    "en": "learn more",
-    "es": "más información"
+    "pt": "abrir procedimento",
+    "en": "Start a case",
+    "es": "Iniciar un caso"
   },
   "solucoes.mediacao.cta.custas": {
     "pt": "custas da mediação",
-    "en": "mediation fees",
-    "es": "costas de la mediación"
+    "en": "View fees",
+    "es": "Ver tarifas"
   },
   "solucoes.arbitros.title": {
     "pt": "Solução para árbitros",
@@ -1275,14 +1275,14 @@ export default {
     "es": "Puerta de entrada natural a la mediación o al arbitraje, si es necesario"
   },
   "solucoes.conciliacao.cta.more": {
-    "pt": "saiba mais",
-    "en": "learn more",
-    "es": "más información"
+    "pt": "abrir procedimento",
+    "en": "Start a case",
+    "es": "Iniciar un caso"
   },
   "solucoes.conciliacao.cta.custas": {
     "pt": "custas da conciliação",
-    "en": "conciliation fees",
-    "es": "costas de la conciliación"
+    "en": "View fees",
+    "es": "Ver tarifas"
   },
   "setores.eyebrow": {
     "pt": "Setores atendidos",
@@ -2593,5 +2593,250 @@ export default {
     "pt": "Pergunte sobre planos, como funciona, segurança jurídica ou fale com contact@arbitrajus.com.",
     "en": "Ask about plans, how it works, legal security, or email contact@arbitrajus.com.",
     "es": "Pregunte sobre planes, cómo funciona, seguridad jurídica o escriba a contact@arbitrajus.com."
+  },
+  "proc.back": {
+    "pt": "Voltar ao site",
+    "en": "Back to site",
+    "es": "Volver al sitio"
+  },
+  "proc.title": {
+    "pt": "Abrir procedimento",
+    "en": "Open a dispute",
+    "es": "Abrir un caso"
+  },
+  "proc.lead": {
+    "pt": "Fluxo digital: cadastro, pagamento, notificação e acompanhamento em tempo real.",
+    "en": "Fast digital flow: file your claim, pay the fee, and we notify the other party automatically.",
+    "es": "Flujo digital: registre el reclamo, pague la tarifa y notificamos a la otra parte."
+  },
+  "proc.step1": {
+    "pt": "Tipo",
+    "en": "Type",
+    "es": "Tipo"
+  },
+  "proc.step2": {
+    "pt": "Conflito",
+    "en": "Claim",
+    "es": "Reclamo"
+  },
+  "proc.step3": {
+    "pt": "Partes",
+    "en": "Parties",
+    "es": "Partes"
+  },
+  "proc.step4": {
+    "pt": "Pagamento",
+    "en": "Payment",
+    "es": "Pago"
+  },
+  "proc.type.title": {
+    "pt": "Tipo de procedimento",
+    "en": "Choose procedure type",
+    "es": "Elija el tipo de procedimiento"
+  },
+  "proc.type.conciliacao": {
+    "pt": "Conciliação",
+    "en": "Conciliation",
+    "es": "Conciliación"
+  },
+  "proc.type.conciliacao.desc": {
+    "pt": "Negociação assistida, foco em acordo rápido",
+    "en": "Assisted negotiation for a fast settlement",
+    "es": "Negociación asistida para un acuerdo rápido"
+  },
+  "proc.type.mediacao": {
+    "pt": "Mediação",
+    "en": "Mediation",
+    "es": "Mediación"
+  },
+  "proc.type.mediacao.desc": {
+    "pt": "Facilitador neutro entre as partes",
+    "en": "Neutral facilitator between the parties",
+    "es": "Facilitador neutral entre las partes"
+  },
+  "proc.type.arbitragem": {
+    "pt": "Arbitragem",
+    "en": "Arbitration",
+    "es": "Arbitraje"
+  },
+  "proc.type.arbitragem.desc": {
+    "pt": "Decisão vinculante por árbitro credenciado",
+    "en": "Binding decision by an accredited arbitrator",
+    "es": "Decisión vinculante por árbitro acreditado"
+  },
+  "proc.caseTitle": {
+    "pt": "Título resumido do caso *",
+    "en": "Short case title *",
+    "es": "Título corto del caso *"
+  },
+  "proc.caseTitle.ph": {
+    "pt": "Ex.: Disputa contratual de fornecimento",
+    "en": "e.g. Unpaid invoice for web design services",
+    "es": "Ej.: Factura impaga por servicios"
+  },
+  "proc.claim.title": {
+    "pt": "Dados do conflito",
+    "en": "Claim details",
+    "es": "Detalles del reclamo"
+  },
+  "proc.claim.desc": {
+    "pt": "Descrição *",
+    "en": "What happened? *",
+    "es": "¿Qué ocurrió? *"
+  },
+  "proc.claim.desc.ph": {
+    "pt": "Descreva brevemente o conflito e o que busca resolver",
+    "en": "Briefly describe the dispute and what you want resolved",
+    "es": "Describa brevemente la disputa"
+  },
+  "proc.claim.area": {
+    "pt": "Área",
+    "en": "Practice area",
+    "es": "Área"
+  },
+  "proc.claim.amount": {
+    "pt": "Valor da causa (R$)",
+    "en": "Amount in dispute (USD)",
+    "es": "Monto en disputa (USD)"
+  },
+  "proc.party.title": {
+    "pt": "Parte contrária",
+    "en": "Who owes you / opposing party",
+    "es": "Parte contraria"
+  },
+  "proc.party.name": {
+    "pt": "Nome da parte contrária *",
+    "en": "Opposing party name *",
+    "es": "Nombre de la parte contraria *"
+  },
+  "proc.party.name.ph": {
+    "pt": "Nome ou razão social",
+    "en": "Person or company name",
+    "es": "Persona o empresa"
+  },
+  "proc.party.email": {
+    "pt": "E-mail para notificação *",
+    "en": "Email to notify *",
+    "es": "Correo para notificar *"
+  },
+  "proc.party.email.ph": {
+    "pt": "contato@empresa.com",
+    "en": "ops@company.com",
+    "es": "ops@empresa.com"
+  },
+  "proc.party.note": {
+    "pt": "Após o pagamento, a plataforma envia convite automático à parte contrária.",
+    "en": "After payment, ARBITRAJUS automatically notifies the other party.",
+    "es": "Tras el pago, ARBITRAJUS notifica automáticamente a la otra parte."
+  },
+  "proc.pay.title": {
+    "pt": "Revisão e pagamento",
+    "en": "Review and payment",
+    "es": "Revisión y pago"
+  },
+  "proc.pay.fee": {
+    "pt": "Taxa de administração (plataforma)",
+    "en": "Platform administration fee",
+    "es": "Tarifa de administración"
+  },
+  "proc.pay.calc": {
+    "pt": "Calculando...",
+    "en": "Calculating...",
+    "es": "Calculando..."
+  },
+  "proc.pay.note": {
+    "pt": "Ambiente demo: o pagamento é simulado.",
+    "en": "Secure checkout. Fee is based on the amount in dispute. After payment, the other party is notified.",
+    "es": "Pago seguro. La tarifa se basa en el monto en disputa."
+  },
+  "proc.prev": {
+    "pt": "Anterior",
+    "en": "Back",
+    "es": "Atrás"
+  },
+  "proc.next": {
+    "pt": "Próximo",
+    "en": "Continue",
+    "es": "Continuar"
+  },
+  "proc.submit": {
+    "pt": "Confirmar e abrir",
+    "en": "Pay fee and file case",
+    "es": "Pagar y abrir caso"
+  },
+  "proc.success.title": {
+    "pt": "Procedimento aberto",
+    "en": "Case filed",
+    "es": "Caso abierto"
+  },
+  "proc.success.protocol": {
+    "pt": "Protocolo:",
+    "en": "Case ID:",
+    "es": "ID del caso:"
+  },
+  "proc.success.view": {
+    "pt": "Ver procedimento",
+    "en": "View case",
+    "es": "Ver caso"
+  },
+  "proc.success.dash": {
+    "pt": "Ir ao painel",
+    "en": "Go to dashboard",
+    "es": "Ir al panel"
+  },
+  "proc.error.tipo": {
+    "pt": "Selecione o tipo de procedimento.",
+    "en": "Select a procedure type.",
+    "es": "Seleccione un tipo de procedimiento."
+  },
+  "proc.area.civil": {
+    "pt": "Civil / Contratos",
+    "en": "Contracts / Commercial",
+    "es": "Contratos / Comercial"
+  },
+  "proc.area.consumidor": {
+    "pt": "Consumidor",
+    "en": "Consumer",
+    "es": "Consumidor"
+  },
+  "proc.area.trabalhista": {
+    "pt": "Trabalhista",
+    "en": "Employment / Independent contractor",
+    "es": "Laboral"
+  },
+  "proc.area.empresarial": {
+    "pt": "Empresarial",
+    "en": "Business / Corporate",
+    "es": "Empresarial"
+  },
+  "proc.area.imobiliario": {
+    "pt": "Imobiliário",
+    "en": "Real estate",
+    "es": "Inmobiliario"
+  },
+  "proc.area.outro": {
+    "pt": "Outro",
+    "en": "Other",
+    "es": "Otro"
+  },
+  "proc.resumo.tipo": {
+    "pt": "Tipo",
+    "en": "Type",
+    "es": "Tipo"
+  },
+  "proc.resumo.titulo": {
+    "pt": "Título",
+    "en": "Title",
+    "es": "Título"
+  },
+  "proc.resumo.parte": {
+    "pt": "Parte contrária",
+    "en": "Opposing party",
+    "es": "Parte contraria"
+  },
+  "proc.resumo.email": {
+    "pt": "E-mail",
+    "en": "Email",
+    "es": "Correo"
   }
 };
