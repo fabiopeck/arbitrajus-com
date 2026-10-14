@@ -1,3 +1,5 @@
+import { applyI18n, onLangChange } from './i18n.js';
+
 const WELCOME_KEY = 'arbitrajus_welcome_seen';
 const COOKIE_KEY = 'arbitrajus_cookie_consent';
 
@@ -18,14 +20,14 @@ function injectWidgets() {
   container.innerHTML = `
     <div class="arb-welcome-overlay" id="arb-welcome" role="dialog" aria-modal="true" aria-labelledby="arb-welcome-title">
       <div class="arb-welcome-banner">
-        <button type="button" class="arb-welcome-close" id="arb-welcome-close" aria-label="Fechar">&times;</button>
+        <button type="button" class="arb-welcome-close" id="arb-welcome-close" aria-label="Close" data-i18n-aria="welcome.closeAria">&times;</button>
         <div class="arb-welcome-grid">
           <div class="arb-welcome-visual">
-            <img src="${heroImg}" alt="Mediação e conciliação online" class="arb-welcome-image" width="480" height="640">
+            <img src="${heroImg}" alt="Online mediation and conciliation" class="arb-welcome-image" width="480" height="640" data-i18n-alt="welcome.imgAlt">
             <div class="arb-welcome-visual-overlay"></div>
             <span class="arb-welcome-badge">
               <img src="${logo}" alt="" class="arb-welcome-badge-logo" width="28" height="28">
-              ODR · Resolução online
+              <span data-i18n="welcome.badge">ODR · Online dispute resolution</span>
             </span>
           </div>
           <div class="arb-welcome-content">
@@ -35,21 +37,21 @@ function injectWidgets() {
                 <span class="arb-welcome-brand-arbitra">ARBITRA</span><span class="arb-welcome-brand-jus">JUS</span>
               </span>
             </div>
-            <h2 id="arb-welcome-title">Resolução de conflitos com excelência e agilidade</h2>
-            <p class="arb-welcome-lead">
-              Plataforma nacional de arbitragem, mediação e conciliação 100% digitais.
-              Ambiente seguro para dialogar, negociar e alcançar acordos com validade jurídica.
+            <h2 id="arb-welcome-title" data-i18n="welcome.title">Conflict resolution with excellence and speed</h2>
+            <p class="arb-welcome-lead" data-i18n="welcome.lead">
+              National platform for 100% digital arbitration, mediation and conciliation.
+              A secure environment to dialogue, negotiate and reach agreements with legal effect.
             </p>
             <ul class="arb-welcome-features">
-              <li><i class="fas fa-bolt"></i> Procedimentos ágeis e rastreáveis</li>
-              <li><i class="fas fa-user-shield"></i> Profissionais credenciados</li>
-              <li><i class="fas fa-laptop"></i> Experiência digital completa</li>
+              <li><i class="fas fa-bolt"></i> <span data-i18n="welcome.feature1">Fast, traceable proceedings</span></li>
+              <li><i class="fas fa-user-shield"></i> <span data-i18n="welcome.feature2">Accredited professionals</span></li>
+              <li><i class="fas fa-laptop"></i> <span data-i18n="welcome.feature3">Fully digital experience</span></li>
             </ul>
             <div class="arb-welcome-actions">
-              <a href="#solucoes" class="btn-arb btn-arb-primary" id="arb-welcome-cta">Conhecer soluções</a>
-              <a href="${abrirProc}" class="btn-arb btn-arb-white">Abrir procedimento</a>
+              <a href="#solucoes" class="btn-arb btn-arb-primary" id="arb-welcome-cta" data-i18n="welcome.cta">Explore solutions</a>
+              <a href="${abrirProc}" class="btn-arb btn-arb-white" data-i18n="welcome.openCase">Open a case</a>
             </div>
-            <button type="button" class="arb-welcome-skip" id="arb-welcome-skip">Continuar navegando</button>
+            <button type="button" class="arb-welcome-skip" id="arb-welcome-skip" data-i18n="welcome.skip">Continue browsing</button>
           </div>
         </div>
       </div>
@@ -152,6 +154,8 @@ function injectWidgets() {
   `;
 
   document.body.appendChild(container);
+  applyI18n(container);
+  onLangChange(() => applyI18n(container));
 }
 
 function getCookieConsent() {

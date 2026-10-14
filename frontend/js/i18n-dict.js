@@ -2473,5 +2473,60 @@ export default {
     "pt": "Espanhol",
     "en": "Spanish",
     "es": "Español"
+  },
+  "welcome.closeAria": {
+    "pt": "Fechar",
+    "en": "Close",
+    "es": "Cerrar"
+  },
+  "welcome.imgAlt": {
+    "pt": "Mediação e conciliação online",
+    "en": "Online mediation and conciliation",
+    "es": "Mediación y conciliación en línea"
+  },
+  "welcome.badge": {
+    "pt": "ODR · Resolução online",
+    "en": "ODR · Online dispute resolution",
+    "es": "ODR · Resolución en línea"
+  },
+  "welcome.title": {
+    "pt": "Resolução de conflitos com excelência e agilidade",
+    "en": "Conflict resolution with excellence and speed",
+    "es": "Resolución de conflictos con excelencia y agilidad"
+  },
+  "welcome.lead": {
+    "pt": "Plataforma nacional de arbitragem, mediação e conciliação 100% digitais. Ambiente seguro para dialogar, negociar e alcançar acordos com validade jurídica.",
+    "en": "National platform for 100% digital arbitration, mediation and conciliation. A secure environment to dialogue, negotiate and reach agreements with legal effect.",
+    "es": "Plataforma nacional de arbitraje, mediación y conciliación 100% digitales. Un entorno seguro para dialogar, negociar y alcanzar acuerdos con validez jurídica."
+  },
+  "welcome.feature1": {
+    "pt": "Procedimentos ágeis e rastreáveis",
+    "en": "Fast, traceable proceedings",
+    "es": "Procedimientos ágiles y rastreables"
+  },
+  "welcome.feature2": {
+    "pt": "Profissionais credenciados",
+    "en": "Accredited professionals",
+    "es": "Profesionales acreditados"
+  },
+  "welcome.feature3": {
+    "pt": "Experiência digital completa",
+    "en": "Fully digital experience",
+    "es": "Experiencia digital completa"
+  },
+  "welcome.cta": {
+    "pt": "Conhecer soluções",
+    "en": "Explore solutions",
+    "es": "Conocer soluciones"
+  },
+  "welcome.openCase": {
+    "pt": "Abrir procedimento",
+    "en": "Open a case",
+    "es": "Abrir procedimiento"
+  },
+  "welcome.skip": {
+    "pt": "Continuar navegando",
+    "en": "Continue browsing",
+    "es": "Seguir navegando"
   }
 };
