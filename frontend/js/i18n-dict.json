@@ -630,9 +630,9 @@
     "es": "Política de privacidad"
   },
   "nav.mega.empresa.privacidade.desc": {
-    "pt": "Proteção de dados e confidencialidade",
-    "en": "Data protection and confidentiality",
-    "es": "Protección de datos y confidencialidad"
+    "pt": "GDPR & US Data Privacy Compliant (CCPA)",
+    "en": "GDPR & US Data Privacy Compliant (CCPA)",
+    "es": "GDPR & US Data Privacy Compliant (CCPA)"
   },
   "nav.mega.empresa.faq.title": {
     "pt": "Perguntas frequentes",
@@ -965,9 +965,9 @@
     "es": "Justicia, igualdad y protección de derechos"
   },
   "impacto.item1.body": {
-    "pt": "Atuamos para garantir acesso à justiça por meios adequados de solução de conflitos, com procedimentos transparentes, imparciais e alinhados ao ordenamento jurídico brasileiro.",
-    "en": "We work to ensure access to justice through appropriate dispute-resolution methods, with transparent, impartial procedures aligned with Brazilian law.",
-    "es": "Actuamos para garantizar el acceso a la justicia por medios adecuados de solución de conflictos, con procedimientos transparentes, imparciales y alineados al ordenamiento jurídico brasileño."
+    "pt": "Atuamos para garantir acesso à justiça por meios adequados de solução de conflitos, com procedimentos transparentes, imparciais e alinhados ao Federal Arbitration Act (FAA) e ao Standard Commercial Mediation Framework.",
+    "en": "We work to ensure access to justice through appropriate dispute-resolution methods, with transparent, impartial procedures aligned with the Federal Arbitration Act (FAA) and the Standard Commercial Mediation Framework.",
+    "es": "Actuamos para garantizar el acceso a la justicia por medios adecuados de solución de conflictos, con procedimientos transparentes, imparciales y alineados al Federal Arbitration Act (FAA) y al Standard Commercial Mediation Framework."
   },
   "impacto.item2.title": {
     "pt": "Profissionais Jurídicos Experientes",
@@ -1155,9 +1155,9 @@
     "es": "Resolución de conflictos en hasta 6 meses, con validez de título ejecutivo judicial. Procedimiento 100% digital en ARBITRAJUS."
   },
   "solucoes.arbitragem.fundamento": {
-    "pt": "Fundamentada na Lei nº 9.307/1996, a arbitragem é método consensual de solução de controvérsias por meio de decisão imparcial de árbitros escolhidos pelas partes, com a mesma eficácia de sentença judicial quando cumpridos os requisitos legais.",
-    "en": "Grounded in Lei nº 9.307/1996, arbitration is a consensual method of dispute resolution through an impartial decision by arbitrators chosen by the parties, with the same effect as a court judgment when legal requirements are met.",
-    "es": "Fundamentada en la Lei nº 9.307/1996, el arbitraje es un método consensual de solución de controversias mediante decisión imparcial de árbitros elegidos por las partes, con la misma eficacia de una sentencia judicial cuando se cumplen los requisitos legales."
+    "pt": "Fully compliant with the Federal Arbitration Act (FAA) — 9 U.S.C. § 1. A arbitragem é um método consensual de resolução de disputas por decisão imparcial de árbitros escolhidos pelas partes. A sentença digital emitida pela ARBITRAJUS possui validade legal e pode ser executada em cortes federais americanas.",
+    "en": "Fully compliant with the Federal Arbitration Act (FAA) — 9 U.S.C. § 1. Arbitration is a consensual method of dispute resolution through an impartial decision by arbitrators chosen by the parties. Digital awards issued by ARBITRAJUS have legal effect and may be enforced in U.S. federal courts.",
+    "es": "Fully compliant with the Federal Arbitration Act (FAA) — 9 U.S.C. § 1. El arbitraje es un método consensual de resolución de disputas mediante decisión imparcial de árbitros elegidos por las partes. El laudo digital emitido por ARBITRAJUS tiene validez legal y puede ejecutarse en cortes federales de EE. UU."
   },
   "solucoes.arbitragem.cta.more": {
     "pt": "saiba mais",
@@ -1180,9 +1180,9 @@
     "es": "Transformando conflictos en relaciones duraderas. En la mediación, las partes construyen soluciones con ayuda de un mediador neutral, en un entorno colaborativo y reservado."
   },
   "solucoes.mediacao.fundamento": {
-    "pt": "Prevista na Lei nº 13.140/2015, a mediação é autocompositiva, voluntária e confidencial. O acordo homologado pode ser executado judicialmente, reduzindo custos, prazos e desgaste entre as partes, especialmente em disputas comerciais e contratuais.",
-    "en": "Provided for in Lei nº 13.140/2015, mediation is party-driven, voluntary and confidential. A homologated agreement can be enforced in court, reducing costs, timelines and strain between the parties—especially in commercial and contractual disputes.",
-    "es": "Prevista en la Lei nº 13.140/2015, la mediación es autocompositiva, voluntaria y confidencial. El acuerdo homologado puede ejecutarse judicialmente, reduciendo costos, plazos y desgaste entre las partes, especialmente en disputas comerciales y contractuales."
+    "pt": "Standard Commercial Mediation Framework. A mediação é voluntária, confidencial e orientada pelas partes. O acordo alcançado pode ser documentado e executado conforme o direito aplicável, reduzindo custos, prazos e desgaste — especialmente em disputas comerciais e contratuais.",
+    "en": "Standard Commercial Mediation Framework. Mediation is voluntary, confidential and party-driven. Settlements can be documented and enforced under applicable law, reducing costs, timelines and strain—especially in commercial and contractual disputes.",
+    "es": "Standard Commercial Mediation Framework. La mediación es voluntaria, confidencial y orientada por las partes. El acuerdo alcanzado puede documentarse y ejecutarse conforme al derecho aplicable, reduciendo costos, plazos y desgaste — especialmente en disputas comerciales y contractuales."
   },
   "solucoes.mediacao.li1": {
     "pt": "Procedimento 100% digital, com sessões por videoconferência",
@@ -1255,9 +1255,9 @@
     "es": "El camino más ágil hacia el acuerdo. Con ayuda de un conciliador calificado, las partes buscan una solución práctica e inmediata, en un entorno reservado y 100% digital."
   },
   "solucoes.conciliacao.fundamento": {
-    "pt": "Prevista no Código de Processo Civil e amplamente utilizada nos CEJUSCs e na justiça multiportas, a conciliação é método autocompositivo ideal para reduzir filas, custos e tempo de resolução, especialmente em conflitos consumeristas, trabalhistas e contratuais de menor complexidade.",
-    "en": "Provided for in the Code of Civil Procedure and widely used in CEJUSCs and multi-door justice, conciliation is a party-driven method ideal for reducing backlogs, costs and resolution time—especially in consumer, labor and lower-complexity contractual disputes.",
-    "es": "Prevista en el Código de Proceso Civil y ampliamente utilizada en los CEJUSCs y en la justicia multipuertas, la conciliación es un método autocompositivo ideal para reducir filas, costos y tiempo de resolución, especialmente en conflictos de consumo, laborales y contractuales de menor complejidad."
+    "pt": "Standard Commercial Mediation Framework. A conciliação é um método ágil e consensual, ideal para reduzir custos e tempo de resolução em disputas comerciais e contratuais de menor complexidade.",
+    "en": "Standard Commercial Mediation Framework. Conciliation is a fast, consensual method ideal for reducing costs and resolution time in lower-complexity commercial and contractual disputes.",
+    "es": "Standard Commercial Mediation Framework. La conciliación es un método ágil y consensual, ideal para reducir costos y tiempo de resolución en disputas comerciales y contractuales de menor complejidad."
   },
   "solucoes.conciliacao.li1": {
     "pt": "Procedimento ágil, com foco em acordo rápido entre as partes",
@@ -1650,9 +1650,9 @@
     "es": "¿Qué es la conciliación en línea?"
   },
   "faq.a1": {
-    "pt": "É o procedimento conduzido na plataforma digital em que um conciliador qualificado auxilia as partes a buscar acordo de forma ágil, conforme os princípios do Código de Processo Civil e da justiça multiportas.",
-    "en": "It is the procedure conducted on the digital platform in which a qualified conciliator helps the parties seek a settlement quickly, in line with the principles of the Code of Civil Procedure and multi-door justice.",
-    "es": "Es el procedimiento conducido en la plataforma digital en el que un conciliador calificado auxilia a las partes a buscar un acuerdo de forma ágil, conforme a los principios del Código de Proceso Civil y de la justicia multipuertas."
+    "pt": "É o procedimento conduzido na plataforma digital em que um conciliador qualificado auxilia as partes a buscar acordo de forma ágil, sob o Standard Commercial Mediation Framework.",
+    "en": "It is the procedure conducted on the digital platform in which a qualified conciliator helps the parties seek a settlement quickly, under the Standard Commercial Mediation Framework.",
+    "es": "Es el procedimiento conducido en la plataforma digital en el que un conciliador calificado auxilia a las partes a buscar un acuerdo de forma ágil, bajo el Standard Commercial Mediation Framework."
   },
   "faq.q2": {
     "pt": "O que é arbitragem online?",
@@ -1660,9 +1660,9 @@
     "es": "¿Qué es el arbitraje en línea?"
   },
   "faq.a2": {
-    "pt": "É o procedimento arbitral conduzido integralmente na plataforma digital, desde a instauração até a sentença, com segurança jurídica prevista na Lei nº 9.307/1996.",
-    "en": "It is the arbitral procedure conducted entirely on the digital platform, from commencement to award, with the legal certainty provided by Lei nº 9.307/1996.",
-    "es": "Es el procedimiento arbitral conducido íntegramente en la plataforma digital, desde la instauración hasta el laudo, con seguridad jurídica prevista en la Lei nº 9.307/1996."
+    "pt": "É o procedimento arbitral 100% digital, desde a instauração até a sentença. Fully compliant with the Federal Arbitration Act (FAA) — 9 U.S.C. § 1. A sentença digital da ARBITRAJUS possui validade legal e pode ser executada em cortes federais americanas.",
+    "en": "It is a fully digital arbitral proceeding, from filing to award. Fully compliant with the Federal Arbitration Act (FAA) — 9 U.S.C. § 1. ARBITRAJUS digital awards have legal effect and may be enforced in U.S. federal courts.",
+    "es": "Es el procedimiento arbitral 100% digital, desde la instauración hasta el laudo. Fully compliant with the Federal Arbitration Act (FAA) — 9 U.S.C. § 1. El laudo digital de ARBITRAJUS tiene validez legal y puede ejecutarse en cortes federales de EE. UU."
   },
   "faq.q3": {
     "pt": "O que é mediação online?",
@@ -1670,9 +1670,9 @@
     "es": "¿Qué es la mediación en línea?"
   },
   "faq.a3": {
-    "pt": "É o método consensual em que um mediador neutro auxilia as partes a construir um acordo, com sessões por videoconferência e documentação digital, conforme a Lei nº 13.140/2015.",
-    "en": "It is the consensual method in which a neutral mediator helps the parties build an agreement, with video sessions and digital documentation, under Lei nº 13.140/2015.",
-    "es": "Es el método consensual en el que un mediador neutral auxilia a las partes a construir un acuerdo, con sesiones por videoconferencia y documentación digital, conforme a la Lei nº 13.140/2015."
+    "pt": "É o método consensual em que um mediador neutro auxilia as partes a construir um acordo, com sessões por videoconferência e documentação digital, sob o Standard Commercial Mediation Framework.",
+    "en": "It is the consensual method in which a neutral mediator helps the parties build an agreement, with video sessions and digital documentation, under the Standard Commercial Mediation Framework.",
+    "es": "Es el método consensual en el que un mediador neutral auxilia a las partes a construir un acuerdo, con sesiones por videoconferencia y documentación digital, bajo el Standard Commercial Mediation Framework."
   },
   "faq.q4": {
     "pt": "Qual a diferença entre conciliação, mediação e arbitragem?",
@@ -1700,9 +1700,9 @@
     "es": "¿El laudo arbitral tiene fuerza de título ejecutivo?"
   },
   "faq.a6": {
-    "pt": "Sim. Cumpridos os requisitos legais, a sentença arbitral constitui título executivo judicial, nos termos do art. 515, VII, do Código de Processo Civil.",
-    "en": "Yes. When legal requirements are met, the arbitral award constitutes a judicial enforceable title under art. 515, VII, of the Code of Civil Procedure.",
-    "es": "Sí. Cumplidos los requisitos legales, el laudo arbitral constituye título ejecutivo judicial, en los términos del art. 515, VII, del Código de Proceso Civil."
+    "pt": "Sim. Fully compliant with the Federal Arbitration Act (FAA) — 9 U.S.C. § 1. A sentença digital emitida pela ARBITRAJUS possui validade legal e pode ser executada em cortes federais americanas.",
+    "en": "Yes. Fully compliant with the Federal Arbitration Act (FAA) — 9 U.S.C. § 1. Digital awards issued by ARBITRAJUS have legal effect and may be enforced in U.S. federal courts.",
+    "es": "Sí. Fully compliant with the Federal Arbitration Act (FAA) — 9 U.S.C. § 1. El laudo digital emitido por ARBITRAJUS tiene validez legal y puede ejecutarse en cortes federales de EE. UU."
   },
   "faq.q7": {
     "pt": "Quanto tempo leva um procedimento?",
@@ -1770,9 +1770,9 @@
     "es": "¿Los procedimientos son confidenciales?"
   },
   "faq.a12": {
-    "pt": "Sim. Conciliação, mediação e arbitragem têm caráter reservado, salvo hipóteses previstas em lei ou acordadas pelas partes. A plataforma adota controles de acesso e proteção de dados conforme a LGPD.",
-    "en": "Yes. Conciliation, mediation and arbitration are confidential, except as provided by law or agreed by the parties. The platform applies access controls and data protection under the LGPD.",
-    "es": "Sí. Conciliación, mediación y arbitraje tienen carácter reservado, salvo hipótesis previstas en la ley o acordadas por las partes. La plataforma adopta controles de acceso y protección de datos conforme a la LGPD."
+    "pt": "Sim. Conciliação, mediação e arbitragem são confidenciais, salvo previsão legal ou acordo das partes. A plataforma aplica controles de acesso e proteção de dados — GDPR & US Data Privacy Compliant (incluindo CCPA da Califórnia).",
+    "en": "Yes. Conciliation, mediation and arbitration are confidential, except as provided by law or agreed by the parties. The platform applies access controls and data protection — GDPR & US Data Privacy Compliant (including California CCPA).",
+    "es": "Sí. Conciliación, mediación y arbitraje son confidenciales, salvo previsión legal o acuerdo de las partes. La plataforma aplica controles de acceso y protección de datos — GDPR & US Data Privacy Compliant (incluida la CCPA de California)."
   },
   "faq.q13": {
     "pt": "É possível conduzir todo o procedimento de forma digital?",
