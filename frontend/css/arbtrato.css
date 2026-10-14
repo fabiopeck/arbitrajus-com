@@ -1519,24 +1519,31 @@ ul { list-style: none; margin: 0; padding: 0; }
 @media (max-width: 900px) {
   .arb-lagix-hero-inner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    gap: 1.5rem;
   }
 
-  /* Mobile: reviews/customer first, then lead + CTA */
-  .arb-lagix-hero-col--stats {
-    order: 1;
+  /* Mobile: reviews/customer first, then lead + CTA — full content width */
+  .arb-lagix-hero-col--stats,
+  .arb-lagix-hero-col--text {
     width: 100%;
     max-width: none;
+  }
+
+  .arb-lagix-hero-col--stats {
+    order: 1;
   }
 
   .arb-lagix-hero-col--text {
     order: 2;
-    width: 100%;
-    max-width: none;
   }
 
-  .arb-lagix-hero-highlights {
+  .arb-lagix-hero-lead,
+  .arb-lagix-hero-rating,
+  .arb-lagix-hero-highlights,
+  .arb-lagix-hero-actions {
     max-width: none;
+    width: 100%;
   }
 }
 
@@ -4279,11 +4286,17 @@ body.arb-theme {
   .arb-lagix-hero-lead {
     font-size: clamp(1rem, 3.8vw, 1.2rem);
     line-height: 1.45;
+    max-width: none;
   }
 
   .arb-lagix-hero-cta {
     width: 100%;
-    max-width: 22rem;
+    max-width: none;
+  }
+
+  /* Spacers only needed for desktop float-card overlap */
+  .arb-impact-metrics--spacer {
+    display: none;
   }
 
   .arb-lagix-hero-counter {
