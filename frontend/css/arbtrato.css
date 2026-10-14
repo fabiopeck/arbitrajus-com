@@ -1517,24 +1517,24 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 
 @media (max-width: 900px) {
-  /* Mobile: video band full-width on top; copy stacked below (not over the video) */
+  /* Mobile: full-width hero; video visible; copy overlaid only on the lower band */
   .arb-lagix-hero {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    min-height: auto;
-    padding: 0;
-    overflow: visible;
+    justify-content: flex-end;
+    position: relative;
+    min-height: min(72svh, 560px);
+    padding: 0 0 1.5rem;
+    overflow: hidden;
   }
 
   .arb-lagix-hero-media {
-    position: relative;
-    inset: auto;
+    position: absolute;
+    inset: 0;
     z-index: 0;
     width: 100%;
-    height: calc(100svh - var(--arb-header-h, 120px));
-    min-height: 320px;
-    flex-shrink: 0;
+    height: 100%;
   }
 
   .arb-lagix-hero-video {
@@ -1543,14 +1543,16 @@ ul { list-style: none; margin: 0; padding: 0; }
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 70% 35%;
   }
 
   .arb-lagix-hero-overlay {
     background: linear-gradient(
       180deg,
-      rgba(5, 4, 49, 0.12) 0%,
-      transparent 45%,
-      rgba(5, 4, 49, 0.2) 100%
+      rgba(5, 4, 49, 0.08) 0%,
+      rgba(5, 4, 49, 0.15) 42%,
+      rgba(5, 4, 49, 0.55) 72%,
+      rgba(5, 4, 49, 0.82) 100%
     );
   }
 
@@ -1559,13 +1561,13 @@ ul { list-style: none; margin: 0; padding: 0; }
     z-index: 2;
     flex-direction: column;
     align-items: stretch;
-    gap: 1.25rem;
+    gap: 1rem;
     width: 100%;
     max-width: none;
     margin: 0;
-    padding: 1.5rem 1.25rem 2rem;
+    padding: 0 1.25rem;
     box-sizing: border-box;
-    background: #050431;
+    background: transparent;
   }
 
   .arb-lagix-hero-col--stats,
