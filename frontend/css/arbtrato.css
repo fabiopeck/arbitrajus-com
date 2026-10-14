@@ -1512,8 +1512,20 @@ ul { list-style: none; margin: 0; padding: 0; }
     align-items: flex-start;
   }
 
+  /* Mobile: reviews/customer first, then lead + CTA */
   .arb-lagix-hero-col--stats {
+    order: 1;
     width: 100%;
+  }
+
+  .arb-lagix-hero-col--text {
+    order: 2;
+    width: 100%;
+    max-width: none;
+  }
+
+  .arb-lagix-hero-highlights {
+    max-width: none;
   }
 }
 
