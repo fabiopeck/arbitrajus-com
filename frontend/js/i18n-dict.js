@@ -896,8 +896,8 @@ export default {
   },
   "hero.lead": {
     "pt": "Conciliação, mediação e arbitragem 100% digitais, com a proximidade e o diálogo que o direito brasileiro exige.",
-    "en": "100% digital conciliation, mediation and arbitration, with the proximity and dialogue U.S. law demands.",
-    "es": "Conciliación, mediación y arbitraje 100% digitales, con la cercanía y el diálogo que el derecho de EE. UU. exige."
+    "en": "100% digital online dispute resolution, with the proximity and dialogue U.S. law demands.",
+    "es": "Resolución de disputas en línea 100% digital, con la cercanía y el diálogo que el derecho de EE. UU. exige."
   },
   "hero.rating": {
     "pt": "Agilidade:<br>casos resolvidos em dias, não em anos",
