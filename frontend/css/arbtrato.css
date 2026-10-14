@@ -33,6 +33,12 @@ body.arb-theme {
   background: var(--arb-white);
 }
 
+/* Market split fallback before JS: PT = Brazil, EN/ES = United States */
+html:not([data-market="br"]) .arb-market-br,
+html[data-market="br"] .arb-market-us {
+  display: none !important;
+}
+
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; margin: 0; padding: 0; }

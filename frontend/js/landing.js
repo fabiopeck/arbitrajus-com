@@ -1,5 +1,6 @@
 import { initHeroCarousel } from './carousel.js';
 import { ContactAPI } from './api.js';
+import { t, getLang } from './i18n.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeroCarousel();
@@ -62,19 +63,20 @@ function initChatbot() {
 
   function respond(msg) {
     const m = msg.toLowerCase();
-    if (m.includes('arbitrajus') || m.includes('o que é')) {
-      return 'A ARBITRAJUS é a maior plataforma digital de conciliação, mediação e arbitragem do Brasil.';
+    const lang = getLang();
+    if (m.includes('arbitrajus') || m.includes('o que é') || m.includes('what is')) {
+      return t('landing.chat.about', lang) || '';
     }
-    if (m.includes('como funciona')) {
-      return 'Cadastro → Negociação assistida → Acordo ou arbitragem. Tudo online com segurança jurídica.';
+    if (m.includes('como funciona') || m.includes('how it works') || m.includes('how does')) {
+      return t('landing.chat.how', lang) || '';
     }
-    if (m.includes('plano') || m.includes('preço')) {
-      return 'Planos a partir de R$99/mês. Veja a seção Planos ou acesse o painel para contratar.';
+    if (m.includes('plano') || m.includes('preço') || m.includes('price') || m.includes('plan')) {
+      return t('landing.chat.plans', lang) || '';
     }
-    if (m.includes('segur') || m.includes('legal')) {
-      return 'We operate under the Federal Arbitration Act (FAA) - 9 U.S.C. § 1, the Standard Commercial Mediation Framework, and GDPR & US Data Privacy Compliant standards (including CCPA), with encryption and audit trails.';
+    if (m.includes('segur') || m.includes('legal') || m.includes('secur') || m.includes('faa') || m.includes('lgpd')) {
+      return t('landing.security.reply', lang) || '';
     }
-    return 'Pergunte sobre planos, como funciona, segurança jurídica ou fale com contact@arbitrajus.com.';
+    return t('landing.chat.fallback', lang) || '';
   }
 
   function sendMsg() {

@@ -16,13 +16,13 @@
   },
   "header.topbar.text": {
     "pt": "Infraestrutura ODR · Conciliação, mediação e arbitragem 100% digitais em todo o Brasil",
-    "en": "ODR infrastructure · 100% digital conciliation, mediation and arbitration across Brazil",
-    "es": "Infraestructura ODR · Conciliación, mediación y arbitraje 100% digitales en todo Brasil"
+    "en": "ODR infrastructure · 100% digital conciliation, mediation and arbitration across the United States",
+    "es": "Infraestructura ODR · Conciliación, mediación y arbitraje 100% digitales en Estados Unidos"
   },
   "header.topbar.link": {
     "pt": "Integração com tribunais e CEJUSCs",
-    "en": "Integration with courts and CEJUSCs",
-    "es": "Integración con tribunales y CEJUSCs"
+    "en": "Integration with courts and ODR programs",
+    "es": "Integración con tribunales y programas ODR"
   },
   "header.logo.aria": {
     "pt": "ARBITRAJUS, início",
@@ -420,14 +420,14 @@
     "es": "Sectores de actuación"
   },
   "nav.mega.setores.intro.title": {
-    "pt": "Feito para startups e pequenos negócios",
+    "pt": "Experiência em disputas de alta complexidade",
     "en": "Built for startups and small businesses",
     "es": "Hecho para startups y pequeños negocios"
   },
   "nav.mega.setores.intro.text": {
-    "pt": "Focamos em verticais digitais com disputas frequentes de pagamento e escopo - para resolver mais rápido, sem esperar meses por contratos enterprise.",
+    "pt": "Atuamos em conflitos contratuais, societários e regulatórios com equipes especializadas por segmento.",
     "en": "We focus on digital verticals with frequent payment and scope disputes - so you can resolve faster without waiting months for enterprise contracts.",
-    "es": "Nos enfocamos en verticales digitales con disputas frecuentes de pago y alcance - para resolver más rápido, sin esperar meses por contratos enterprise."
+    "es": "Nos enfocamos en verticales digitales con disputas frecuentes de pago y alcance."
   },
   "nav.mega.setores.imobiliaria": {
     "pt": "Imobiliária",
@@ -460,14 +460,14 @@
     "es": "Contractual"
   },
   "nav.mega.setores.trabalhista": {
-    "pt": "SaaS & Freelancers",
-    "en": "SaaS & Freelancers",
-    "es": "SaaS & Freelancers"
+    "pt": "Trabalhista",
+    "en": "Labor",
+    "es": "Laboral"
   },
   "nav.mega.setores.adminPublica": {
-    "pt": "Digital Agencies & IT Services",
-    "en": "Digital Agencies & IT Services",
-    "es": "Digital Agencies & IT Services"
+    "pt": "Administração pública",
+    "en": "Public administration",
+    "es": "Administración pública"
   },
   "nav.mega.setores.franquias": {
     "pt": "Franquias",
@@ -486,13 +486,13 @@
   },
   "nav.mega.integracao.tribunais.title": {
     "pt": "Tribunais e CEJUSCs",
-    "en": "Courts and CEJUSCs",
-    "es": "Tribunales y CEJUSCs"
+    "en": "Courts and ODR programs",
+    "es": "Tribunales y programas ODR"
   },
   "nav.mega.integracao.tribunais.desc": {
     "pt": "Justiça multiportas e encaminhamento digital",
-    "en": "Multi-door justice and digital referral",
-    "es": "Justicia multipuertas y remisión digital"
+    "en": "Court-annexed ODR and digital referral",
+    "es": "ODR anexado a tribunales y derivación digital"
   },
   "nav.mega.integracao.admin.title": {
     "pt": "Administração pública",
@@ -500,7 +500,7 @@
     "es": "Administración pública"
   },
   "nav.mega.integracao.admin.desc": {
-    "pt": "Disputas de assinatura e profissionais independentes",
+    "pt": "Conciliação e mediação em demandas públicas",
     "en": "Subscription and independent-contractor disputes",
     "es": "Disputas de suscripción y contratistas independientes"
   },
@@ -630,7 +630,7 @@
     "es": "Política de privacidad"
   },
   "nav.mega.empresa.privacidade.desc": {
-    "pt": "GDPR & US Data Privacy Compliant (CCPA)",
+    "pt": "Proteção de dados e confidencialidade (LGPD)",
     "en": "GDPR & US Data Privacy Compliant (CCPA)",
     "es": "GDPR & US Data Privacy Compliant (CCPA)"
   },
@@ -656,8 +656,8 @@
   },
   "nav.mega.empresa.feature.text": {
     "pt": "Operação digital em todo o Brasil.",
-    "en": "Digital operations across Brazil.",
-    "es": "Operación digital en todo Brasil."
+    "en": "Digital operations across the United States.",
+    "es": "Operación digital en todo Estados Unidos."
   },
   "nav.mega.empresa.feature.cta": {
     "pt": "Fale conosco",
@@ -826,8 +826,8 @@
   },
   "mobile.integracao.tribunais": {
     "pt": "Tribunais e CEJUSCs",
-    "en": "Courts and CEJUSCs",
-    "es": "Tribunales y CEJUSCs"
+    "en": "Courts and ODR programs",
+    "es": "Tribunales y programas ODR"
   },
   "mobile.integracao.oab": {
     "pt": "OAB e entidades de classe",
@@ -895,12 +895,12 @@
     "es": "Acceder a la plataforma"
   },
   "hero.lead": {
-    "pt": "Conciliação, mediação e arbitragem 100% digitais, com a proximidade e o diálogo que o direito dos EUA exige.",
+    "pt": "Conciliação, mediação e arbitragem 100% digitais, com a proximidade e o diálogo que o direito brasileiro exige.",
     "en": "100% digital conciliation, mediation and arbitration, with the proximity and dialogue U.S. law demands.",
     "es": "Conciliación, mediación y arbitraje 100% digitales, con la cercanía y el diálogo que el derecho de EE. UU. exige."
   },
   "hero.rating": {
-    "pt": "A confiança dos clientes reflete<br>nosso compromisso com acordos justos",
+    "pt": "A satisfação dos clientes reflete<br>nosso compromisso com acordos justos",
     "en": "Customer trust reflects<br>our commitment to fair agreements",
     "es": "La confianza de los clientes refleja<br>nuestro compromiso con acuerdos justos"
   },
@@ -911,23 +911,23 @@
   },
   "marquee.item1": {
     "pt": "Câmara aprova regras para mediação extrajudicial em conflitos de PMEs",
-    "en": "Chamber approves rules for extrajudicial mediation in SME disputes",
-    "es": "Cámara aprueba reglas para mediación extrajudicial en conflictos de pymes"
+    "en": "New rules expand commercial mediation for small business disputes",
+    "es": "Nuevas reglas amplían la mediación comercial para disputas de pymes"
   },
   "marquee.item2": {
     "pt": "STJ avança na justiça multiportas com mediação extrajudicial",
-    "en": "STJ advances multi-door justice with extrajudicial mediation",
-    "es": "STJ avanza en la justicia multipuertas con mediación extrajudicial"
+    "en": "Federal courts expand multi-door justice with online mediation",
+    "es": "Tribunales federales amplían la justicia multipuertas con mediación en línea"
   },
   "marquee.item3": {
     "pt": "Lei da Arbitragem completa 30 anos como solução estratégica empresarial",
-    "en": "Arbitration Act turns 30 as a strategic business solution",
-    "es": "Ley de Arbitraje cumple 30 años como solución estratégica empresarial"
+    "en": "Federal Arbitration Act remains the backbone of U.S. commercial ADR",
+    "es": "El Federal Arbitration Act sigue siendo el pilar del ADR comercial en EE. UU."
   },
   "marquee.item4": {
     "pt": "Arbitragem com o setor público registra alta de 34% em valores disputados",
-    "en": "Arbitration with the public sector rises 34% in disputed amounts",
-    "es": "Arbitraje con el sector público registra alza del 34% en valores disputados"
+    "en": "Public-sector arbitration volumes rise as agencies adopt ODR",
+    "es": "El arbitraje del sector público crece a medida que las agencias adoptan ODR"
   },
   "marquee.item5": {
     "pt": "Mediação e arbitragem ganham espaço em contratos digitais e nuvem",
@@ -936,8 +936,8 @@
   },
   "marquee.item6": {
     "pt": "Mais de 146 câmaras privadas atuam em conflitos consumeristas nos TJs",
-    "en": "Over 146 private chambers handle consumer disputes in state courts",
-    "es": "Más de 146 cámaras privadas actúan en conflictos de consumo en los TJs"
+    "en": "Private ADR providers handle a growing share of consumer disputes nationwide",
+    "es": "Proveedores privados de ADR manejan una parte creciente de disputas de consumo"
   },
   "impacto.metric.satisfaction": {
     "pt": "A classificação de satisfação do cliente reflete nosso compromisso",
@@ -965,9 +965,9 @@
     "es": "Justicia, igualdad y protección de derechos"
   },
   "impacto.item1.body": {
-    "pt": "Atuamos para garantir acesso à justiça por meios adequados de solução de conflitos, com procedimentos transparentes, imparciais e alinhados ao Federal Arbitration Act (FAA) e ao Standard Commercial Mediation Framework.",
+    "pt": "Atuamos para garantir acesso à justiça por meios adequados de solução de conflitos, com procedimentos transparentes, imparciais e alinhados ao ordenamento jurídico brasileiro.",
     "en": "We work to ensure access to justice through appropriate dispute-resolution methods, with transparent, impartial procedures aligned with the Federal Arbitration Act (FAA) and the Standard Commercial Mediation Framework.",
-    "es": "Actuamos para garantizar el acceso a la justicia por medios adecuados de solución de conflictos, con procedimientos transparentes, imparciales y alineados al Federal Arbitration Act (FAA) y al Standard Commercial Mediation Framework."
+    "es": "Actuamos para garantizar el acceso a la justicia con procedimientos transparentes e imparciales alineados con el Federal Arbitration Act (FAA)."
   },
   "impacto.item2.title": {
     "pt": "Profissionais Jurídicos Experientes",
@@ -1051,8 +1051,8 @@
   },
   "instituicoes.card.tribunais.title": {
     "pt": "Tribunais e CEJUSCs",
-    "en": "Courts and CEJUSCs",
-    "es": "Tribunales y CEJUSCs"
+    "en": "Courts and ODR programs",
+    "es": "Tribunales y programas ODR"
   },
   "instituicoes.card.tribunais.text": {
     "pt": "Encaminhamento digital, condução de audiências de conciliação e mediação, retorno de termos e métricas para justiça multiportas.",
@@ -1155,7 +1155,7 @@
     "es": "Resolución de conflictos en hasta 6 meses, con validez de título ejecutivo judicial. Procedimiento 100% digital en ARBITRAJUS."
   },
   "solucoes.arbitragem.fundamento": {
-    "pt": "Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. A arbitragem é um método consensual de resolução de disputas por decisão imparcial de árbitros escolhidos pelas partes. A sentença digital emitida pela ARBITRAJUS possui validade legal e pode ser executada em cortes federais americanas.",
+    "pt": "Fundamentada na Lei nº 9.307/1996, a arbitragem é método consensual de solução de controvérsias por meio de decisão imparcial de árbitros escolhidos pelas partes, com a mesma eficácia de sentença judicial quando cumpridos os requisitos legais.",
     "en": "Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. Arbitration is a consensual method of dispute resolution through an impartial decision by arbitrators chosen by the parties. Digital awards issued by ARBITRAJUS have legal effect and may be enforced in U.S. federal courts.",
     "es": "Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. El arbitraje es un método consensual de resolución de disputas mediante decisión imparcial de árbitros elegidos por las partes. El laudo digital emitido por ARBITRAJUS tiene validez legal y puede ejecutarse en cortes federales de EE. UU."
   },
@@ -1180,9 +1180,9 @@
     "es": "Transformando conflictos en relaciones duraderas. En la mediación, las partes construyen soluciones con ayuda de un mediador neutral, en un entorno colaborativo y reservado."
   },
   "solucoes.mediacao.fundamento": {
-    "pt": "Standard Commercial Mediation Framework. A mediação é voluntária, confidencial e orientada pelas partes. O acordo alcançado pode ser documentado e executado conforme o direito aplicável, reduzindo custos, prazos e desgaste - especialmente em disputas comerciais e contratuais.",
+    "pt": "Prevista na Lei nº 13.140/2015, a mediação é autocompositiva, voluntária e confidencial. O acordo homologado pode ser executado judicialmente, reduzindo custos, prazos e desgaste entre as partes, especialmente em disputas comerciais e contratuais.",
     "en": "Standard Commercial Mediation Framework. Mediation is voluntary, confidential and party-driven. Settlements can be documented and enforced under applicable law, reducing costs, timelines and strain - especially in commercial and contractual disputes.",
-    "es": "Standard Commercial Mediation Framework. La mediación es voluntaria, confidencial y orientada por las partes. El acuerdo alcanzado puede documentarse y ejecutarse conforme al derecho aplicable, reduciendo costos, plazos y desgaste - especialmente en disputas comerciales y contractuales."
+    "es": "Standard Commercial Mediation Framework. La mediación es voluntaria, confidencial y orientada por las partes. El acuerdo alcanzado puede documentarse y ejecutarse conforme al derecho aplicable."
   },
   "solucoes.mediacao.li1": {
     "pt": "Procedimento 100% digital, com sessões por videoconferência",
@@ -1255,9 +1255,9 @@
     "es": "El camino más ágil hacia el acuerdo. Con ayuda de un conciliador calificado, las partes buscan una solución práctica e inmediata, en un entorno reservado y 100% digital."
   },
   "solucoes.conciliacao.fundamento": {
-    "pt": "Standard Commercial Mediation Framework. A conciliação é um método ágil e consensual, ideal para reduzir custos e tempo de resolução em disputas comerciais e contratuais de menor complexidade.",
+    "pt": "Prevista no Código de Processo Civil e amplamente utilizada nos CEJUSCs e na justiça multiportas, a conciliação é método autocompositivo ideal para reduzir filas, custos e tempo de resolução, especialmente em conflitos consumeristas, trabalhistas e contratuais de menor complexidade.",
     "en": "Standard Commercial Mediation Framework. Conciliation is a fast, consensual method ideal for reducing costs and resolution time in lower-complexity commercial and contractual disputes.",
-    "es": "Standard Commercial Mediation Framework. La conciliación es un método ágil y consensual, ideal para reducir costos y tiempo de resolución en disputas comerciales y contractuales de menor complejidad."
+    "es": "Standard Commercial Mediation Framework. La conciliación es un método ágil y consensual, ideal para reducir costos y tiempo de resolución."
   },
   "solucoes.conciliacao.li1": {
     "pt": "Procedimento ágil, com foco em acordo rápido entre as partes",
@@ -1290,14 +1290,14 @@
     "es": "Sectores que atendemos"
   },
   "setores.title": {
-    "pt": "Feito para negócios digitais",
+    "pt": "Possibilidades de atuação",
     "en": "Built for digital businesses",
     "es": "Hecho para negocios digitales"
   },
   "setores.lead": {
-    "pt": "Procedimentos estruturados para startups e pequenos negócios que enfrentam calotes, disputas de escopo e chargebacks todos os dias.",
+    "pt": "Procedimentos estruturados para os principais setores da economia brasileira.",
     "en": "Structured procedures for startups and small businesses that face payment defaults, scope disputes and marketplace chargebacks every day.",
-    "es": "Procedimientos estructurados para startups y pequeños negocios que enfrentan impagos, disputas de alcance y chargebacks todos los días."
+    "es": "Procedimientos estructurados para startups y pequeños negocios digitales."
   },
   "setores.stat.label": {
     "pt": "áreas especializadas",
@@ -1356,13 +1356,13 @@
   },
   "plataformaCta.p1": {
     "pt": "Somos a infraestrutura nacional de conciliação, mediação e arbitragem online. Acreditamos que conflitos podem ser resolvidos de forma célere, justa e transparente.",
-    "en": "We are the national online infrastructure for conciliation, mediation and arbitration. We believe conflicts can be resolved swiftly, fairly and transparently.",
-    "es": "Somos la infraestructura nacional de conciliación, mediación y arbitraje en línea. Creemos que los conflictos pueden resolverse de forma rápida, justa y transparente."
+    "en": "We are the U.S. online infrastructure for conciliation, mediation and arbitration. We believe conflicts can be resolved swiftly, fairly and transparently.",
+    "es": "Somos la infraestructura en línea de EE. UU. para conciliación, mediación y arbitraje. Creemos que los conflictos pueden resolverse de forma rápida, justa y transparente."
   },
   "plataformaCta.p2": {
     "pt": "Democratizamos o acesso aos métodos consensuais com tecnologia, governança e equipe especializada em todo o território nacional.",
-    "en": "We democratize access to consensual methods with technology, governance and specialized teams nationwide.",
-    "es": "Democratizamos el acceso a los métodos consensuales con tecnología, gobernanza y equipo especializado en todo el territorio nacional."
+    "en": "We democratize access to consensual methods with technology, governance and specialized teams across the United States.",
+    "es": "Democratizamos el acceso a los métodos consensuales con tecnología, gobernanza y equipos especializados en Estados Unidos."
   },
   "plataformaCta.highlight.title": {
     "pt": "+ de 22.000",
@@ -1445,22 +1445,22 @@
     "es": "Helen Carter"
   },
   "equipe.card1.role": {
-    "pt": "Commercial & Real Estate Mediation Expert",
+    "pt": "Mediação societária e imobiliária",
     "en": "Commercial & Real Estate Mediation Expert",
     "es": "Commercial & Real Estate Mediation Expert"
   },
   "equipe.card1.bio": {
-    "pt": "Especialista em mediação comercial e imobiliária, com atuação em acordos complexos entre sócios, investidores e incorporadoras.",
+    "pt": "Especialista em mediação societária e imobiliária, com atuação em acordos complexos entre sócios e incorporadoras.",
     "en": "Specialist in commercial and real-estate mediation, with experience in complex agreements between partners, investors and developers.",
-    "es": "Especialista en mediación comercial e inmobiliaria, con experiencia en acuerdos complejos entre socios, inversores e incorporadoras."
+    "es": "Especialista en mediación comercial e inmobiliaria."
   },
   "equipe.card1.tag1": {
-    "pt": "Commercial",
+    "pt": "Societário",
     "en": "Commercial",
     "es": "Commercial"
   },
   "equipe.card1.tag2": {
-    "pt": "Real estate",
+    "pt": "Imobiliário",
     "en": "Real estate",
     "es": "Real estate"
   },
@@ -1475,22 +1475,22 @@
     "es": "Andrew Kinzer"
   },
   "equipe.card2.role": {
-    "pt": "B2B Contract & Supply Chain Arbitrator",
+    "pt": "Arbitragem contratual e infraestrutura",
     "en": "B2B Contract & Supply Chain Arbitrator",
     "es": "B2B Contract & Supply Chain Arbitrator"
   },
   "equipe.card2.bio": {
-    "pt": "Árbitro em disputas contratuais B2B e cadeias de fornecimento, com experiência em obras, concessões e contratos comerciais complexos.",
+    "pt": "Árbitro em disputas contratuais e de infraestrutura, com experiência em obras, concessões e cadeias de fornecimento.",
     "en": "Arbitrator in B2B contractual and supply-chain disputes, with experience in construction works, concessions and complex commercial contracts.",
-    "es": "Árbitro en disputas contractuales B2B y cadenas de suministro, con experiencia en obras, concesiones y contratos comerciales complejos."
+    "es": "Árbitro en disputas contractuales B2B y cadenas de suministro."
   },
   "equipe.card2.tag1": {
-    "pt": "B2B Contracts",
+    "pt": "Contratual",
     "en": "B2B Contracts",
     "es": "B2B Contracts"
   },
   "equipe.card2.tag2": {
-    "pt": "Supply chain",
+    "pt": "Infraestrutura",
     "en": "Supply chain",
     "es": "Supply chain"
   },
@@ -1505,14 +1505,14 @@
     "es": "Robert Allen"
   },
   "equipe.card3.role": {
-    "pt": "Regulatory & Energy Sector Arbitrator",
+    "pt": "Arbitragem em energia e setor público",
     "en": "Regulatory & Energy Sector Arbitrator",
     "es": "Regulatory & Energy Sector Arbitrator"
   },
   "equipe.card3.bio": {
-    "pt": "Atua em arbitragens envolvendo energia, regulação e contratos do setor, com foco em desempenho, compliance e resolução eficiente.",
+    "pt": "Atua em arbitragens envolvendo energia, regulação e contratos com a administração pública, com foco em execução e compliance.",
     "en": "Acts in arbitrations involving energy, regulation and sector contracts, with a focus on performance, compliance and efficient resolution.",
-    "es": "Actúa en arbitrajes que involucran energía, regulación y contratos del sector, con foco en desempeño, compliance y resolución eficiente."
+    "es": "Actúa en arbitrajes de energía y regulación."
   },
   "equipe.card3.tag1": {
     "pt": "Energia",
@@ -1520,7 +1520,7 @@
     "es": "Energía"
   },
   "equipe.card3.tag2": {
-    "pt": "Regulatório",
+    "pt": "Administração pública",
     "en": "Regulatory",
     "es": "Regulatorio"
   },
@@ -1535,14 +1535,14 @@
     "es": "Marina Hayes"
   },
   "equipe.card4.role": {
-    "pt": "SaaS & Freelance Mediation Specialist",
+    "pt": "Mediação trabalhista e franquias",
     "en": "SaaS & Freelance Mediation Specialist",
     "es": "SaaS & Freelance Mediation Specialist"
   },
   "equipe.card4.bio": {
-    "pt": "Mediadora em disputas de assinaturas SaaS e contratos freelance, com histórico de acordos que mantêm a operação em andamento.",
+    "pt": "Mediadora em conflitos trabalhistas e de franquias, com histórico de acordos preservando continuidade operacional das partes.",
     "en": "Mediator in SaaS subscription and freelance engagement disputes, with a track record of settlements that keep operations moving.",
-    "es": "Mediadora en disputas de suscripciones SaaS y contratos freelance, con historial de acuerdos que mantienen la operación en marcha."
+    "es": "Mediadora en disputas SaaS y freelance."
   },
   "equipe.card4.tag1": {
     "pt": "Trabalhista",
@@ -1566,8 +1566,8 @@
   },
   "equipe.cta.text": {
     "pt": "Árbitros e mediadores podem solicitar credenciamento para atuar em procedimentos digitais em todo o Brasil.",
-    "en": "Arbitrators and mediators may apply for accreditation to act in digital proceedings across Brazil.",
-    "es": "Árbitros y mediadores pueden solicitar acreditación para actuar en procedimientos digitales en todo Brasil."
+    "en": "Arbitrators and mediators may apply for accreditation to act in digital proceedings across the United States.",
+    "es": "Árbitros y mediadores pueden solicitar acreditación para actuar en procedimientos digitales en Estados Unidos."
   },
   "equipe.cta.consultar": {
     "pt": "Consultar profissionais",
@@ -1650,7 +1650,7 @@
     "es": "¿Qué es la conciliación en línea?"
   },
   "faq.a1": {
-    "pt": "É o procedimento conduzido na plataforma digital em que um conciliador qualificado auxilia as partes a buscar acordo de forma ágil, sob o Standard Commercial Mediation Framework.",
+    "pt": "É o procedimento conduzido na plataforma digital em que um conciliador qualificado auxilia as partes a buscar acordo de forma ágil, conforme os princípios do Código de Processo Civil e da justiça multiportas.",
     "en": "It is the procedure conducted on the digital platform in which a qualified conciliator helps the parties seek a settlement quickly, under the Standard Commercial Mediation Framework.",
     "es": "Es el procedimiento conducido en la plataforma digital en el que un conciliador calificado auxilia a las partes a buscar un acuerdo de forma ágil, bajo el Standard Commercial Mediation Framework."
   },
@@ -1660,9 +1660,9 @@
     "es": "¿Qué es el arbitraje en línea?"
   },
   "faq.a2": {
-    "pt": "É o procedimento arbitral 100% digital, desde a instauração até a sentença. Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. A sentença digital da ARBITRAJUS possui validade legal e pode ser executada em cortes federais americanas.",
+    "pt": "É o procedimento arbitral conduzido integralmente na plataforma digital, desde a instauração até a sentença, com segurança jurídica prevista na Lei nº 9.307/1996.",
     "en": "It is a fully digital arbitral proceeding, from filing to award. Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. ARBITRAJUS digital awards have legal effect and may be enforced in U.S. federal courts.",
-    "es": "Es el procedimiento arbitral 100% digital, desde la instauración hasta el laudo. Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. El laudo digital de ARBITRAJUS tiene validez legal y puede ejecutarse en cortes federales de EE. UU."
+    "es": "Es el procedimiento arbitral 100% digital, desde la instauración hasta el laudo. Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1."
   },
   "faq.q3": {
     "pt": "O que é mediação online?",
@@ -1670,9 +1670,9 @@
     "es": "¿Qué es la mediación en línea?"
   },
   "faq.a3": {
-    "pt": "É o método consensual em que um mediador neutro auxilia as partes a construir um acordo, com sessões por videoconferência e documentação digital, sob o Standard Commercial Mediation Framework.",
+    "pt": "É o método consensual em que um mediador neutro auxilia as partes a construir um acordo, com sessões por videoconferência e documentação digital, conforme a Lei nº 13.140/2015.",
     "en": "It is the consensual method in which a neutral mediator helps the parties build an agreement, with video sessions and digital documentation, under the Standard Commercial Mediation Framework.",
-    "es": "Es el método consensual en el que un mediador neutral auxilia a las partes a construir un acuerdo, con sesiones por videoconferencia y documentación digital, bajo el Standard Commercial Mediation Framework."
+    "es": "Es el método consensual en el que un mediador neutral auxilia a las partes a construir un acuerdo, bajo el Standard Commercial Mediation Framework."
   },
   "faq.q4": {
     "pt": "Qual a diferença entre conciliação, mediação e arbitragem?",
@@ -1700,7 +1700,7 @@
     "es": "¿El laudo arbitral tiene fuerza de título ejecutivo?"
   },
   "faq.a6": {
-    "pt": "Sim. Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. A sentença digital emitida pela ARBITRAJUS possui validade legal e pode ser executada em cortes federais americanas.",
+    "pt": "Sim. Cumpridos os requisitos legais, a sentença arbitral constitui título executivo judicial, nos termos do art. 515, VII, do Código de Processo Civil.",
     "en": "Yes. Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. Digital awards issued by ARBITRAJUS have legal effect and may be enforced in U.S. federal courts.",
     "es": "Sí. Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. El laudo digital emitido por ARBITRAJUS tiene validez legal y puede ejecutarse en cortes federales de EE. UU."
   },
@@ -1770,7 +1770,7 @@
     "es": "¿Los procedimientos son confidenciales?"
   },
   "faq.a12": {
-    "pt": "Sim. Conciliação, mediação e arbitragem são confidenciais, salvo previsão legal ou acordo das partes. A plataforma aplica controles de acesso e proteção de dados - GDPR & US Data Privacy Compliant (incluindo CCPA da Califórnia).",
+    "pt": "Sim. Conciliação, mediação e arbitragem têm caráter reservado, salvo hipóteses previstas em lei ou acordadas pelas partes. A plataforma adota controles de acesso e proteção de dados conforme a LGPD.",
     "en": "Yes. Conciliation, mediation and arbitration are confidential, except as provided by law or agreed by the parties. The platform applies access controls and data protection - GDPR & US Data Privacy Compliant (including California CCPA).",
     "es": "Sí. Conciliación, mediación y arbitraje son confidenciales, salvo previsión legal o acuerdo de las partes. La plataforma aplica controles de acceso y protección de datos - GDPR & US Data Privacy Compliant (incluida la CCPA de California)."
   },
@@ -1880,7 +1880,7 @@
     "es": "Atención"
   },
   "contato.channel.atendimento.value": {
-    "pt": "Online Dispute Resolution",
+    "pt": "Online em todo o Brasil",
     "en": "Online Dispute Resolution",
     "es": "Online Dispute Resolution"
   },
@@ -2071,8 +2071,8 @@
   },
   "login.brand.lead": {
     "pt": "A maior plataforma de conciliação, mediação e arbitragem do Brasil. Acesse seu painel para gerenciar casos, documentos e negociações.",
-    "en": "Brazil's leading conciliation, mediation and arbitration platform. Access your dashboard to manage cases, documents and negotiations.",
-    "es": "La mayor plataforma de conciliación, mediación y arbitraje de Brasil. Acceda a su panel para gestionar casos, documentos y negociaciones."
+    "en": "The leading U.S. platform for conciliation, mediation and arbitration. Access your dashboard to manage cases, documents and negotiations.",
+    "es": "La plataforma líder en EE. UU. de conciliación, mediación y arbitraje. Acceda a su panel para gestionar casos, documentos y negociaciones."
   },
   "login.feature.gestao": {
     "pt": "Gestão completa de procedimentos",
@@ -2535,38 +2535,63 @@
     "es": "Resolver una disputa ahora"
   },
   "nav.mega.setores.digitalAgencies": {
-    "pt": "Digital Agencies & IT Services",
+    "pt": "Agências digitais e TI",
     "en": "Digital Agencies & IT Services",
-    "es": "Digital Agencies & IT Services"
+    "es": "Agencias digitales e IT"
   },
   "nav.mega.setores.ecommerce": {
-    "pt": "E-commerce & Marketplaces",
+    "pt": "E-commerce e marketplaces",
     "en": "E-commerce & Marketplaces",
-    "es": "E-commerce & Marketplaces"
+    "es": "E-commerce y marketplaces"
   },
   "nav.mega.setores.saasFreelancers": {
-    "pt": "SaaS & Freelancers",
+    "pt": "SaaS e freelancers",
     "en": "SaaS & Freelancers",
-    "es": "SaaS & Freelancers"
+    "es": "SaaS y freelancers"
   },
   "hero.highlight.speed": {
-    "pt": "Fast turnaround: Cases resolved within days, not years.",
+    "pt": "Agilidade: casos resolvidos em dias, não em anos.",
     "en": "Fast turnaround: Cases resolved within days, not years.",
-    "es": "Fast turnaround: Cases resolved within days, not years."
+    "es": "Agilidad: casos resueltos en días, no en años."
   },
   "hero.highlight.savings": {
-    "pt": "Significant savings: Reduce alternative dispute costs by up to 80% compared to traditional litigation.",
+    "pt": "Economia significativa: reduza custos em até 80% em relação ao litígio tradicional.",
     "en": "Significant savings: Reduce alternative dispute costs by up to 80% compared to traditional litigation.",
-    "es": "Significant savings: Reduce alternative dispute costs by up to 80% compared to traditional litigation."
+    "es": "Ahorro significativo: reduzca costos hasta un 80% frente al litigio tradicional."
   },
   "impacto.metric.speed": {
-    "pt": "<strong>Fast turnaround:</strong> Cases resolved within days, not years.",
+    "pt": "<strong>Agilidade:</strong> casos resolvidos em dias, não em anos.",
     "en": "<strong>Fast turnaround:</strong> Cases resolved within days, not years.",
-    "es": "<strong>Fast turnaround:</strong> Cases resolved within days, not years."
+    "es": "<strong>Agilidad:</strong> casos resueltos en días, no en años."
   },
   "impacto.metric.savings": {
-    "pt": "<strong>Significant savings:</strong> Reduce alternative dispute costs by up to 80% compared to traditional litigation.",
+    "pt": "<strong>Economia significativa:</strong> reduza custos em até 80% em relação ao litígio tradicional.",
     "en": "<strong>Significant savings:</strong> Reduce alternative dispute costs by up to 80% compared to traditional litigation.",
-    "es": "<strong>Significant savings:</strong> Reduce alternative dispute costs by up to 80% compared to traditional litigation."
+    "es": "<strong>Ahorro significativo:</strong> reduzca costos hasta un 80% frente al litigio tradicional."
+  },
+  "landing.security.reply": {
+    "pt": "Operamos sob Lei 9.307/96, Lei 13.140/15 e LGPD, com criptografia e auditoria.",
+    "en": "We operate under the Federal Arbitration Act (FAA) - 9 U.S.C. § 1, the Standard Commercial Mediation Framework, and GDPR & US Data Privacy Compliant standards (including CCPA), with encryption and audit trails.",
+    "es": "Operamos bajo el Federal Arbitration Act (FAA), el Standard Commercial Mediation Framework y GDPR & US Data Privacy Compliant."
+  },
+  "landing.chat.about": {
+    "pt": "A ARBITRAJUS é a maior plataforma digital de conciliação, mediação e arbitragem do Brasil.",
+    "en": "ARBITRAJUS is a leading digital platform for conciliation, mediation and arbitration across the United States.",
+    "es": "ARBITRAJUS es una plataforma digital líder de conciliación, mediación y arbitraje en Estados Unidos."
+  },
+  "landing.chat.how": {
+    "pt": "Cadastro → Negociação assistida → Acordo ou arbitragem. Tudo online com segurança jurídica.",
+    "en": "Sign up → Assisted negotiation → Settlement or arbitration. Fully online with legal certainty.",
+    "es": "Registro → Negociación asistida → Acuerdo o arbitraje. Todo en línea con seguridad jurídica."
+  },
+  "landing.chat.plans": {
+    "pt": "Planos a partir de R$99/mês. Veja a seção Planos ou acesse o painel para contratar.",
+    "en": "Plans from $99/month. See the Plans section or access the dashboard to subscribe.",
+    "es": "Planes desde US$99/mes. Vea la sección Planes o acceda al panel para contratar."
+  },
+  "landing.chat.fallback": {
+    "pt": "Pergunte sobre planos, como funciona, segurança jurídica ou fale com contact@arbitrajus.com.",
+    "en": "Ask about plans, how it works, legal security, or email contact@arbitrajus.com.",
+    "es": "Pregunte sobre planes, cómo funciona, seguridad jurídica o escriba a contact@arbitrajus.com."
   }
 }
