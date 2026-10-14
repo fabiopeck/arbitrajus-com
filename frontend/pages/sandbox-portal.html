@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Portal Sandbox | Unimed Lavras</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/arbtrato.css">
+  <link rel="stylesheet" href="../css/sandbox.css">
+</head>
+<body class="sandbox-body">
+  <div class="sandbox-banner">
+    <strong>Sandbox ODR</strong> · perfil: <span id="banner-perfil">Carregando</span> · plataforma ARBITRAJUS · dados simulados
+  </div>
+
+  <div class="sandbox-shell" id="sandbox-shell"></div>
+
+  <template id="portal-main-template">
+    <main class="sandbox-main">
+      <div class="sandbox-tour" id="sandbox-tour"></div>
+
+      <div class="sandbox-topbar">
+        <div>
+          <p class="sandbox-kicker" id="section-kicker">Dashboard</p>
+          <h1 id="section-title">Visao geral</h1>
+          <p class="sandbox-sub" id="section-sub">Metricas em tempo real, funil de acordos e indicadores gerenciais</p>
+        </div>
+        <div class="sandbox-actions">
+          <div class="sandbox-export-group" id="sandbox-export-group"></div>
+          <button type="button" class="sandbox-btn sandbox-btn-outline" id="btn-reset"><i class="fas fa-rotate-left"></i> Reiniciar demo</button>
+        </div>
+      </div>
+
+      <section class="sandbox-section" id="sec-dashboard" data-section="dashboard"></section>
+      <section class="sandbox-section sandbox-section--hidden" id="sec-relatorios" data-section="relatorios"></section>
+      <section class="sandbox-section sandbox-section--hidden" id="sec-esteira-sync" data-section="esteira-sync"></section>
+      <section class="sandbox-section sandbox-section--hidden" id="sec-esteira-async" data-section="esteira-async"></section>
+      <section class="sandbox-section sandbox-section--hidden" id="sec-processos" data-section="processos"></section>
+      <section class="sandbox-section sandbox-section--hidden" id="sec-datajud" data-section="datajud"></section>
+      <section class="sandbox-section sandbox-section--hidden" id="sec-auditoria" data-section="auditoria"></section>
+      <section class="sandbox-section sandbox-section--hidden" id="sec-blockchain" data-section="blockchain"></section>
+    </main>
+  </template>
+
+  <script type="module" src="../js/sandbox-portal.js"></script>
+</body>
+</html>

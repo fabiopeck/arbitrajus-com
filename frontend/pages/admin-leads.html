@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico?v=20260818" sizes="any">
+  <link rel="icon" type="image/png" href="/frontend/assets/img/favicon-32.png?v=20260818" sizes="32x32">
+  <link rel="apple-touch-icon" href="/frontend/assets/img/apple-touch-icon.png?v=20260818">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Inteligência de Vendas | ARBITRAJUS interno</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="app-body">
+  <div class="admin-page admin-wide container">
+    <p class="admin-kicker">Passo 1 · Prospecção</p>
+    <h1>Inteligência de Vendas</h1>
+    <p class="admin-lead">Empresas médias e grandes com volume de conflito e <strong>sem plataforma ODR privada</strong>. O mapeamento consulta a API pública do DataJud (CNJ) por CNPJ/razão social no último ano.</p>
+
+    <div id="admin-auth" class="admin-card">
+      <label>Chave de administrador (OUTREACH_ADMIN_KEY)</label>
+      <input type="password" id="admin-key" placeholder="Cole a chave do .env">
+      <button type="button" id="admin-save-key" class="btn btn-primary">Conectar</button>
+    </div>
+
+    <div id="admin-panel" hidden>
+      <div id="datajud-banner" class="admin-card admin-banner"></div>
+      <div class="admin-stats" id="admin-stats"></div>
+
+      <div class="admin-card">
+        <h2>Rodar mapeamento DataJud</h2>
+        <p>Busca CNPJ e nome nos tribunais da sede + TJSP (modo rápido) ou nos 10 TJs de maior movimento (amplo). Limiar comercial: <strong>30</strong> e <strong>50</strong> processos novos/mês.</p>
+        <div class="admin-actions">
+          <button type="button" id="btn-scan-rapido" class="btn btn-primary"><i class="fas fa-bolt"></i> Mapear rápido</button>
+          <button type="button" id="btn-scan-amplo" class="btn btn-outline"><i class="fas fa-globe"></i> Mapear amplo</button>
+          <button type="button" id="btn-refresh" class="btn btn-outline">Atualizar</button>
+          <a class="btn btn-outline" href="admin-outreach.html">Outreach</a>
+          <a class="btn btn-primary" href="admin-sul-minas.html">Sul de Minas (interno)</a>
+        </div>
+        <div id="scan-progress" class="admin-log">Aguardando mapeamento.</div>
+      </div>
+
+      <div class="admin-card admin-filters">
+        <input type="search" id="q" placeholder="Buscar empresa, CNPJ, UF...">
+        <select id="setor">
+          <option value="">Todos os setores</option>
+          <option value="varejo">Varejo</option>
+          <option value="ecommerce">E-commerce</option>
+          <option value="transportadora">Transportadoras</option>
+          <option value="saude">Planos de saúde</option>
+        </select>
+        <select id="odr">
+          <option value="sem_odr">Sem ODR privado (alvo)</option>
+          <option value="todos">Todos</option>
+          <option value="com_odr">Já usam ODR</option>
+        </select>
+        <select id="faixa">
+          <option value="todas">Todas as faixas</option>
+          <option value="quente">Quente (≥50/mês)</option>
+          <option value="morno">Morno (≥30/mês)</option>
+          <option value="oportunidade_odr">Sem volume DataJud, sem ODR</option>
+          <option value="usa_odr">Usa ODR privado</option>
+        </select>
+      </div>
+
+      <div class="admin-card">
+        <h2>Incluir empresa</h2>
+        <div class="admin-inline">
+          <input id="new-nome" placeholder="Nome fantasia">
+          <input id="new-razao" placeholder="Razão social">
+          <input id="new-cnpj" placeholder="CNPJ">
+          <select id="new-setor">
+            <option value="varejo">Varejo</option>
+            <option value="ecommerce">E-commerce</option>
+            <option value="transportadora">Transportadora</option>
+            <option value="saude">Plano de saúde</option>
+          </select>
+          <input id="new-uf" maxlength="2" placeholder="UF">
+          <button type="button" id="btn-add" class="btn btn-primary">Adicionar</button>
+        </div>
+      </div>
+
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Empresa</th>
+              <th>CNPJ</th>
+              <th>Setor</th>
+              <th>12 meses</th>
+              <th>Média/mês</th>
+              <th>ODR</th>
+              <th>Faixa</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody id="admin-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="../js/admin-leads.js"></script>
+</body>
+</html>

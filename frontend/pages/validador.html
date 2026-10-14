@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico?v=20260818" sizes="any">
+  <link rel="icon" type="image/png" href="/frontend/assets/img/favicon-32.png?v=20260818" sizes="32x32">
+  <link rel="apple-touch-icon" href="/frontend/assets/img/apple-touch-icon.png?v=20260818">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validador de documentos | ARBITRAJUS</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/arbtrato.css">
+</head>
+<body class="arb-theme">
+  <header class="arb-header">
+    <div class="arb-header-inner">
+      <a href="../../index.html" class="arb-logo" aria-label="ARBITRAJUS">
+        <img src="../assets/img/logo-2.png" alt="" class="arb-logo-img" width="72" height="72">
+        <span class="arb-logo-text"><span class="arb-logo-arbitra">ARBITRA</span><span class="arb-logo-jus">JUS</span></span>
+      </a>
+      <a href="../../index.html" class="btn-arb btn-arb-outline">Voltar</a>
+    </div>
+  </header>
+  <div class="arb-page-hero">
+    <div class="container"><h1>Validador de documentos</h1></div>
+  </div>
+  <main class="arb-page-content container">
+    <p>Informe o código hash ou protocolo do documento gerado na plataforma ARBITRAJUS.</p>
+    <form id="validator-form" style="margin-top:1.5rem;">
+      <input type="text" id="doc-code" placeholder="Ex: ARBJUS-A1B2C3D4 ou ARB-2026-0487" required
+        style="width:100%;padding:1rem;border:1px solid var(--arb-border);border-radius:8px;font-size:1rem;margin-bottom:1rem;">
+      <button type="submit" class="btn-arb btn-arb-primary">Validar documento</button>
+    </form>
+    <div id="validator-result" class="arb-validator-result"></div>
+    <p style="margin-top:2rem;font-size:0.85rem;color:var(--arb-muted);">Demo: use <code>ARBJUS-VALIDO</code> para simular documento autêntico.</p>
+  </main>
+  <script>
+    document.getElementById('validator-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const code = document.getElementById('doc-code').value.trim().toUpperCase();
+      const el = document.getElementById('validator-result');
+      const valid = code === 'ARBJUS-VALIDO' || /^ARB-\d{4}-\d{4}$/.test(code);
+      el.className = 'arb-validator-result ' + (valid ? 'valid' : 'invalid');
+      el.innerHTML = valid
+        ? '<i class="fas fa-circle-check"></i> Documento autêntico. Procedimento registrado na ARBITRAJUS em 12/05/2026.'
+        : '<i class="fas fa-circle-xmark"></i> Código não encontrado. Verifique o protocolo ou entre em contato.';
+    });
+  </script>
+</body>
+</html>

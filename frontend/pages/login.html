@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico?v=20260818" sizes="any">
+  <link rel="icon" type="image/png" href="/frontend/assets/img/favicon-32.png?v=20260818" sizes="32x32">
+  <link rel="apple-touch-icon" href="/frontend/assets/img/apple-touch-icon.png?v=20260818">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar | ARBITRAJUS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/arbtrato.css">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="app-body">
+  <div class="auth-page">
+    <div class="auth-brand">
+      <a href="../../index.html" style="color:var(--arb-primary);text-decoration:none;font-size:0.9rem;margin-bottom:2rem;display:inline-block;" data-i18n="login.back"><i class="fas fa-arrow-left"></i> Voltar ao site</a>
+      <img src="../assets/img/logo-2.png" alt="" class="auth-brand-logo" width="136" height="136">
+      <h1>ARBITRAJUS</h1>
+      <p data-i18n="login.brand.lead">A maior plataforma de conciliação, mediação e arbitragem do Brasil. Acesse seu painel para gerenciar casos, documentos e negociações.</p>
+      <ul style="margin-top:2rem;opacity:0.8;line-height:2;">
+        <li data-i18n="login.feature.gestao"><i class="fas fa-check" style="color:#c5a059;"></i> Gestão completa de procedimentos</li>
+        <li data-i18n="login.feature.assinatura"><i class="fas fa-check" style="color:#c5a059;"></i> Assinatura digital integrada</li>
+        <li data-i18n="login.feature.credenciamento"><i class="fas fa-check" style="color:#c5a059;"></i> Credenciamento de árbitros e mediadores</li>
+      </ul>
+    </div>
+    <div class="auth-form-panel">
+      <div class="auth-card">
+        <div class="auth-tabs">
+          <button type="button" class="auth-tab active" data-tab="login" data-i18n="login.tab.entrar">Entrar</button>
+          <button type="button" class="auth-tab" data-tab="signup" data-i18n="login.tab.cadastrar">Cadastrar</button>
+        </div>
+        <div id="auth-error" class="auth-error"></div>
+        <form id="login-form">
+          <label data-i18n="login.email">E-mail</label>
+          <input type="email" name="email" required placeholder="seu@email.com">
+          <label data-i18n="login.password">Senha</label>
+          <input type="password" name="password" required placeholder="••••••••">
+          <button type="submit" class="btn btn-primary" style="width:100%;margin-top:0.5rem;" data-i18n="login.submit">Entrar na Plataforma</button>
+        </form>
+        <form id="signup-form" style="display:none;">
+          <label data-i18n="login.fullName">Nome completo</label>
+          <input type="text" name="full_name" required>
+          <label data-i18n="login.email">E-mail</label>
+          <input type="email" name="email" required>
+          <label data-i18n="login.password">Senha</label>
+          <input type="password" name="password" required minlength="6">
+          <label data-i18n="login.role">Perfil</label>
+          <select name="role">
+            <option value="cliente" data-i18n="login.role.cliente">Cliente / Empresa</option>
+            <option value="advogado" data-i18n="login.role.advogado">Advogado</option>
+            <option value="mediador" data-i18n="login.role.mediador">Mediador / Árbitro</option>
+          </select>
+          <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="login.createAccount">Criar Conta</button>
+        </form>
+        <p style="text-align:center;margin-top:1.5rem;font-size:0.85rem;color:#718096;" data-i18n-html="login.demoNote">
+          Modo demo: use qualquer e-mail com senha <strong>demo123</strong> para testar a plataforma.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="../js/auth-page.js"></script>
+</body>
+</html>

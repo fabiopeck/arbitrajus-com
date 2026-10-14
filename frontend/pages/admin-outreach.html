@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico?v=20260818" sizes="any">
+  <link rel="icon" type="image/png" href="/frontend/assets/img/favicon-32.png?v=20260818" sizes="32x32">
+  <link rel="apple-touch-icon" href="/frontend/assets/img/apple-touch-icon.png?v=20260818">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outreach | ARBITRAJUS Admin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="app-body">
+  <div class="admin-page container">
+    <h1>Outreach: Credenciamento</h1>
+    <p class="admin-lead">Importe prospects (CSV), envie convites em lotes de 20 e gerencie descadastros/exclusões conforme a LGPD. <a href="admin-leads.html">Inteligência de vendas (DataJud)</a></p>
+
+    <div id="admin-auth" class="admin-card">
+      <label>Chave de administrador (OUTREACH_ADMIN_KEY)</label>
+      <input type="password" id="admin-key" placeholder="Cole a chave do .env">
+      <button type="button" id="admin-save-key" class="btn btn-primary">Conectar</button>
+    </div>
+
+    <div id="admin-panel" hidden>
+      <div id="admin-email-status" class="admin-card admin-email-status"></div>
+
+      <div class="admin-stats" id="admin-stats"></div>
+
+      <div class="admin-card">
+        <h2>Importar CSV</h2>
+        <p>Colunas: <code>nome,email,tipo,areas,cidade,uf,telefone</code>: máx. 50 por importação.</p>
+        <textarea id="csv-input" rows="6" placeholder="nome,email,tipo,areas,cidade,uf&#10;Dr. João Silva,joao@escritorio.com.br,arbitro,Contratos;Imobiliário,São Paulo,SP"></textarea>
+        <button type="button" id="btn-import" class="btn btn-primary">Importar</button>
+      </div>
+
+      <div class="admin-actions">
+        <button type="button" id="btn-send" class="btn btn-primary">Enviar até 20 convites</button>
+        <button type="button" id="btn-purge" class="btn btn-outline">Excluir inativos (60 dias)</button>
+        <button type="button" id="btn-refresh" class="btn btn-outline">Atualizar lista</button>
+      </div>
+
+      <div id="admin-log" class="admin-log"></div>
+
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>E-mail</th>
+              <th>Status</th>
+              <th>Convites</th>
+              <th>Contato OK?</th>
+            </tr>
+          </thead>
+          <tbody id="admin-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="../js/admin-outreach.js"></script>
+</body>
+</html>

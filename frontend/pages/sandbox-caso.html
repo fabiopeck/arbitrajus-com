@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Caso | Sandbox ODR</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/arbtrato.css">
+  <link rel="stylesheet" href="../css/sandbox.css">
+</head>
+<body class="sandbox-body">
+  <div class="sandbox-banner">
+    <strong data-i18n="sandbox.banner">Sandbox ODR</strong> · <span data-i18n="sandbox.banner.simulated">dados simulados</span> · <a href="sandbox-portal.html" style="color:#c9a227" data-i18n="sandbox.banner.backPanel">Voltar ao painel</a>
+  </div>
+
+  <div class="sandbox-shell" id="sandbox-shell"></div>
+
+  <template id="caso-main-template">
+    <main class="sandbox-main">
+      <div class="sandbox-topbar">
+        <div>
+          <p class="sandbox-kicker" id="caso-vara">Carregando</p>
+          <h1 id="caso-numero">Carregando...</h1>
+          <p class="sandbox-sub" id="caso-partes">Carregando</p>
+        </div>
+        <span class="sandbox-badge sandbox-badge--gold" id="caso-etapa">Carregando</span>
+      </div>
+
+      <div class="sandbox-caso-grid">
+        <div>
+          <div class="sandbox-panel" id="negociacao">
+            <h2>Valores e alcada</h2>
+            <p id="caso-valores">Carregando</p>
+          </div>
+
+          <div class="sandbox-panel">
+            <h2><i class="fas fa-comments"></i> Chat de negociacao</h2>
+            <p class="sandbox-panel-desc">Esteira assincrona: propostas e contrapropostas em tempo real</p>
+            <div class="sandbox-chat" id="caso-chat"></div>
+            <form class="sandbox-chat-form" id="chat-form">
+              <input type="text" id="chat-input" placeholder="Digite uma mensagem..." autocomplete="off">
+              <button type="submit" class="sandbox-btn sandbox-btn-primary">Enviar</button>
+            </form>
+          </div>
+
+          <div class="sandbox-panel" id="minutas">
+            <h2><i class="fas fa-file-contract"></i> Editor de termos</h2>
+            <p class="sandbox-panel-desc">Minutas e termos de autocomposicao gerados automaticamente</p>
+            <div id="caso-minutas"></div>
+          </div>
+
+          <div class="sandbox-panel">
+            <h2><i class="fas fa-file-arrow-up"></i> Documentos</h2>
+            <ul class="sandbox-docs" id="caso-docs"></ul>
+            <label class="sandbox-upload">
+              <input type="file" id="file-input" hidden accept=".pdf,.doc,.docx,.jpg,.png">
+              <i class="fas fa-cloud-arrow-up"></i><br>
+              Clique para simular upload (PDF, DOC, imagem)
+            </label>
+          </div>
+
+          <div class="sandbox-panel" id="assinatura">
+            <h2><i class="fas fa-pen-nib"></i> Assinatura eletronica</h2>
+            <p class="sandbox-panel-desc">Modulo integrado: dispensa certificado fisico na demonstracao (ICP simulado)</p>
+            <div class="sandbox-sigs" id="caso-sigs"></div>
+            <div class="sandbox-acoes" id="caso-acoes"></div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="sandbox-panel">
+            <h2><i class="fas fa-route"></i> Timeline do caso</h2>
+            <div class="sandbox-etapas" id="caso-etapas"></div>
+          </div>
+
+          <div class="sandbox-panel sandbox-video" id="audiencia">
+            <i class="fas fa-video"></i>
+            <h2 style="color:#fff;font-family:Cinzel,serif;margin:0 0 0.5rem">Sala de videoconferencia</h2>
+            <p style="font-size:0.85rem;opacity:0.9;margin:0 0 1rem">Chamada gravada, chat e telefone integrados (Jitsi Meet, demo)</p>
+            <a class="sandbox-btn sandbox-btn-primary" id="btn-audiencia" href="#" target="_blank" rel="noopener">
+              <i class="fas fa-external-link-alt"></i> Entrar na sala
+            </a>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </template>
+
+  <script type="module" src="../js/sandbox-caso.js"></script>
+</body>
+</html>

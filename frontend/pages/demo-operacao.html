@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>ARBITRAJUS | Demonstracao operacional</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="../css/portal-cliente.css">
+  <link rel="stylesheet" href="../css/demo-operacao.css">
+</head>
+<body class="app-body demo-body">
+  <div class="demo-shell">
+    <header class="demo-header">
+      <div>
+        <p class="demo-kicker">Modo demonstracao | uso interno</p>
+        <h1>ARBITRAJUS em operacao simulada</h1>
+        <p class="demo-sub">Fluxo completo: captura DataJud, portal ODR, gestao de casos e webhook ERP.</p>
+      </div>
+      <span class="demo-pill"><i class="fas fa-circle"></i> Ambiente local</span>
+    </header>
+
+    <section class="demo-status" id="demo-status">
+      <article class="demo-status-card" data-key="api">
+        <span class="demo-status-label">API</span>
+        <strong>Verificando...</strong>
+      </article>
+      <article class="demo-status-card" data-key="integracao">
+        <span class="demo-status-label">Integracao ERP</span>
+        <strong>Verificando...</strong>
+      </article>
+      <article class="demo-status-card" data-key="monitor">
+        <span class="demo-status-label">Robo DataJud</span>
+        <strong>Verificando...</strong>
+      </article>
+      <article class="demo-status-card" data-key="modo">
+        <span class="demo-status-label">Modo</span>
+        <strong>Demo operacional</strong>
+      </article>
+    </section>
+
+    <section class="demo-flow">
+      <h2>Fluxo simulado ponta a ponta</h2>
+      <ol class="demo-flow-steps">
+        <li><span>1</span> Processo distribuido no TJMG</li>
+        <li><span>2</span> Alerta no Telegram</li>
+        <li><span>3</span> Caso aberto no portal ODR</li>
+        <li><span>4</span> Negociacao e acordo</li>
+        <li><span>5</span> Webhook Projuris/Benner</li>
+      </ol>
+    </section>
+
+    <section class="demo-grid">
+      <a class="demo-card demo-card-primary" href="sandbox.html">
+        <i class="fas fa-flask"></i>
+        <h3>Sandbox ODR completo</h3>
+        <p>Login por perfil, timeline, docs, assinatura, audiencia e feed DataJud.</p>
+      </a>
+      <a class="demo-card demo-card-primary" href="portal-cliente.html">
+        <i class="fas fa-building"></i>
+        <h3>Portal ODR Unimed Lavras</h3>
+        <p>Metricas, funil, chat de negociacao e selo de captura antecipada.</p>
+      </a>
+      <button type="button" class="demo-card" id="btn-dashboard">
+        <i class="fas fa-gauge-high"></i>
+        <h3>Painel juridico</h3>
+        <p>Dashboard com procedimentos, status e gestao de casos (login demo).</p>
+      </button>
+      <a class="demo-card" href="abrir-procedimento.html">
+        <i class="fas fa-plus-circle"></i>
+        <h3>Abrir procedimento</h3>
+        <p>Simula abertura de novo caso na plataforma.</p>
+      </a>
+      <button type="button" class="demo-card" id="btn-webhook">
+        <i class="fas fa-plug"></i>
+        <h3>Simular webhook Projuris</h3>
+        <p>Dispara payload JSON de acordo concluido para o ERP do cliente.</p>
+      </button>
+      <a class="demo-card" href="admin-sul-minas.html">
+        <i class="fas fa-map-location-dot"></i>
+        <h3>Inteligencia Sul de Minas</h3>
+        <p>Ranking de comarcas e empresas sem ODR (painel interno).</p>
+      </a>
+      <a class="demo-card" href="../../index.html">
+        <i class="fas fa-globe"></i>
+        <h3>Site institucional</h3>
+        <p>Landing comercial completa da ARBITRAJUS.</p>
+      </a>
+    </section>
+
+    <section class="demo-two-col">
+      <div class="demo-panel">
+        <h2>Empresas no radar (5)</h2>
+        <ul class="demo-empresas" id="demo-empresas"></ul>
+      </div>
+      <div class="demo-panel">
+        <h2>Linha do tempo de hoje</h2>
+        <ul class="demo-timeline" id="demo-timeline"></ul>
+      </div>
+    </section>
+
+    <section class="demo-panel demo-log-panel">
+      <div class="demo-log-head">
+        <h2>Console da demonstracao</h2>
+        <button type="button" class="btn btn-outline btn-sm" id="btn-clear-log">Limpar</button>
+      </div>
+      <pre id="demo-log" class="demo-log"></pre>
+    </section>
+  </div>
+
+  <div id="demo-modal" class="modal-overlay">
+    <div class="modal portal-modal demo-modal">
+      <div id="demo-modal-body"></div>
+      <button type="button" class="btn btn-outline" id="demo-modal-close">Fechar</button>
+    </div>
+  </div>
+
+  <script type="module" src="../js/demo-operacao.js"></script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+{
+  "regioes": ["Norte", "Nordeste", "Centro-Oeste", "Sudeste", "Sul"],
+  "funcoes": ["Árbitro", "Mediador", "Conciliador"],
+  "cursos": [
+    "Curso de Arbitragem ARBITRAJUS",
+    "Curso de Mediação ARBITRAJUS",
+    "Curso de Conciliação ARBITRAJUS",
+    "Formação ODR multiportas",
+    "Capacitação CNJ Mediação"
+  ],
+  "planos": [
+    {
+      "id": "perfil",
+      "nome": "Perfil na vitrine",
+      "preco": "R$ 0",
+      "periodo": "cadastro",
+      "destaque": false,
+      "itens": [
+        "Card na vitrine de árbitros e mediadores",
+        "Exige curso/credenciamento válido",
+        "Busca por área, cidade, estado e região",
+        "Avaliações e comentários da plataforma"
+      ]
+    },
+    {
+      "id": "destaque-semanal",
+      "nome": "Destaque semanal",
+      "preco": "R$ 149",
+      "periodo": "semana",
+      "destaque": true,
+      "popular": true,
+      "itens": [
+        "Selo Destaque Semanal no card",
+        "Prioridade no topo da vitrine por 7 dias",
+        "Aparece na faixa de patrocinados",
+        "Ideal para campanhas pontuais",
+        "Renovação automática opcional"
+      ]
+    },
+    {
+      "id": "destaque-mensal",
+      "nome": "Destaque mensal",
+      "preco": "R$ 449",
+      "periodo": "mês",
+      "destaque": true,
+      "itens": [
+        "Selo Destaque Mensal no card",
+        "Prioridade máxima na vitrine por 30 dias",
+        "Faixa de patrocinados + home da Rede",
+        "Estatísticas de visualizações do card",
+        "Melhor custo por dia de exposição"
+      ]
+    }
+  ],
+  "advogados": [
+    {
+      "id": "adv01",
+      "nome": "Dra. Helena Prado",
+      "oab": "OAB/SP 312.458",
+      "funcao": "Árbitro",
+      "areas": ["Civil", "Arbitragem/Mediação/ODR", "Empresarial/Societário"],
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "regiao": "Sudeste",
+      "curso": "Curso de Arbitragem ARBITRAJUS",
+      "qualificacoes": ["Árbitro credenciado", "Mestre", "Especialista"],
+      "foto": "frontend/assets/img/lagix-demo02/slider-review1.jpg",
+      "destaque": true,
+      "destaqueTipo": "mensal",
+      "online": true,
+      "rating": 4.9,
+      "avaliacoes": 128,
+      "sessoes": 86,
+      "comentarios": [
+        { "autor": "Parte em procedimento", "texto": "Condução clara e imparcial na arbitragem.", "estrelas": 5 },
+        { "autor": "Usuário plataforma", "texto": "Pontualidade nas sessões online.", "estrelas": 5 }
+      ]
+    },
+    {
+      "id": "adv02",
+      "nome": "Dr. Marcos Vieira",
+      "oab": "OAB/RJ 198.220",
+      "funcao": "Mediador",
+      "areas": ["Civil", "Consumidor"],
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ",
+      "regiao": "Sudeste",
+      "curso": "Curso de Mediação ARBITRAJUS",
+      "qualificacoes": ["Mediador credenciado", "Especialista"],
+      "foto": "frontend/assets/img/lagix-demo02/slider-review2.jpg",
+      "destaque": true,
+      "destaqueTipo": "semanal",
+      "online": true,
+      "rating": 4.7,
+      "avaliacoes": 86,
+      "sessoes": 54,
+      "comentarios": [
+        { "autor": "Parte em procedimento", "texto": "Mediação objetiva e ética.", "estrelas": 5 }
+      ]
+    },
+    {
+      "id": "adv03",
+      "nome": "Dra. Camila Nogueira",
+      "oab": "OAB/MG 145.903",
+      "funcao": "Mediador",
+      "areas": ["Trabalhista", "Consumidor"],
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "regiao": "Sudeste",
+      "curso": "Curso de Mediação ARBITRAJUS",
+      "qualificacoes": ["Mediador credenciado", "Especialista"],
+      "foto": "frontend/assets/img/lagix-demo02/slider-review3.jpg",
+      "destaque": true,
+      "destaqueTipo": "mensal",
+      "online": false,
+      "rating": 4.8,
+      "avaliacoes": 102,
+      "sessoes": 71,
+      "comentarios": [
+        { "autor": "Usuário plataforma", "texto": "Excelente clareza nas sessões trabalhistas.", "estrelas": 5 }
+      ]
+    },
+    {
+      "id": "adv04",
+      "nome": "Dr. Felipe Andrade",
+      "oab": "OAB/DF 54.771",
+      "funcao": "Árbitro",
+      "areas": ["Tributário", "Administrativo"],
+      "cidade": "Brasília",
+      "estado": "DF",
+      "regiao": "Centro-Oeste",
+      "curso": "Curso de Arbitragem ARBITRAJUS",
+      "qualificacoes": ["Árbitro credenciado", "Doutor", "Mestre"],
+      "foto": "frontend/assets/img/lagix-demo02/slider-review4.jpg",
+      "destaque": false,
+      "destaqueTipo": null,
+      "online": true,
+      "rating": 4.6,
+      "avaliacoes": 64,
+      "sessoes": 39,
+      "comentarios": [
+        { "autor": "Parte em procedimento", "texto": "Análise técnica consistente.", "estrelas": 5 }
+      ]
+    },
+    {
+      "id": "adv05",
+      "nome": "Dra. Beatriz Lemos",
+      "oab": "OAB/SP 278.114",
+      "funcao": "Árbitro",
+      "areas": ["Empresarial/Societário", "Arbitragem/Mediação/ODR"],
+      "cidade": "Campinas",
+      "estado": "SP",
+      "regiao": "Sudeste",
+      "curso": "Formação ODR multiportas",
+      "qualificacoes": ["Árbitro credenciado", "Pós-graduado"],
+      "foto": "frontend/assets/img/lagix-demo02/slider-review5.jpg",
+      "destaque": true,
+      "destaqueTipo": "semanal",
+      "online": true,
+      "rating": 5.0,
+      "avaliacoes": 74,
+      "sessoes": 62,
+      "comentarios": [
+        { "autor": "Parte em procedimento", "texto": "Arbitragem societária bem conduzida.", "estrelas": 5 }
+      ]
+    },
+    {
+      "id": "adv06",
+      "nome": "Dr. Renato Guimarães",
+      "oab": "OAB/PR 67.402",
+      "funcao": "Conciliador",
+      "areas": ["Consumidor", "Digital/LGPD"],
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "regiao": "Sul",
+      "curso": "Curso de Conciliação ARBITRAJUS",
+      "qualificacoes": ["Conciliador", "Especialista"],
+      "foto": "frontend/assets/img/lagix-demo02/person-876767.jpg",
+      "destaque": false,
+      "destaqueTipo": null,
+      "online": false,
+      "rating": 4.4,
+      "avaliacoes": 41,
+      "sessoes": 28,
+      "comentarios": [
+        { "autor": "Usuário plataforma", "texto": "Conciliação rápida e respeitosa.", "estrelas": 4 }
+      ]
+    },
+    {
+      "id": "adv07",
+      "nome": "Dra. Patrícia Mendes",
+      "oab": "OAB/BA 41.288",
+      "funcao": "Mediador",
+      "areas": ["Família e Sucessões", "Civil"],
+      "cidade": "Salvador",
+      "estado": "BA",
+      "regiao": "Nordeste",
+      "curso": "Capacitação CNJ Mediação",
+      "qualificacoes": ["Mediador credenciado", "Conciliador"],
+      "foto": "frontend/assets/img/lagix-demo02/person-4332342.jpg",
+      "destaque": true,
+      "destaqueTipo": "mensal",
+      "online": true,
+      "rating": 4.8,
+      "avaliacoes": 93,
+      "sessoes": 80,
+      "comentarios": [
+        { "autor": "Parte em procedimento", "texto": "Mediação familiar muito respeitosa.", "estrelas": 5 }
+      ]
+    },
+    {
+      "id": "adv08",
+      "nome": "Dr. Lucas Ferreira",
+      "oab": "OAB/RS 89.551",
+      "funcao": "Mediador",
+      "areas": ["Previdenciário", "Trabalhista"],
+      "cidade": "Porto Alegre",
+      "estado": "RS",
+      "regiao": "Sul",
+      "curso": "Curso de Mediação ARBITRAJUS",
+      "qualificacoes": ["Mediador credenciado", "Pós-graduado"],
+      "foto": "frontend/assets/img/lagix-demo02/person-878787.jpg",
+      "destaque": false,
+      "destaqueTipo": null,
+      "online": true,
+      "rating": 4.3,
+      "avaliacoes": 37,
+      "sessoes": 21,
+      "comentarios": [
+        { "autor": "Usuário plataforma", "texto": "Boa condução em conflitos previdenciários.", "estrelas": 4 }
+      ]
+    },
+    {
+      "id": "adv09",
+      "nome": "Dra. Sofia Albuquerque",
+      "oab": "OAB/PE 32.019",
+      "funcao": "Árbitro",
+      "areas": ["Administrativo", "Constitucional"],
+      "cidade": "Recife",
+      "estado": "PE",
+      "regiao": "Nordeste",
+      "curso": "Curso de Arbitragem ARBITRAJUS",
+      "qualificacoes": ["Árbitro credenciado", "Mestre", "Professor universitário"],
+      "foto": "frontend/assets/img/lagix-demo02/slider-review1.jpg",
+      "destaque": true,
+      "destaqueTipo": "semanal",
+      "online": false,
+      "rating": 4.9,
+      "avaliacoes": 58,
+      "sessoes": 44,
+      "comentarios": [
+        { "autor": "Usuário plataforma", "texto": "Didática e imparcialidade excelentes.", "estrelas": 5 }
+      ]
+    },
+    {
+      "id": "adv10",
+      "nome": "Dra. Marina Costa",
+      "oab": "OAB/AM 8.412",
+      "funcao": "Mediador",
+      "areas": ["Ambiental", "Agrário"],
+      "cidade": "Manaus",
+      "estado": "AM",
+      "regiao": "Norte",
+      "curso": "Formação ODR multiportas",
+      "qualificacoes": ["Mediador credenciado", "Mestre"],
+      "foto": "frontend/assets/img/lagix-demo02/slider-review2.jpg",
+      "destaque": false,
+      "destaqueTipo": null,
+      "online": true,
+      "rating": 4.7,
+      "avaliacoes": 29,
+      "sessoes": 18,
+      "comentarios": [
+        { "autor": "Parte em procedimento", "texto": "Domínio técnico em conflitos ambientais.", "estrelas": 5 }
+      ]
+    },
+    {
+      "id": "adv11",
+      "nome": "Dr. Thiago Ramos",
+      "oab": "OAB/SP 256.330",
+      "funcao": "Árbitro",
+      "areas": ["Imobiliário", "Civil"],
+      "cidade": "Santos",
+      "estado": "SP",
+      "regiao": "Sudeste",
+      "curso": "Curso de Arbitragem ARBITRAJUS",
+      "qualificacoes": ["Árbitro credenciado", "Especialista"],
+      "foto": "frontend/assets/img/lagix-demo02/slider-review3.jpg",
+      "destaque": true,
+      "destaqueTipo": "mensal",
+      "online": true,
+      "rating": 4.5,
+      "avaliacoes": 71,
+      "sessoes": 50,
+      "comentarios": [
+        { "autor": "Usuário plataforma", "texto": "Arbitragem imobiliária bem estruturada.", "estrelas": 4 }
+      ]
+    },
+    {
+      "id": "adv12",
+      "nome": "Dra. Juliana Paiva",
+      "oab": "OAB/SC 48.901",
+      "funcao": "Árbitro",
+      "areas": ["Digital/LGPD", "Propriedade Intelectual"],
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "regiao": "Sul",
+      "curso": "Curso de Arbitragem ARBITRAJUS",
+      "qualificacoes": ["Árbitro credenciado", "Mestre"],
+      "foto": "frontend/assets/img/lagix-demo02/slider-review4.jpg",
+      "destaque": true,
+      "destaqueTipo": "semanal",
+      "online": true,
+      "rating": 4.9,
+      "avaliacoes": 88,
+      "sessoes": 67,
+      "comentarios": [
+        { "autor": "Parte em procedimento", "texto": "Excelente em disputas digitais.", "estrelas": 5 }
+      ]
+    },
+    {
+      "id": "adv13",
+      "nome": "Dra. Ana Luiza Borges",
+      "oab": "OAB/GO 39.662",
+      "funcao": "Conciliador",
+      "areas": ["Bancário/Financeiro", "Empresarial/Societário"],
+      "cidade": "Goiânia",
+      "estado": "GO",
+      "regiao": "Centro-Oeste",
+      "curso": "Curso de Conciliação ARBITRAJUS",
+      "qualificacoes": ["Conciliador", "Pós-graduado"],
+      "foto": "frontend/assets/img/lagix-demo02/slider-review5.jpg",
+      "destaque": false,
+      "destaqueTipo": null,
+      "online": false,
+      "rating": 4.2,
+      "avaliacoes": 33,
+      "sessoes": 19,
+      "comentarios": [
+        { "autor": "Usuário plataforma", "texto": "Conciliação bancária objetiva.", "estrelas": 4 }
+      ]
+    },
+    {
+      "id": "adv14",
+      "nome": "Dr. Ricardo Stein",
+      "oab": "OAB/PR 55.207",
+      "funcao": "Mediador",
+      "areas": ["Médico/Saúde", "Civil"],
+      "cidade": "Londrina",
+      "estado": "PR",
+      "regiao": "Sul",
+      "curso": "Curso de Mediação ARBITRAJUS",
+      "qualificacoes": ["Mediador credenciado", "Especialista"],
+      "foto": "frontend/assets/img/lagix-demo02/person-876767.jpg",
+      "destaque": false,
+      "destaqueTipo": null,
+      "online": true,
+      "rating": 4.6,
+      "avaliacoes": 47,
+      "sessoes": 31,
+      "comentarios": [
+        { "autor": "Parte em procedimento", "texto": "Mediação hospitalar bem estruturada.", "estrelas": 5 }
+      ]
+    },
+    {
+      "id": "adv15",
+      "nome": "Dra. Larissa Hoffmann",
+      "oab": "OAB/SP 290.001",
+      "funcao": "Árbitro",
+      "areas": ["Internacional", "Arbitragem/Mediação/ODR"],
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "regiao": "Sudeste",
+      "curso": "Formação ODR multiportas",
+      "qualificacoes": ["Árbitro credenciado", "Doutor", "Professor universitário"],
+      "foto": "frontend/assets/img/lagix-demo02/person-4332342.jpg",
+      "destaque": true,
+      "destaqueTipo": "mensal",
+      "online": true,
+      "rating": 5.0,
+      "avaliacoes": 112,
+      "sessoes": 95,
+      "comentarios": [
+        { "autor": "Usuário plataforma", "texto": "Referência em arbitragem internacional.", "estrelas": 5 }
+      ]
+    },
+    {
+      "id": "adv16",
+      "nome": "Dr. Paulo Henrique Dias",
+      "oab": "OAB/RJ 155.088",
+      "funcao": "Árbitro",
+      "areas": ["Marítimo/Aeronáutico", "Consumidor"],
+      "cidade": "Niterói",
+      "estado": "RJ",
+      "regiao": "Sudeste",
+      "curso": "Curso de Arbitragem ARBITRAJUS",
+      "qualificacoes": ["Árbitro credenciado", "Pós-graduado"],
+      "foto": "frontend/assets/img/lagix-demo02/person-878787.jpg",
+      "destaque": false,
+      "destaqueTipo": null,
+      "online": false,
+      "rating": 4.1,
+      "avaliacoes": 22,
+      "sessoes": 14,
+      "comentarios": [
+        { "autor": "Usuário plataforma", "texto": "Bom domínio em transporte aéreo.", "estrelas": 4 }
+      ]
+    }
+  ]
+}

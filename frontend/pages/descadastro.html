@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico?v=20260818" sizes="any">
+  <link rel="icon" type="image/png" href="/frontend/assets/img/favicon-32.png?v=20260818" sizes="32x32">
+  <link rel="apple-touch-icon" href="/frontend/assets/img/apple-touch-icon.png?v=20260818">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descadastro e exclusão de dados | ARBITRAJUS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/arbtrato.css">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="app-body">
+  <div class="cred-page cred-page--narrow">
+    <header class="cred-header">
+      <a href="../../index.html" class="cred-back"><i class="fas fa-arrow-left"></i> Voltar ao site</a>
+      <img src="../assets/img/logo-2.png" alt="" class="cred-logo" width="64" height="64">
+      <h1>Seus direitos (LGPD)</h1>
+      <p class="cred-lead">Descadastre-se de convites ou solicite a exclusão dos seus dados a qualquer momento. O processo é gratuito e confirmado por e-mail.</p>
+    </header>
+
+    <div id="desc-alert" class="cred-alert" hidden></div>
+
+    <div class="desc-cards">
+      <section class="desc-card">
+        <h2><i class="fas fa-envelope-open"></i> Descadastrar convites</h2>
+        <p>Pare de receber e-mails de convite para credenciamento. Seus dados permanecem registrados apenas se você já iniciou cadastro.</p>
+        <form id="desc-form" class="cred-form">
+          <input type="hidden" id="desc-token" name="token">
+          <label for="desc-email">E-mail</label>
+          <input id="desc-email" name="email" type="email" placeholder="seu@email.com">
+          <button type="submit" class="btn btn-primary">Descadastrar convites</button>
+        </form>
+      </section>
+
+      <section class="desc-card desc-card--danger">
+        <h2><i class="fas fa-trash-can"></i> Excluir meus dados</h2>
+        <p>Solicitação de exclusão definitiva conforme Art. 18 da LGPD. Dados serão removidos em até 15 dias úteis, salvo obrigação legal de retenção.</p>
+        <form id="excl-form" class="cred-form">
+          <input type="hidden" id="excl-token" name="token">
+          <label for="excl-email">E-mail</label>
+          <input id="excl-email" name="email" type="email" placeholder="seu@email.com">
+          <label for="excl-motivo">Motivo (opcional)</label>
+          <textarea id="excl-motivo" name="motivo" rows="3"></textarea>
+          <button type="submit" class="btn btn-primary desc-btn-danger">Solicitar exclusão de dados</button>
+        </form>
+      </section>
+    </div>
+
+    <p class="cred-lgpd-note" style="margin-top:2rem;text-align:center;">
+      Dúvidas: <a href="mailto:privacidade@arbitrajus.com.br">privacidade@arbitrajus.com.br</a> ·
+      <a href="privacidade.html">Política de Privacidade</a>
+    </p>
+  </div>
+  <script type="module" src="../js/descadastro-page.js"></script>
+</body>
+</html>

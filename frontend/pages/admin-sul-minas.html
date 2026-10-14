@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico?v=20260818" sizes="any">
+  <link rel="icon" type="image/png" href="/frontend/assets/img/favicon-32.png?v=20260818" sizes="32x32">
+  <link rel="apple-touch-icon" href="/frontend/assets/img/apple-touch-icon.png?v=20260818">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Sul de Minas, controle interno | ARBITRAJUS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="app-body">
+  <div class="admin-page admin-wide container">
+    <p class="admin-kicker">Uso interno, não publicar</p>
+    <h1>Sul de Minas: possíveis clientes</h1>
+    <p class="admin-lead">Ranking pela <strong>comarca com mais processos cíveis novos no último ano</strong> (TJMG / DataJud). Filtro: empresas que <strong>ainda não usam ODR privado</strong>. Volume é da comarca, não da capa da empresa (o CNJ não libera parte/CNPJ na API pública).</p>
+
+    <div id="admin-auth" class="admin-card">
+      <label>Chave de acesso deste computador</label>
+      <p class="admin-lead" style="margin:0.35rem 0 0.75rem;">Copie exatamente isto (está no arquivo .env): <code>sua-chave-secreta-longa</code></p>
+      <input type="text" id="admin-key" value="sua-chave-secreta-longa" autocomplete="off">
+      <button type="button" id="admin-save-key" class="btn btn-primary">Entrar no painel interno</button>
+    </div>
+
+    <div id="admin-panel" hidden>
+      <div id="aviso" class="admin-card admin-banner"></div>
+      <div class="admin-stats" id="admin-stats"></div>
+
+      <div class="admin-card">
+        <h2>Extrair e organizar</h2>
+        <div class="admin-actions">
+          <button type="button" id="btn-extrair" class="btn btn-primary"><i class="fas fa-download"></i> Extrair volume TJMG (12 meses)</button>
+          <button type="button" id="btn-csv" class="btn btn-outline"><i class="fas fa-file-csv"></i> Baixar CSV</button>
+          <button type="button" id="btn-refresh" class="btn btn-outline">Atualizar</button>
+          <a class="btn btn-outline" href="admin-leads.html">Visão nacional</a>
+        </div>
+        <div id="log" class="admin-log">Pronto para extrair.</div>
+      </div>
+
+      <h2>Comarcas por volume cível</h2>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Cidade</th>
+              <th>Cível 12 meses</th>
+              <th>Média/mês</th>
+              <th>Total (todas as classes)</th>
+              <th>Faixa</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-cidades"></tbody>
+        </table>
+      </div>
+
+      <h2>Alvos sem ODR (ordenados pelo volume da comarca)</h2>
+      <div class="admin-card admin-filters">
+        <input type="search" id="q" placeholder="Filtrar empresa ou cidade">
+        <select id="setor">
+          <option value="">Todos os setores</option>
+          <option value="saude">Saúde</option>
+          <option value="agronegocio">Agronegócio</option>
+          <option value="varejo">Varejo</option>
+          <option value="industria">Indústria</option>
+          <option value="transportadora">Transportadora</option>
+          <option value="ecommerce">E-commerce</option>
+        </select>
+        <select id="odr">
+          <option value="sem_odr">Só sem ODR</option>
+          <option value="todos">Incluir quem já tem ODR</option>
+        </select>
+        <span></span>
+      </div>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Empresa</th>
+              <th>Cidade</th>
+              <th>Setor</th>
+              <th>Cível/mês da comarca</th>
+              <th>ODR</th>
+              <th>Status interno</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-empresas"></tbody>
+        </table>
+      </div>
+
+      <div class="admin-card">
+        <h2>Incluir empresa no controle</h2>
+        <div class="admin-inline">
+          <input id="new-nome" placeholder="Nome">
+          <input id="new-cnpj" placeholder="CNPJ (opcional)">
+          <select id="new-ibge"></select>
+          <select id="new-setor">
+            <option value="varejo">Varejo</option>
+            <option value="saude">Saúde</option>
+            <option value="agronegocio">Agronegócio</option>
+            <option value="industria">Indústria</option>
+            <option value="transportadora">Transportadora</option>
+          </select>
+          <span></span>
+          <button type="button" id="btn-add" class="btn btn-primary">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="../js/admin-sul-minas.js"></script>
+</body>
+</html>

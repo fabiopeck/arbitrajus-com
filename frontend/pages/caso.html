@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico?v=20260818" sizes="any">
+  <link rel="icon" type="image/png" href="/frontend/assets/img/favicon-32.png?v=20260818" sizes="32x32">
+  <link rel="apple-touch-icon" href="/frontend/assets/img/apple-touch-icon.png?v=20260818">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procedimento | ARBITRAJUS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/arbtrato.css">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="app-body">
+  <div class="dashboard">
+    <aside class="sidebar">
+      <a href="../../index.html" class="sidebar-logo">ARBITRAJUS</a>
+      <nav>
+        <a href="dashboard.html"><i class="fas fa-gauge-high"></i> Dashboard</a>
+        <a href="abrir-procedimento.html"><i class="fas fa-plus"></i> Novo procedimento</a>
+        <a href="#" id="logout-btn"><i class="fas fa-right-from-bracket"></i> Sair</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <div class="topbar">
+        <div>
+          <a href="dashboard.html" class="cred-back" style="margin-bottom:0.5rem;display:inline-block;"><i class="fas fa-arrow-left"></i> Voltar</a>
+          <h1 id="caso-titulo">Carregando...</h1>
+          <p id="caso-protocolo" class="proc-meta"></p>
+        </div>
+        <span id="caso-status-badge" class="badge-status"></span>
+      </div>
+
+      <div class="caso-grid">
+        <section class="caso-main">
+          <div class="caso-info-card">
+            <h2>Detalhes</h2>
+            <dl id="caso-detalhes" class="caso-dl"></dl>
+          </div>
+
+          <div class="caso-acoes-card">
+            <h2>Próxima ação</h2>
+            <p id="caso-acao-hint" class="proc-note">O motor de resolução indica a etapa atual do procedimento.</p>
+            <div id="caso-acoes" class="caso-acoes"></div>
+          </div>
+        </section>
+
+        <aside class="caso-timeline-wrap">
+          <h2><i class="fas fa-clock-rotate-left"></i> Timeline</h2>
+          <ul id="caso-timeline" class="caso-timeline">
+            <li class="caso-timeline-loading">Carregando eventos...</li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="../js/caso.js"></script>
+</body>
+</html>

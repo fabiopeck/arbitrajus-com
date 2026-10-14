@@ -1,0 +1,54 @@
+{
+  "stats": {
+    "processos_plataforma": 22418,
+    "processos_finalizados": 21105,
+    "sessoes_mediacao": 412,
+    "valor_causas": "R$ 612M+",
+    "novos_7_dias": 187,
+    "dias_sentenca": 28
+  },
+  "custas": {
+    "arbitragem": [
+      { "faixa": "Até R$ 50.000", "taxa": "R$ 2.890,00" },
+      { "faixa": "R$ 50.001 a R$ 200.000", "taxa": "R$ 5.450,00" },
+      { "faixa": "R$ 200.001 a R$ 1.000.000", "taxa": "R$ 12.800,00" },
+      { "faixa": "Acima de R$ 1.000.000", "taxa": "Sob consulta" }
+    ],
+    "mediacao": [
+      { "faixa": "Até R$ 30.000", "taxa": "R$ 890,00" },
+      { "faixa": "R$ 30.001 a R$ 150.000", "taxa": "R$ 1.950,00" },
+      { "faixa": "Acima de R$ 150.000", "taxa": "R$ 3.200,00" }
+    ]
+  },
+  "setores": [
+    { "id": "imobiliaria", "nome": "Imobiliária", "icon": "fa-building" },
+    { "id": "infraestrutura", "nome": "Infraestrutura / Construção", "icon": "fa-hard-hat" },
+    { "id": "societario", "nome": "Societário", "icon": "fa-chart-pie" },
+    { "id": "saude", "nome": "Saúde", "icon": "fa-heart-pulse" },
+    { "id": "energia", "nome": "Energia", "icon": "fa-bolt" },
+    { "id": "contratual", "nome": "Contratual", "icon": "fa-file-contract" },
+    { "id": "trabalhista", "nome": "Trabalhista", "icon": "fa-briefcase" },
+    { "id": "publico", "nome": "Administração pública", "icon": "fa-landmark" },
+    { "id": "franquias", "nome": "Franquias", "icon": "fa-store" }
+  ],
+  "blog": [
+    {
+      "titulo": "Soluções para árbitros ad hoc na ARBITRAJUS",
+      "resumo": "Plataforma segura com tecnologia de ponta para conduzir procedimentos designados com eficiência.",
+      "data": "15 Mai 2026",
+      "imagem": "frontend/assets/img/blog/blog-arbitros.jpg"
+    },
+    {
+      "titulo": "Mediação online: economia e celeridade",
+      "resumo": "A forma mais moderna de solucionar conflitos preservando relacionamentos comerciais.",
+      "data": "8 Mai 2026",
+      "imagem": "frontend/assets/img/blog/blog-mediacao.jpg"
+    },
+    {
+      "titulo": "Cláusula arbitral: o que incluir em contratos",
+      "resumo": "Modelo validado para garantir resolução extrajudicial eficiente desde a assinatura.",
+      "data": "1 Mai 2026",
+      "imagem": "frontend/assets/img/blog/blog-clausula.jpg"
+    }
+  ]
+}

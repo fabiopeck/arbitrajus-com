@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico?v=20260818" sizes="any">
+  <link rel="icon" type="image/png" href="/frontend/assets/img/favicon-32.png?v=20260818" sizes="32x32">
+  <link rel="apple-touch-icon" href="/frontend/assets/img/apple-touch-icon.png?v=20260818">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel | ARBITRAJUS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/arbtrato.css">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="app-body">
+  <div class="dashboard">
+    <aside class="sidebar">
+      <a href="../../index.html" class="sidebar-logo">ARBITRAJUS</a>
+      <nav>
+        <a href="portal-cliente.html"><i class="fas fa-chart-line"></i> Portal ODR</a>
+        <a href="#" class="active"><i class="fas fa-gauge-high"></i> Dashboard</a>
+        <a href="abrir-procedimento.html"><i class="fas fa-plus"></i> Novo procedimento</a>
+        <a href="#"><i class="fas fa-file-contract"></i> Documentos</a>
+        <a href="#"><i class="fas fa-comments"></i> Mensagens</a>
+        <a href="#"><i class="fas fa-credit-card"></i> Planos</a>
+        <a href="#" id="logout-btn"><i class="fas fa-right-from-bracket"></i> Sair</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <div class="topbar">
+        <h1>Painel de Controle</h1>
+        <div class="user-badge">
+          <i class="fas fa-user-circle" style="font-size:1.5rem;color:#003366;"></i>
+          <span id="user-name">Carregando...</span>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card"><div class="value" id="stat-total">-</div><div style="color:#718096;font-size:0.85rem;">Total de casos</div></div>
+        <div class="stat-card"><div class="value" id="stat-active">-</div><div style="color:#718096;font-size:0.85rem;">Em andamento</div></div>
+        <div class="stat-card"><div class="value" id="stat-done">-</div><div style="color:#718096;font-size:0.85rem;">Concluídos</div></div>
+        <div class="stat-card"><div class="value" style="color:#ff6b35;">72h</div><div style="color:#718096;font-size:0.85rem;">Tempo médio</div></div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+        <h2 style="font-family:Cinzel;color:#001f3f;margin:0;">Meus Procedimentos</h2>
+        <button id="new-case-btn" class="btn btn-primary"><i class="fas fa-plus"></i> Novo Procedimento</button>
+      </div>
+
+      <table class="cases-table">
+        <thead>
+          <tr>
+            <th>Protocolo</th>
+            <th>Título</th>
+            <th>Tipo</th>
+            <th>Status</th>
+            <th>Data</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cases-tbody">
+          <tr><td colspan="6" style="text-align:center;padding:2rem;">Carregando casos...</td></tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+  <script type="module" src="../js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico?v=20260818" sizes="any">
+  <link rel="icon" type="image/png" href="/frontend/assets/img/favicon-32.png?v=20260818" sizes="32x32">
+  <link rel="apple-touch-icon" href="/frontend/assets/img/apple-touch-icon.png?v=20260818">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abrir Procedimento | ARBITRAJUS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/arbtrato.css">
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body class="app-body">
+  <div class="proc-page">
+    <header class="proc-header">
+      <a href="../../index.html" class="cred-back"><i class="fas fa-arrow-left"></i> Voltar ao site</a>
+      <img src="../assets/img/logo-2.png" alt="" class="cred-logo" width="72" height="72">
+      <h1>Abrir Procedimento</h1>
+      <p class="cred-lead">Fluxo digital automatizado: cadastro, pagamento, notificação e acompanhamento em tempo real.</p>
+    </header>
+
+    <div class="proc-wizard" id="wizard">
+      <div class="proc-steps" id="step-indicators">
+        <div class="proc-step active" data-step="1"><span>1</span> Tipo</div>
+        <div class="proc-step" data-step="2"><span>2</span> Conflito</div>
+        <div class="proc-step" data-step="3"><span>3</span> Partes</div>
+        <div class="proc-step" data-step="4"><span>4</span> Pagamento</div>
+      </div>
+
+      <form id="proc-form" class="proc-form-panel">
+        <div class="proc-panel active" data-panel="1">
+          <h2>Tipo de procedimento</h2>
+          <div class="proc-tipo-grid">
+            <label class="proc-tipo-card">
+              <input type="radio" name="tipo" value="conciliacao" required>
+              <i class="fas fa-handshake"></i>
+              <strong>Conciliação</strong>
+              <small>Negociação assistida, foco em acordo rápido</small>
+            </label>
+            <label class="proc-tipo-card">
+              <input type="radio" name="tipo" value="mediacao">
+              <i class="fas fa-scale-balanced"></i>
+              <strong>Mediação</strong>
+              <small>Facilitador neutro entre as partes</small>
+            </label>
+            <label class="proc-tipo-card">
+              <input type="radio" name="tipo" value="arbitragem">
+              <i class="fas fa-gavel"></i>
+              <strong>Arbitragem</strong>
+              <small>Decisão vinculante por árbitro credenciado</small>
+            </label>
+          </div>
+          <label for="titulo">Título resumido do caso *</label>
+          <input id="titulo" name="titulo" required placeholder="Ex.: Disputa contratual de fornecimento">
+        </div>
+
+        <div class="proc-panel" data-panel="2">
+          <h2>Dados do conflito</h2>
+          <label for="descricao">Descrição *</label>
+          <textarea id="descricao" name="descricao" rows="4" required placeholder="Descreva brevemente o conflito e o que busca resolver"></textarea>
+          <label for="area">Área</label>
+          <select id="area" name="area">
+            <option value="civil">Civil / Contratos</option>
+            <option value="consumidor">Consumidor</option>
+            <option value="trabalhista">Trabalhista</option>
+            <option value="empresarial">Empresarial</option>
+            <option value="imobiliario">Imobiliário</option>
+            <option value="outro">Outro</option>
+          </select>
+          <label for="valor_causa">Valor da causa (R$)</label>
+          <input id="valor_causa" name="valor_causa" type="number" min="0" step="0.01" placeholder="0,00">
+        </div>
+
+        <div class="proc-panel" data-panel="3">
+          <h2>Parte contrária</h2>
+          <label for="parte_contraria">Nome da parte contrária *</label>
+          <input id="parte_contraria" name="parte_contraria" required placeholder="Nome ou razão social">
+          <label for="parte_contraria_email">E-mail para notificação *</label>
+          <input id="parte_contraria_email" name="parte_contraria_email" type="email" required placeholder="contato@empresa.com">
+          <p class="proc-note"><i class="fas fa-info-circle"></i> Após o pagamento, a plataforma envia convite automático à parte contrária.</p>
+        </div>
+
+        <div class="proc-panel" data-panel="4">
+          <h2>Revisão e pagamento</h2>
+          <div id="proc-resumo" class="proc-resumo"></div>
+          <div class="proc-taxa-box">
+            <span>Taxa de administração (plataforma)</span>
+            <strong id="proc-taxa">Calculando...</strong>
+          </div>
+          <p class="proc-note">Ambiente demo: o pagamento é simulado. Em produção, integração com gateway (Asaas).</p>
+        </div>
+
+        <div id="proc-success" class="proc-success" hidden>
+          <i class="fas fa-circle-check"></i>
+          <h2>Procedimento aberto</h2>
+          <p>Protocolo: <strong id="success-protocolo"></strong></p>
+          <p id="success-status"></p>
+          <div class="proc-success-actions">
+            <a href="#" id="success-caso-link" class="btn btn-primary">Ver procedimento</a>
+            <a href="dashboard.html" class="btn btn-outline">Ir ao painel</a>
+          </div>
+        </div>
+
+        <div id="proc-error" class="cred-alert" hidden></div>
+
+        <div class="proc-nav" id="proc-nav">
+          <button type="button" id="proc-prev" class="btn btn-outline" disabled>Anterior</button>
+          <button type="button" id="proc-next" class="btn btn-primary">Próximo</button>
+          <button type="submit" id="proc-submit" class="btn btn-primary" hidden>Confirmar e abrir</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="../js/abrir-procedimento.js"></script>
+</body>
+</html>

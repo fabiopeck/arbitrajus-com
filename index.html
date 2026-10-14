@@ -1,64 +1,1227 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico?v=20260818" sizes="any">
+  <link rel="icon" type="image/png" href="/frontend/assets/img/favicon-32.png?v=20260818" sizes="32x32">
+  <link rel="apple-touch-icon" href="/frontend/assets/img/apple-touch-icon.png?v=20260818">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARBITRAJUS</title>
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" href="/assets/favicon-32.png" sizes="32x32">
-  <link rel="apple-touch-icon" href="/assets/favicon-192.png">
+  <meta name="description" content="ARBITRAJUS. Conciliação, mediação e arbitragem online. Resolução de conflitos com tecnologia, segurança e eficiência.">
   <link rel="canonical" href="https://arbitrajus.com/">
-  <meta name="theme-color" content="#ffffff">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      background: #ffffff;
-      color: #1a1a1a;
-      font-family: Montserrat, system-ui, sans-serif;
-      padding: 2rem;
+  <title data-i18n="meta.title">ARBITRAJUS | Conciliação, mediação e arbitragem online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="frontend/css/arbtrato.css?v=20261007k">
+  <link rel="stylesheet" href="frontend/css/widgets.css?v=20260723c">
+  <link rel="preload" as="image" href="frontend/assets/img/lagix-demo02/hero-mediation-poster.jpg?v=20260627" fetchpriority="high">
+  <script>
+    if (location.protocol === 'file:') {
+      document.addEventListener('DOMContentLoaded', function () {
+        var bar = document.createElement('div');
+        bar.setAttribute('role', 'alert');
+        bar.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:9999;background:#023047;color:#fff;padding:14px;text-align:center;font-size:14px;font-family:sans-serif;';
+        bar.innerHTML = 'Abra pelo servidor local para o site completo: execute <strong>npm start</strong> na pasta do projeto e acesse <a href="http://localhost:3000" style="color:#48cae4;">http://localhost:3000</a>';
+        document.body.prepend(bar);
+        document.body.style.paddingTop = '52px';
+      });
     }
-    .wrap {
-      text-align: center;
-      max-width: 420px;
-    }
-    .logo {
-      width: 64px;
-      height: 64px;
-      margin: 0 auto 1.5rem;
-      border-radius: 12px;
-    }
-    h1 {
-      font-family: Cinzel, serif;
-      font-size: clamp(1.75rem, 5vw, 2.25rem);
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      color: #001428;
-      margin-bottom: 0.75rem;
-    }
-    p {
-      font-size: 0.95rem;
-      font-weight: 400;
-      color: #6b7280;
-      letter-spacing: 0.02em;
-    }
-    .line {
-      width: 40px;
-      height: 2px;
-      background: #e5e7eb;
-      margin: 1.25rem auto 0;
-    }
-  </style>
+  </script>
 </head>
-<body>
-  <div class="wrap">
-    <img class="logo" src="/assets/favicon-192.png" alt="" width="64" height="64">
-    <h1>ARBITRAJUS</h1>
-    <p>Em manutenção</p>
-    <div class="line"></div>
+<body class="arb-theme">
+
+  <header class="arb-header">
+    <div class="arb-header-topbar">
+      <div class="container arb-header-topbar-inner">
+        <p data-i18n="header.topbar.text">Infraestrutura ODR · Conciliação, mediação e arbitragem 100% digitais em todo o Brasil</p>
+        <a href="#instituicoes" data-i18n="header.topbar.link">Integração com tribunais e CEJUSCs</a>
+      </div>
+    </div>
+
+    <div class="arb-header-main">
+      <div class="container arb-header-main-inner">
+        <a href="index.html" class="arb-logo" aria-label="ARBITRAJUS, início" data-i18n-aria="header.logo.aria">
+          <img src="frontend/assets/img/logo-2.png" alt="" class="arb-logo-img" width="76" height="76">
+          <span class="arb-logo-text"><span class="arb-logo-arbitra">ARBITRA</span><span class="arb-logo-jus">JUS</span></span>
+        </a>
+
+        <form class="arb-header-search" id="arb-header-search" role="search" autocomplete="off">
+          <label class="visually-hidden" for="arb-search-input" data-i18n="header.search.label">Buscar na plataforma</label>
+          <input
+            type="search"
+            id="arb-search-input"
+            name="q"
+            placeholder="Buscar procedimentos, setores, custas, ajuda..."
+            data-i18n-placeholder="header.search.placeholder"
+            list="arb-search-suggestions"
+          >
+          <datalist id="arb-search-suggestions">
+            <option value="Arbitragem"></option>
+            <option value="Mediação"></option>
+            <option value="Conciliação"></option>
+            <option value="Custas"></option>
+            <option value="Notificação arbitral"></option>
+            <option value="Credenciamento"></option>
+            <option value="Tribunais"></option>
+            <option value="FAQ"></option>
+          </datalist>
+          <button type="submit" class="arb-header-search-btn" aria-label="Buscar" data-i18n-aria="header.search.submitAria">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+
+        <div class="arb-header-actions">
+          <div class="arb-header-a11y-wrap">
+            <a
+              href="#"
+              class="arb-header-tool arb-header-a11y-link"
+              id="arb-a11y-fab"
+              aria-label="Acessibilidade"
+              aria-expanded="false"
+              aria-controls="arb-a11y-panel"
+            >
+              <span class="arb-header-a11y-text" data-i18n="header.a11y.label">Acessibilidade</span>
+              <img
+                src="frontend/assets/img/acessibilidade-40-40.png"
+                alt=""
+                class="arb-header-a11y-icon"
+                width="40"
+                height="40"
+                decoding="async"
+              >
+            </a>
+            <div class="arb-a11y-panel arb-a11y-panel--header" id="arb-a11y-panel" role="dialog" aria-label="Acessibilidade" hidden>
+              <p class="arb-a11y-panel-title" data-i18n="header.a11y.label">Acessibilidade</p>
+              <button type="button" class="arb-a11y-action" data-a11y="font-up" data-i18n="header.a11y.fontUp">
+                <i class="fas fa-text-height" aria-hidden="true"></i> Aumentar texto
+              </button>
+              <button type="button" class="arb-a11y-action" data-a11y="font-down" data-i18n="header.a11y.fontDown">
+                <i class="fas fa-font" aria-hidden="true"></i> Diminuir texto
+              </button>
+              <button type="button" class="arb-a11y-action" data-a11y="contrast" data-i18n="header.a11y.contrast">
+                <i class="fas fa-circle-half-stroke" aria-hidden="true"></i> Alto contraste
+              </button>
+              <button type="button" class="arb-a11y-action" data-a11y="reset" data-i18n="header.a11y.reset">
+                <i class="fas fa-rotate-left" aria-hidden="true"></i> Restaurar padrão
+              </button>
+            </div>
+          </div>
+
+          <div class="arb-header-actions-account">
+            <a href="frontend/pages/login.html" class="arb-header-tool arb-header-login-link" title="Login" aria-label="Login" data-i18n-aria="header.login.aria">
+              <span class="arb-header-tool-icon" aria-hidden="true">
+                <i class="fas fa-user-plus"></i>
+              </span>
+            </a>
+            <a href="frontend/pages/abrir-procedimento.html" class="btn-arb btn-arb-primary arb-header-cta" data-i18n="header.cta.openCase">Abrir caso</a>
+          </div>
+
+          <div class="arb-lang" id="arbLangRoot">
+            <button class="arb-lang__btn" type="button" aria-expanded="false" aria-haspopup="listbox" aria-label="Language" data-i18n-aria="header.lang.aria" title="Language">
+              <span class="arb-lang__flag" data-lang-flag aria-hidden="true">
+                <svg viewBox="0 0 30 30"><rect width="30" height="30" fill="#b22234"/><path stroke="#fff" stroke-width="2.3" d="M0 3.5h30M0 8h30M0 12.5h30M0 17h30M0 21.5h30M0 26h30"/><rect width="12.5" height="14.5" fill="#3c3b6e"/></svg>
+              </span>
+              <span class="arb-lang__code" data-lang-code>EN</span>
+              <svg class="arb-lang__chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5"/></svg>
+            </button>
+            <div class="arb-lang__menu" role="listbox" aria-label="Language" data-i18n-aria="header.lang.aria">
+              <button type="button" class="arb-lang__option" role="option" data-lang-option="en" aria-selected="true">
+                <span class="arb-lang__flag" aria-hidden="true"><svg viewBox="0 0 30 30"><rect width="30" height="30" fill="#b22234"/><path stroke="#fff" stroke-width="2.3" d="M0 3.5h30M0 8h30M0 12.5h30M0 17h30M0 21.5h30M0 26h30"/><rect width="12.5" height="14.5" fill="#3c3b6e"/></svg></span>
+                <span class="arb-lang__option-label" data-i18n="header.lang.en">English</span>
+                <span class="arb-lang__option-code">EN</span>
+              </button>
+              <button type="button" class="arb-lang__option" role="option" data-lang-option="pt" aria-selected="false">
+                <span class="arb-lang__flag" aria-hidden="true"><svg viewBox="0 0 30 30"><circle cx="15" cy="15" r="15" fill="#009c3b"/><path fill="#ffdf00" d="M15 5.2L24.8 15 15 24.8 5.2 15z"/><circle cx="15" cy="15" r="5.2" fill="#002776"/></svg></span>
+                <span class="arb-lang__option-label" data-i18n="header.lang.pt">Português</span>
+                <span class="arb-lang__option-code">PT</span>
+              </button>
+              <button type="button" class="arb-lang__option" role="option" data-lang-option="es" aria-selected="false">
+                <span class="arb-lang__flag" aria-hidden="true"><svg viewBox="0 0 30 30"><rect width="30" height="7.5" y="0" fill="#aa151b"/><rect width="30" height="15" y="7.5" fill="#f1bf00"/><rect width="30" height="7.5" y="22.5" fill="#aa151b"/></svg></span>
+                <span class="arb-lang__option-label" data-i18n="header.lang.es">Español</span>
+                <span class="arb-lang__option-code">ES</span>
+              </button>
+            </div>
+          </div>
+
+          <button type="button" class="arb-menu-btn" id="arb-menu-btn" aria-label="Menu" data-i18n-aria="header.menu.aria"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="arb-header-navbar">
+      <div class="container arb-header-navbar-inner">
+      <nav class="arb-nav" aria-label="Principal" data-i18n-aria="nav.aria">
+        <div class="arb-nav-item arb-nav-item--mega">
+          <button type="button" class="arb-nav-link" aria-expanded="false" aria-haspopup="true" data-i18n="nav.plataforma">Plataforma</button>
+          <div class="arb-mega" role="region" aria-label="Plataforma" data-i18n-aria="nav.mega.plataforma.aria">
+            <div class="container arb-mega-inner">
+              <div class="arb-mega-grid arb-mega-grid--3">
+                <div class="arb-mega-col">
+                  <p class="arb-mega-label" data-i18n="nav.mega.plataforma.label.acesso">Acesso</p>
+                  <a href="frontend/pages/login.html" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-right-to-bracket" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.plataforma.acessar.title">Acessar a plataforma</strong><small data-i18n="nav.mega.plataforma.acessar.desc">Área do cliente e painel de casos</small></span>
+                  </a>
+                  <a href="frontend/pages/abrir-procedimento.html" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-user-plus" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.plataforma.cadastrar.title">Cadastrar caso</strong><small data-i18n="nav.mega.plataforma.cadastrar.desc">Inicie um procedimento online</small></span>
+                  </a>
+                  <a href="frontend/pages/credenciamento.html" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-briefcase" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.plataforma.trabalhe.title">Trabalhe conosco</strong><small data-i18n="nav.mega.plataforma.trabalhe.desc">Árbitros, mediadores e parceiros</small></span>
+                  </a>
+                </div>
+                <div class="arb-mega-col">
+                  <p class="arb-mega-label" data-i18n="nav.mega.plataforma.label.ferramentas">Ferramentas</p>
+                  <a href="frontend/pages/validador.html" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-certificate" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.plataforma.validador.title">Validador de documentos</strong><small data-i18n="nav.mega.plataforma.validador.desc">Autenticidade de laudos e decisões</small></span>
+                  </a>
+                  <a href="frontend/pages/notificacao.html" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-bell" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="header.search.suggestion.notificacao">Notificação arbitral</strong><small data-i18n="nav.mega.plataforma.notificacao.desc">Orientações para partes notificadas</small></span>
+                  </a>
+                  <a href="#plataforma-cta" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-desktop" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.plataforma.conheca.title">Conheça a plataforma</strong><small data-i18n="nav.mega.plataforma.conheca.desc">Recursos e fluxo dos procedimentos</small></span>
+                  </a>
+                </div>
+                <aside class="arb-mega-feature arb-mega-feature--dark">
+                  <p class="arb-mega-feature-tag" data-i18n="nav.mega.plataforma.feature.tag">Motor de resolução</p>
+                  <h3 class="arb-mega-feature-title" data-i18n="nav.mega.plataforma.feature.title">Infraestrutura global de ODR em operação</h3>
+                  <p class="arb-mega-feature-text" data-i18n="nav.mega.plataforma.feature.text">Protocolo, prazos, audiências, custas e rede credenciada, da abertura do caso ao termo de encerramento.</p>
+                  <a href="frontend/pages/login.html" class="btn-arb btn-arb-white" data-i18n="nav.mega.plataforma.feature.cta">Acessar plataforma</a>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arb-nav-item arb-nav-item--mega">
+          <button type="button" class="arb-nav-link" aria-expanded="false" aria-haspopup="true" data-i18n="nav.solucoesAdr">Soluções ADR</button>
+          <div class="arb-mega" role="region" aria-label="Soluções ADR" data-i18n-aria="nav.mega.solucoes.aria">
+            <div class="container arb-mega-inner">
+              <div class="arb-mega-grid arb-mega-grid--4">
+                <div class="arb-mega-col">
+                  <p class="arb-mega-label" data-i18n="nav.mega.solucoes.label.solucoes">Soluções</p>
+                  <a href="#solucoes" data-tab-trigger="arbitragem" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-gavel" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.solucoes.arbitragem.title">Arbitragem online</strong><small data-i18n="nav.mega.solucoes.arbitragem.desc">Decisão vinculante em ambiente digital</small></span>
+                  </a>
+                  <a href="#solucoes" data-tab-trigger="conciliacao" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-handshake" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.solucoes.conciliacao.title">Conciliação online</strong><small data-i18n="nav.mega.solucoes.conciliacao.desc">Acordos rápidos com conciliador qualificado</small></span>
+                  </a>
+                  <a href="#solucoes" data-tab-trigger="mediacao" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-scale-balanced" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.solucoes.mediacao.title">Mediação online</strong><small data-i18n="nav.mega.solucoes.mediacao.desc">Acordos com auxílio de mediador neutro</small></span>
+                  </a>
+                </div>
+                <div class="arb-mega-col">
+                  <p class="arb-mega-label" data-i18n="nav.mega.solucoes.label.especializados">Serviços especializados</p>
+                  <a href="#instituicoes" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-plug" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.solucoes.api.title">API institucional</strong><small data-i18n="nav.mega.solucoes.api.desc">Integração com tribunais e sistemas parceiros</small></span>
+                  </a>
+                  <a href="#solucoes" data-tab-trigger="arbitros" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-user-tie" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.solucoes.arbitros.title">Soluções para árbitros ad hoc</strong><small data-i18n="nav.mega.solucoes.arbitros.desc">Gestão segura de procedimentos</small></span>
+                  </a>
+                  <a href="#equipe" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-users" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.solucoes.selecao.title">Seleção de árbitros e mediadores</strong><small data-i18n="nav.mega.solucoes.selecao.desc">Profissionais qualificados e credenciados</small></span>
+                  </a>
+                </div>
+                <div class="arb-mega-col">
+                  <p class="arb-mega-label" data-i18n="nav.mega.solucoes.label.documentos">Documentos e orientações</p>
+                  <a href="frontend/pages/custas.html" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-calculator" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.solucoes.custas.title">Custas da arbitragem</strong><small data-i18n="nav.mega.solucoes.custas.desc">Valores transparentes desde o início</small></span>
+                  </a>
+                  <a href="#solucoes" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-file-contract" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.solucoes.clausula.title">Cláusula arbitral e termo de compromisso</strong><small data-i18n="nav.mega.solucoes.clausula.desc">Modelos e orientações práticas</small></span>
+                  </a>
+                  <a href="#solucoes" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-book" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.solucoes.regulamentos.title">Regulamentos e políticas</strong><small data-i18n="nav.mega.solucoes.regulamentos.desc">Normas dos procedimentos ARBITRAJUS</small></span>
+                  </a>
+                  <a href="frontend/pages/notificacao.html" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-envelope-open-text" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.solucoes.recebi.title">Recebi uma notificação arbitral</strong><small data-i18n="nav.mega.solucoes.recebi.desc">Saiba como responder com segurança</small></span>
+                  </a>
+                </div>
+                <aside class="arb-mega-feature arb-mega-feature--dark">
+                  <p class="arb-mega-feature-tag" data-i18n="nav.mega.solucoes.feature.tag">Infraestrutura ODR</p>
+                  <h3 class="arb-mega-feature-title" data-i18n="nav.mega.solucoes.feature.title">Plataforma de mediação, conciliação e arbitragem.</h3>
+                  <p class="arb-mega-feature-text" data-i18n="nav.mega.solucoes.feature.text">Sistema digital de resolução de conflitos com validade jurídica, rede credenciada e acompanhamento em tempo real.</p>
+                  <a href="#solucoes" class="btn-arb btn-arb-white" data-i18n="nav.mega.solucoes.feature.cta">Conheça as soluções</a>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arb-nav-item arb-nav-item--mega">
+          <button type="button" class="arb-nav-link" aria-expanded="false" aria-haspopup="true" data-i18n="nav.setores">Setores</button>
+          <div class="arb-mega" role="region" aria-label="Setores de atuação" data-i18n-aria="nav.mega.setores.aria">
+            <div class="container arb-mega-inner">
+              <div class="arb-mega-intro">
+                <p class="arb-mega-label" data-i18n="nav.mega.setores.label">Setores de atuação</p>
+                <h3 class="arb-mega-intro-title" data-i18n="nav.mega.setores.intro.title">Experiência em disputas de alta complexidade</h3>
+                <p class="arb-mega-intro-text" data-i18n="nav.mega.setores.intro.text">Atuamos em conflitos contratuais, societários e regulatórios com equipes especializadas por segmento.</p>
+              </div>
+              <div class="arb-mega-sectors">
+                <a href="#setores" class="arb-mega-sector"><i class="fas fa-building" aria-hidden="true"></i><span data-i18n="nav.mega.setores.imobiliaria">Imobiliária</span></a>
+                <a href="#setores" class="arb-mega-sector"><i class="fas fa-hard-hat" aria-hidden="true"></i><span data-i18n="nav.mega.setores.infraestrutura">Infraestrutura / Construção</span></a>
+                <a href="#setores" class="arb-mega-sector"><i class="fas fa-chart-pie" aria-hidden="true"></i><span data-i18n="nav.mega.setores.societario">Societário</span></a>
+                <a href="#setores" class="arb-mega-sector"><i class="fas fa-heart-pulse" aria-hidden="true"></i><span data-i18n="nav.mega.setores.saude">Saúde</span></a>
+                <a href="#setores" class="arb-mega-sector"><i class="fas fa-bolt" aria-hidden="true"></i><span data-i18n="nav.mega.setores.energia">Energia</span></a>
+                <a href="#setores" class="arb-mega-sector"><i class="fas fa-file-signature" aria-hidden="true"></i><span data-i18n="nav.mega.setores.contratual">Contratual</span></a>
+                <a href="#setores" class="arb-mega-sector"><i class="fas fa-briefcase" aria-hidden="true"></i><span data-i18n="nav.mega.setores.trabalhista">Trabalhista</span></a>
+                <a href="#setores" class="arb-mega-sector"><i class="fas fa-landmark" aria-hidden="true"></i><span data-i18n="nav.mega.setores.adminPublica">Administração pública</span></a>
+                <a href="#setores" class="arb-mega-sector"><i class="fas fa-store" aria-hidden="true"></i><span data-i18n="nav.mega.setores.franquias">Franquias</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arb-nav-item arb-nav-item--mega">
+          <button type="button" class="arb-nav-link" aria-expanded="false" aria-haspopup="true" data-i18n="nav.integracao">Integração</button>
+          <div class="arb-mega" role="region" aria-label="Integração institucional" data-i18n-aria="nav.mega.integracao.aria">
+            <div class="container arb-mega-inner">
+              <div class="arb-mega-grid arb-mega-grid--3">
+                <div class="arb-mega-col">
+                  <p class="arb-mega-label" data-i18n="nav.mega.integracao.label.publico">Setor público</p>
+                  <a href="#instituicoes" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-landmark" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.integracao.tribunais.title">Tribunais e CEJUSCs</strong><small data-i18n="nav.mega.integracao.tribunais.desc">Justiça multiportas e encaminhamento digital</small></span>
+                  </a>
+                  <a href="#instituicoes" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-gavel" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.setores.adminPublica">Administração pública</strong><small data-i18n="nav.mega.integracao.admin.desc">Conciliação e mediação em demandas públicas</small></span>
+                  </a>
+                  <a href="#instituicoes" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-file-signature" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.integracao.convenios.title">Convênios institucionais</strong><small data-i18n="nav.mega.integracao.convenios.desc">Parcerias com tribunais e entidades públicas</small></span>
+                  </a>
+                </div>
+                <div class="arb-mega-col">
+                  <p class="arb-mega-label" data-i18n="nav.mega.integracao.label.privados">Parceiros privados</p>
+                  <a href="#instituicoes" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-scale-balanced" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.integracao.oab.title">OAB e entidades de classe</strong><small data-i18n="nav.mega.integracao.oab.desc">Credenciamento e operação compartilhada</small></span>
+                  </a>
+                  <a href="#instituicoes" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-network-wired" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.integracao.corporativos.title">Programas corporativos</strong><small data-i18n="nav.mega.integracao.corporativos.desc">ADR em escala para empresas e associações</small></span>
+                  </a>
+                  <a href="#contato" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-handshake" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.integracao.empresas.title">Empresas e associações</strong><small data-i18n="nav.mega.integracao.empresas.desc">Programas corporativos de resolução de conflitos</small></span>
+                  </a>
+                </div>
+                <aside class="arb-mega-feature arb-mega-feature--dark">
+                  <p class="arb-mega-feature-tag" data-i18n="nav.mega.integracao.feature.tag">Justiça multiportas</p>
+                  <h3 class="arb-mega-feature-title" data-i18n="nav.mega.integracao.feature.title">Integração institucional para tribunais e parceiros</h3>
+                  <p class="arb-mega-feature-text" data-i18n="nav.mega.integracao.feature.text">API de encaminhamento, gestão de procedimentos, métricas e retorno institucional. Infraestrutura privada, interoperável e sem barreiras estaduais.</p>
+                  <a href="#instituicoes" class="btn-arb btn-arb-white" data-i18n="nav.mega.solucoes.feature.cta">Conheça as soluções</a>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arb-nav-item arb-nav-item--mega">
+          <button type="button" class="arb-nav-link" aria-expanded="false" aria-haspopup="true" data-i18n="nav.empresa">Empresa</button>
+          <div class="arb-mega" role="region" aria-label="Empresa" data-i18n-aria="nav.mega.empresa.aria">
+            <div class="container arb-mega-inner">
+              <div class="arb-mega-grid arb-mega-grid--3">
+                <div class="arb-mega-col">
+                  <p class="arb-mega-label" data-i18n="nav.mega.empresa.label.institucional">Institucional</p>
+                  <a href="#ecossistema" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-scale-balanced" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.empresa.sobre.title">Sobre a ARBITRAJUS</strong><small data-i18n="nav.mega.empresa.sobre.desc">Missão, visão e ecossistema digital</small></span>
+                  </a>
+                  <a href="#impacto" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.empresa.resultados.title">Resultados e impacto</strong><small data-i18n="nav.mega.empresa.resultados.desc">Eficiência, transparência e métricas</small></span>
+                  </a>
+                  <a href="#equipe" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-user-graduate" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.empresa.rede.title">Rede credenciada</strong><small data-i18n="nav.mega.empresa.rede.desc">Árbitros, mediadores e conciliadores</small></span>
+                  </a>
+                </div>
+                <div class="arb-mega-col">
+                  <p class="arb-mega-label" data-i18n="nav.mega.empresa.label.governanca">Governança</p>
+                  <a href="#solucoes" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.solucoes.regulamentos.title">Regulamentos e políticas</strong><small data-i18n="nav.mega.empresa.regulamentos.desc">Conformidade e segurança jurídica</small></span>
+                  </a>
+                  <a href="frontend/pages/privacidade.html" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-lock" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.empresa.privacidade.title">Política de privacidade</strong><small data-i18n="nav.mega.empresa.privacidade.desc">Proteção de dados e confidencialidade</small></span>
+                  </a>
+                  <a href="#faq" class="arb-mega-link">
+                    <span class="arb-mega-link-icon"><i class="fas fa-circle-question" aria-hidden="true"></i></span>
+                    <span class="arb-mega-link-text"><strong data-i18n="nav.mega.empresa.faq.title">Perguntas frequentes</strong><small data-i18n="nav.mega.empresa.faq.desc">Conciliação, mediação e arbitragem</small></span>
+                  </a>
+                </div>
+                <aside class="arb-mega-feature arb-mega-feature--dark">
+                  <p class="arb-mega-feature-tag" data-i18n="nav.mega.empresa.feature.tag">CNPJ 65.992.148/0001-03</p>
+                  <h3 class="arb-mega-feature-title" data-i18n="nav.mega.empresa.feature.title">Infraestrutura privada de resolução de conflitos</h3>
+                  <p class="arb-mega-feature-text" data-i18n="nav.mega.empresa.feature.text">Operação digital em todo o Brasil.</p>
+                  <a href="#contato" class="btn-arb btn-arb-white" data-i18n="nav.mega.empresa.feature.cta">Fale conosco</a>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contato" class="arb-nav-link arb-nav-link--plain" data-i18n="nav.contato">Contato</a>
+      </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="arb-mobile-drawer" id="arb-mobile-drawer">
+    <div class="arb-mobile-panel">
+      <button type="button" id="arb-drawer-close" class="arb-mobile-close" aria-label="Fechar menu" data-i18n-aria="mobile.closeAria">&times;</button>
+      <p class="arb-mobile-title" data-i18n="mobile.title">Menu</p>
+
+      <form class="arb-header-search arb-header-search--mobile" id="arb-mobile-search" role="search">
+        <label class="visually-hidden" for="arb-mobile-search-input" data-i18n="mobile.search.label">Buscar</label>
+        <input type="search" id="arb-mobile-search-input" placeholder="Buscar na plataforma..." data-i18n-placeholder="mobile.search.placeholder">
+        <button type="submit" class="arb-header-search-btn" aria-label="Buscar" data-i18n-aria="header.search.submitAria"><i class="fas fa-search"></i></button>
+      </form>
+
+      <details class="arb-mobile-group">
+        <summary data-i18n="nav.plataforma">Plataforma</summary>
+        <a href="frontend/pages/login.html" data-i18n="nav.mega.plataforma.feature.cta">Acessar plataforma</a>
+        <a href="frontend/pages/abrir-procedimento.html" data-i18n="nav.mega.plataforma.cadastrar.title">Cadastrar caso</a>
+        <a href="frontend/pages/credenciamento.html" data-i18n="nav.mega.plataforma.trabalhe.title">Trabalhe conosco</a>
+        <a href="frontend/pages/validador.html" data-i18n="nav.mega.plataforma.validador.title">Validador de documentos</a>
+        <a href="frontend/pages/notificacao.html" data-i18n="header.search.suggestion.notificacao">Notificação arbitral</a>
+        <a href="#plataforma-cta" data-i18n="nav.mega.plataforma.conheca.title">Conheça a plataforma</a>
+      </details>
+
+      <details class="arb-mobile-group">
+        <summary data-i18n="nav.solucoesAdr">Soluções ADR</summary>
+        <a href="#solucoes" data-tab-trigger="conciliacao" data-i18n="nav.mega.solucoes.conciliacao.title">Conciliação online</a>
+        <a href="#solucoes" data-tab-trigger="mediacao" data-i18n="nav.mega.solucoes.mediacao.title">Mediação online</a>
+        <a href="#solucoes" data-tab-trigger="arbitragem" data-i18n="nav.mega.solucoes.arbitragem.title">Arbitragem online</a>
+        <a href="#instituicoes" data-i18n="nav.mega.solucoes.api.title">API institucional</a>
+        <a href="#solucoes" data-tab-trigger="arbitros" data-i18n="mobile.solucoes.arbitros">Soluções para árbitros</a>
+        <a href="frontend/pages/custas.html" data-i18n="nav.mega.solucoes.custas.title">Custas da arbitragem</a>
+        <a href="frontend/pages/notificacao.html" data-i18n="header.search.suggestion.notificacao">Notificação arbitral</a>
+        <a href="#equipe" data-i18n="mobile.solucoes.equipe">Árbitros e mediadores</a>
+      </details>
+
+      <details class="arb-mobile-group">
+        <summary data-i18n="nav.setores">Setores</summary>
+        <a href="#setores" data-i18n="nav.mega.setores.imobiliaria">Imobiliária</a>
+        <a href="#setores" data-i18n="nav.mega.setores.infraestrutura">Infraestrutura / Construção</a>
+        <a href="#setores" data-i18n="nav.mega.setores.societario">Societário</a>
+        <a href="#setores" data-i18n="nav.mega.setores.saude">Saúde</a>
+        <a href="#setores" data-i18n="nav.mega.setores.energia">Energia</a>
+        <a href="#setores" data-i18n="nav.mega.setores.contratual">Contratual</a>
+        <a href="#setores" data-i18n="nav.mega.setores.trabalhista">Trabalhista</a>
+        <a href="#setores" data-i18n="nav.mega.setores.adminPublica">Administração pública</a>
+        <a href="#setores" data-i18n="nav.mega.setores.franquias">Franquias</a>
+      </details>
+
+      <details class="arb-mobile-group">
+        <summary data-i18n="nav.integracao">Integração</summary>
+        <a href="#instituicoes" data-i18n="nav.mega.integracao.tribunais.title">Tribunais e CEJUSCs</a>
+        <a href="#instituicoes" data-i18n="nav.mega.integracao.oab.title">OAB e entidades de classe</a>
+        <a href="#instituicoes" data-i18n="nav.mega.integracao.corporativos.title">Programas corporativos</a>
+        <a href="#instituicoes" data-i18n="mobile.integracao.api">API e integração digital</a>
+        <a href="#contato" data-i18n="mobile.integracao.parcerias">Parcerias institucionais</a>
+      </details>
+
+      <details class="arb-mobile-group">
+        <summary data-i18n="nav.empresa">Empresa</summary>
+        <a href="#ecossistema" data-i18n="nav.mega.empresa.sobre.title">Sobre a ARBITRAJUS</a>
+        <a href="#impacto" data-i18n="nav.mega.empresa.resultados.title">Resultados e impacto</a>
+        <a href="#equipe" data-i18n="nav.mega.empresa.rede.title">Rede credenciada</a>
+        <a href="#faq" data-i18n="nav.mega.empresa.faq.title">Perguntas frequentes</a>
+        <a href="frontend/pages/privacidade.html" data-i18n="nav.mega.empresa.privacidade.title">Política de privacidade</a>
+      </details>
+
+      <a href="#contato" class="arb-mobile-link" data-i18n="nav.contato">Contato</a>
+      <a href="#blog" class="arb-mobile-link" data-i18n="mobile.link.blog">Blog</a>
+      <a href="frontend/pages/login.html" class="btn-arb btn-arb-primary arb-mobile-cta" data-i18n="nav.mega.plataforma.feature.cta">Acessar plataforma</a>
+    </div>
   </div>
+
+  <div class="arb-mega-backdrop" id="arb-mega-backdrop" hidden aria-hidden="true"></div>
+
+  <!-- Hero Lagix Demo 02 -->
+  <section class="arb-lagix-hero">
+    <div class="arb-lagix-hero-media" aria-hidden="true">
+      <video
+        class="arb-lagix-hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="frontend/assets/img/lagix-demo02/hero-mediation-poster.jpg?v=20260627"
+        tabindex="-1"
+      >
+        <source src="frontend/assets/img/lagix-demo02/hero-mediation-hq.mp4?v=20260627" type="video/mp4">
+      </video>
+      <div class="arb-lagix-hero-overlay"></div>
+    </div>
+
+    <div class="container arb-lagix-hero-inner">
+      <div class="arb-lagix-hero-col arb-lagix-hero-col--text">
+        <p class="arb-lagix-hero-lead" data-i18n="hero.lead">Conciliação, mediação e arbitragem 100% digitais, com a proximidade e o diálogo que o direito brasileiro exige.</p>
+      </div>
+
+      <div class="arb-lagix-hero-col arb-lagix-hero-col--stats">
+        <p class="arb-lagix-hero-counter">
+          +<span data-stat="100">0</span><span class="arb-lagix-hero-counter-suffix">k</span>
+        </p>
+        <div class="arb-lagix-hero-reviews">
+          <img src="frontend/assets/img/lagix-demo02/slider-review1.jpg?v=20260627" alt="" width="65" height="65" decoding="async">
+          <img src="frontend/assets/img/lagix-demo02/slider-review2.jpg?v=20260627" alt="" width="65" height="65" decoding="async">
+          <img src="frontend/assets/img/lagix-demo02/slider-review3.jpg?v=20260627" alt="" width="65" height="65" decoding="async">
+          <img src="frontend/assets/img/lagix-demo02/slider-review4.jpg?v=20260627" alt="" width="65" height="65" decoding="async">
+          <img src="frontend/assets/img/lagix-demo02/slider-review5.jpg?v=20260627" alt="" width="65" height="65" decoding="async">
+          <span class="arb-lagix-hero-reviews-plus" aria-hidden="true"><i class="fas fa-plus"></i></span>
+        </div>
+        <p class="arb-lagix-hero-rating" data-i18n-html="hero.rating">A satisfação dos clientes reflete<br>nosso compromisso com acordos justos</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faixa de notícias do setor -->
+  <section class="arb-lagix-marquee" aria-label="Notícias do setor" data-i18n-aria="marquee.aria">
+    <div class="arb-lagix-marquee-viewport">
+      <div class="arb-lagix-marquee-track">
+        <article class="arb-lagix-marquee-item">
+          <img src="frontend/assets/img/lagix-demo02/marquee-01.jpg" alt="" width="48" height="48" decoding="async">
+          <span data-i18n="marquee.item1">Câmara aprova regras para mediação extrajudicial em conflitos de PMEs</span>
+        </article>
+        <article class="arb-lagix-marquee-item">
+          <img src="frontend/assets/img/lagix-demo02/marquee-02.jpg" alt="" width="48" height="48" decoding="async">
+          <span data-i18n="marquee.item2">STJ avança na justiça multiportas com mediação extrajudicial</span>
+        </article>
+        <article class="arb-lagix-marquee-item">
+          <img src="frontend/assets/img/lagix-demo02/marquee-03.jpg" alt="" width="48" height="48" decoding="async">
+          <span data-i18n="marquee.item3">Lei da Arbitragem completa 30 anos como solução estratégica empresarial</span>
+        </article>
+        <article class="arb-lagix-marquee-item">
+          <img src="frontend/assets/img/lagix-demo02/marquee-04.jpg" alt="" width="48" height="48" decoding="async">
+          <span data-i18n="marquee.item4">Arbitragem com o setor público registra alta de 34% em valores disputados</span>
+        </article>
+        <article class="arb-lagix-marquee-item">
+          <img src="frontend/assets/img/lagix-demo02/marquee-01.jpg" alt="" width="48" height="48" decoding="async">
+          <span data-i18n="marquee.item5">Mediação e arbitragem ganham espaço em contratos digitais e nuvem</span>
+        </article>
+        <article class="arb-lagix-marquee-item">
+          <img src="frontend/assets/img/lagix-demo02/marquee-02.jpg" alt="" width="48" height="48" decoding="async">
+          <span data-i18n="marquee.item6">Mais de 146 câmaras privadas atuam em conflitos consumeristas nos TJs</span>
+        </article>
+        <article class="arb-lagix-marquee-item" aria-hidden="true">
+          <img src="frontend/assets/img/lagix-demo02/marquee-01.jpg" alt="" width="48" height="48" decoding="async">
+          <span data-i18n="marquee.item1">Câmara aprova regras para mediação extrajudicial em conflitos de PMEs</span>
+        </article>
+        <article class="arb-lagix-marquee-item" aria-hidden="true">
+          <img src="frontend/assets/img/lagix-demo02/marquee-02.jpg" alt="" width="48" height="48" decoding="async">
+          <span data-i18n="marquee.item2">STJ avança na justiça multiportas com mediação extrajudicial</span>
+        </article>
+        <article class="arb-lagix-marquee-item" aria-hidden="true">
+          <img src="frontend/assets/img/lagix-demo02/marquee-03.jpg" alt="" width="48" height="48" decoding="async">
+          <span data-i18n="marquee.item3">Lei da Arbitragem completa 30 anos como solução estratégica empresarial</span>
+        </article>
+        <article class="arb-lagix-marquee-item" aria-hidden="true">
+          <img src="frontend/assets/img/lagix-demo02/marquee-04.jpg" alt="" width="48" height="48" decoding="async">
+          <span data-i18n="marquee.item4">Arbitragem com o setor público registra alta de 34% em valores disputados</span>
+        </article>
+        <article class="arb-lagix-marquee-item" aria-hidden="true">
+          <img src="frontend/assets/img/lagix-demo02/marquee-01.jpg" alt="" width="48" height="48" decoding="async">
+          <span data-i18n="marquee.item5">Mediação e arbitragem ganham espaço em contratos digitais e nuvem</span>
+        </article>
+        <article class="arb-lagix-marquee-item" aria-hidden="true">
+          <img src="frontend/assets/img/lagix-demo02/marquee-02.jpg" alt="" width="48" height="48" decoding="async">
+          <span data-i18n="marquee.item6">Mais de 146 câmaras privadas atuam em conflitos consumeristas nos TJs</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impacto Lagix-style -->
+  <section class="arb-impact" id="impacto">
+    <div class="container arb-impact-wrap">
+      <div class="arb-impact-metrics">
+        <div class="arb-impact-metric arb-impact-metric--dark">
+          <span class="arb-impact-metric-label" data-i18n="impacto.metric.satisfaction">A classificação de satisfação do cliente reflete nosso compromisso</span>
+          <p class="arb-impact-metric-value">
+            <span data-stat="10">0</span><span class="arb-impact-metric-suffix">*</span>
+          </p>
+        </div>
+        <div class="arb-impact-metric arb-impact-metric--light">
+          <span class="arb-impact-metric-label" data-i18n="impacto.metric.success">Taxa de sucesso do cliente entregando Cliente confiável</span>
+          <p class="arb-impact-metric-value">
+            <span data-stat="97">0</span><span class="arb-impact-metric-suffix">%</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="arb-impact-main">
+        <div class="arb-impact-panel">
+          <h2 class="arb-impact-title" data-i18n="impacto.title">Análise jurídica e resultados reais</h2>
+
+          <div class="arb-impact-accordion" role="region" aria-label="Análise jurídica" data-i18n-aria="impacto.accordion.aria">
+            <details class="arb-impact-item" open>
+              <summary class="arb-impact-item-head">
+                <span data-i18n="impacto.item1.title">Justiça, igualdade e proteção de direitos</span>
+                <i class="fas fa-chevron-down arb-impact-chevron" aria-hidden="true"></i>
+              </summary>
+              <div class="arb-impact-item-body">
+                <p data-i18n="impacto.item1.body">Atuamos para garantir acesso à justiça por meios adequados de solução de conflitos, com procedimentos transparentes, imparciais e alinhados ao ordenamento jurídico brasileiro.</p>
+              </div>
+            </details>
+
+            <details class="arb-impact-item">
+              <summary class="arb-impact-item-head">
+                <span data-i18n="impacto.item2.title">Profissionais Jurídicos Experientes</span>
+                <i class="fas fa-chevron-down arb-impact-chevron" aria-hidden="true"></i>
+              </summary>
+              <div class="arb-impact-item-body">
+                <p data-i18n="impacto.item2.body">Atuamos em conciliação, mediação e arbitragem com equipe especializada em disputas contratuais, societárias, imobiliárias e demais áreas do direito.</p>
+              </div>
+            </details>
+
+            <details class="arb-impact-item">
+              <summary class="arb-impact-item-head">
+                <span data-i18n="impacto.item3.title">Suporte Legal Constrói Confiança</span>
+                <i class="fas fa-chevron-down arb-impact-chevron" aria-hidden="true"></i>
+              </summary>
+              <div class="arb-impact-item-body">
+                <p data-i18n="impacto.item3.body">Nossas custas e honorários são definidos com clareza desde o início, para que as partes decidam com total transparência e segurança.</p>
+              </div>
+            </details>
+
+            <details class="arb-impact-item">
+              <summary class="arb-impact-item-head">
+                <span data-i18n="impacto.item4.title">Assistência Jurídica Rápida</span>
+                <i class="fas fa-chevron-down arb-impact-chevron" aria-hidden="true"></i>
+              </summary>
+              <div class="arb-impact-item-body">
+                <p data-i18n="impacto.item4.body">Procedimentos 100% digitais, com consultas por videoconferência e acompanhamento em tempo real na plataforma ARBITRAJUS.</p>
+              </div>
+            </details>
+          </div>
+
+          <img
+            src="frontend/assets/img/lagix/law-1.png"
+            alt=""
+            class="arb-impact-scales"
+            width="362"
+            height="344"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+
+        <figure class="arb-impact-float-card">
+          <img
+            src="frontend/assets/img/bb212907-ff42-4068-aca3-252c5a1279aa.png"
+            alt="Profissional jurídico ARBITRAJUS" data-i18n-alt="impacto.float.alt"
+            width="440"
+            height="550"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecossistema -->
+  <section class="arb-section" id="ecossistema">
+    <div class="container">
+      <h2 class="arb-section-title" data-i18n="ecossistema.title">Um ecossistema digital de soluções para conflitos</h2>
+      <p class="arb-section-lead" data-i18n="ecossistema.lead">A ARBITRAJUS é um ecossistema digital de soluções para a resolução adequada de conflitos, que integra, em um único ambiente tecnológico, conciliação, mediação e arbitragem.</p>
+      <p data-i18n="ecossistema.p1">Por meio de procedimentos estruturados em diferentes setores e contextos, regras claras e governança digital, oferecemos às partes previsibilidade, segurança jurídica e organização desde o início do procedimento.</p>
+      <p data-i18n="ecossistema.p2">Nossa plataforma foi desenvolvida para que cada conflito seja tratado de forma adequada às suas características, com transparência, eficiência e autonomia das partes.</p>
+      <a href="#setores" class="btn-arb btn-arb-primary" style="margin-top:1rem;" data-i18n="ecossistema.cta">CONHEÇA OS SETORES ATENDIDOS</a>
+    </div>
+  </section>
+
+  <!-- Instituições -->
+  <section class="arb-section arb-section-alt arb-instituicoes" id="instituicoes">
+    <div class="container">
+      <div class="arb-instituicoes-head">
+        <div>
+          <p class="arb-instituicoes-eyebrow" data-i18n="mobile.integracao.parcerias">Parcerias institucionais</p>
+          <h2 class="arb-section-title" data-i18n="instituicoes.title">Soluções para instituições</h2>
+          <p class="arb-section-lead" data-i18n="instituicoes.lead">Infraestrutura digital de conciliação, mediação e arbitragem para tribunais, entidades de classe, empresas e organizações que precisam resolver conflitos em escala.</p>
+        </div>
+        <a href="#contato" class="btn-arb btn-arb-primary" data-i18n="instituicoes.cta">Solicitar parceria</a>
+      </div>
+
+      <div class="arb-instituicoes-grid">
+        <article class="arb-instituicao-card">
+          <div class="arb-instituicao-icon"><i class="fas fa-landmark" aria-hidden="true"></i></div>
+          <h3 data-i18n="nav.mega.integracao.tribunais.title">Tribunais e CEJUSCs</h3>
+          <p data-i18n="instituicoes.card.tribunais.text">Encaminhamento digital, condução de audiências de conciliação e mediação, retorno de termos e métricas para justiça multiportas.</p>
+        </article>
+        <article class="arb-instituicao-card">
+          <div class="arb-instituicao-icon"><i class="fas fa-scale-balanced" aria-hidden="true"></i></div>
+          <h3 data-i18n="nav.mega.integracao.oab.title">OAB e entidades de classe</h3>
+          <p data-i18n="instituicoes.card.oab.text">Credenciamento de profissionais, operação compartilhada e programas de capacitação em métodos consensuais de solução de conflitos.</p>
+        </article>
+        <article class="arb-instituicao-card">
+          <div class="arb-instituicao-icon"><i class="fas fa-cloud" aria-hidden="true"></i></div>
+          <h3 data-i18n="instituicoes.card.fintechs.title">Fintechs e plataformas digitais</h3>
+          <p data-i18n="instituicoes.card.fintechs.text">API de resolução de conflitos embutida em marketplaces, fintechs e operadoras, com gestão automatizada de procedimentos sob a marca ARBITRAJUS.</p>
+        </article>
+        <article class="arb-instituicao-card">
+          <div class="arb-instituicao-icon"><i class="fas fa-briefcase" aria-hidden="true"></i></div>
+          <h3 data-i18n="nav.mega.integracao.empresas.title">Empresas e associações</h3>
+          <p data-i18n="instituicoes.card.empresas.text">Programas corporativos de prevenção e resolução de conflitos, com trilhas de conciliação, mediação e arbitragem por vertical de negócio.</p>
+        </article>
+        <article class="arb-instituicao-card">
+          <div class="arb-instituicao-icon"><i class="fas fa-plug" aria-hidden="true"></i></div>
+          <h3 data-i18n="mobile.integracao.api">API e integração digital</h3>
+          <p data-i18n="instituicoes.card.api.text">Encaminhamento automatizado de demandas, consulta de status, retorno de acordos e relatórios agregados para sistemas institucionais.</p>
+        </article>
+        <article class="arb-instituicao-card">
+          <div class="arb-instituicao-icon"><i class="fas fa-users-gear" aria-hidden="true"></i></div>
+          <h3 data-i18n="nav.mega.empresa.rede.title">Rede credenciada</h3>
+          <p data-i18n="instituicoes.card.rede.text">Designação automática de conciliadores, mediadores e árbitros por área de atuação, disponibilidade e especialidade técnica.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Soluções (tabs) -->
+  <section class="arb-section arb-section-alt" id="solucoes">
+    <div class="container">
+      <h2 class="arb-section-title text-center" data-i18n="solucoes.title">Nossas soluções</h2>
+      <p class="arb-section-lead text-center mx-auto" data-i18n="solucoes.lead">Nossa missão é democratizar os métodos alternativos de resolução de conflitos, facilitando o acesso à conciliação, mediação, arbitragem e apoio técnico especializado.</p>
+
+      <div class="arb-tabs" role="tablist">
+        <button type="button" class="arb-tab active" data-tab="arbitragem" data-i18n="header.search.suggestion.arbitragem">Arbitragem</button>
+        <button type="button" class="arb-tab" data-tab="mediacao" data-i18n="header.search.suggestion.mediacao">Mediação</button>
+        <button type="button" class="arb-tab" data-tab="arbitros" data-i18n="solucoes.tab.arbitros">Solução para árbitros</button>
+        <button type="button" class="arb-tab" data-tab="conciliacao" data-i18n="header.search.suggestion.conciliacao">Conciliação</button>
+      </div>
+
+      <div class="arb-tab-panel active" data-panel="arbitragem">
+        <div class="arb-tab-visual arb-tab-visual--photo">
+          <img src="frontend/assets/img/martelo-arbitragem.avif" alt="Martelo da justiça, arbitragem" data-i18n-alt="solucoes.arbitragem.imgAlt" width="480" height="320">
+        </div>
+        <div class="arb-tab-content">
+          <h3 data-i18n="header.search.suggestion.arbitragem">Arbitragem</h3>
+          <p data-i18n="solucoes.arbitragem.p1">Resolução de conflitos em até 6 meses, com validade de título executivo judicial. Procedimento 100% digital na ARBITRAJUS.</p>
+          <p class="arb-tab-fundamento" data-i18n="solucoes.arbitragem.fundamento">Fundamentada na Lei nº 9.307/1996, a arbitragem é método consensual de solução de controvérsias por meio de decisão imparcial de árbitros escolhidos pelas partes, com a mesma eficácia de sentença judicial quando cumpridos os requisitos legais.</p>
+          <div class="arb-tab-links">
+            <a href="frontend/pages/login.html?tab=signup" class="btn-arb btn-arb-primary" data-i18n="solucoes.arbitragem.cta.more">saiba mais</a>
+            <a href="#solucoes" class="btn-arb btn-arb-outline" data-i18n="solucoes.arbitragem.cta.regulamento">acesse o regulamento</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="arb-tab-panel arb-tab-panel--text" data-panel="mediacao">
+        <div class="arb-tab-content">
+          <h3 data-i18n="header.search.suggestion.mediacao">Mediação</h3>
+          <p data-i18n="solucoes.mediacao.p1">Transformando conflitos em relacionamentos duradouros. Na mediação, as partes constroem soluções com auxílio de mediador neutro, em ambiente colaborativo e reservado.</p>
+          <p class="arb-tab-fundamento" data-i18n="solucoes.mediacao.fundamento">Prevista na Lei nº 13.140/2015, a mediação é autocompositiva, voluntária e confidencial. O acordo homologado pode ser executado judicialmente, reduzindo custos, prazos e desgaste entre as partes, especialmente em disputas comerciais e contratuais.</p>
+          <ul class="arb-tab-list">
+            <li data-i18n="solucoes.mediacao.li1">Procedimento 100% digital, com sessões por videoconferência</li>
+            <li data-i18n="solucoes.mediacao.li2">Mediadores neutros e capacitados</li>
+            <li data-i18n="solucoes.mediacao.li3">Ideal para preservar relações comerciais e societárias</li>
+          </ul>
+          <div class="arb-tab-links">
+            <a href="frontend/pages/login.html?tab=signup" class="btn-arb btn-arb-primary" data-i18n="solucoes.arbitragem.cta.more">saiba mais</a>
+            <a href="frontend/pages/custas.html" class="btn-arb btn-arb-outline" data-i18n="solucoes.mediacao.cta.custas">custas da mediação</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="arb-tab-panel arb-tab-panel--text" data-panel="arbitros">
+        <div class="arb-tab-content">
+          <h3 data-i18n="solucoes.tab.arbitros">Solução para árbitros</h3>
+          <p data-i18n="solucoes.arbitros.p1">Plataforma segura e com tecnologia de ponta para conduzir procedimentos arbitrais em que você foi designado, com controle total do fluxo processual.</p>
+          <p class="arb-tab-fundamento" data-i18n="solucoes.arbitros.fundamento">O árbitro ad hoc e o colegiado arbitral exigem ferramentas que garantam organização documental, prazos, sigilo e rastreabilidade. A ARBITRAJUS centraliza petições, atas, laudos e decisões em ambiente criptografado, alinhado às melhores práticas de governança arbitral.</p>
+          <ul class="arb-tab-list">
+            <li data-i18n="solucoes.arbitros.li1">Gestão de prazos, audiências e comunicações entre as partes</li>
+            <li data-i18n="solucoes.arbitros.li2">Repositório seguro de documentos e provas digitais</li>
+            <li data-i18n="solucoes.arbitros.li3">Relatórios e acompanhamento em tempo real do procedimento</li>
+          </ul>
+          <div class="arb-tab-links">
+            <a href="frontend/pages/credenciamento.html" class="btn-arb btn-arb-primary" data-i18n="solucoes.arbitragem.cta.more">saiba mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="arb-tab-panel arb-tab-panel--text" data-panel="conciliacao">
+        <div class="arb-tab-content">
+          <h3 data-i18n="header.search.suggestion.conciliacao">Conciliação</h3>
+          <p data-i18n="solucoes.conciliacao.p1">O caminho mais ágil para o acordo. Com auxílio de conciliador qualificado, as partes buscam solução prática e imediata, em ambiente reservado e 100% digital.</p>
+          <p class="arb-tab-fundamento" data-i18n="solucoes.conciliacao.fundamento">Prevista no Código de Processo Civil e amplamente utilizada nos CEJUSCs e na justiça multiportas, a conciliação é método autocompositivo ideal para reduzir filas, custos e tempo de resolução, especialmente em conflitos consumeristas, trabalhistas e contratuais de menor complexidade.</p>
+          <ul class="arb-tab-list">
+            <li data-i18n="solucoes.conciliacao.li1">Procedimento ágil, com foco em acordo rápido entre as partes</li>
+            <li data-i18n="solucoes.conciliacao.li2">Conciliadores credenciados e experientes</li>
+            <li data-i18n="solucoes.conciliacao.li3">Porta de entrada natural para mediação ou arbitragem, se necessário</li>
+          </ul>
+          <div class="arb-tab-links">
+            <a href="frontend/pages/login.html?tab=signup" class="btn-arb btn-arb-primary" data-i18n="solucoes.arbitragem.cta.more">saiba mais</a>
+            <a href="frontend/pages/custas.html" class="btn-arb btn-arb-outline" data-i18n="solucoes.conciliacao.cta.custas">custas da conciliação</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Setores -->
+  <section class="arb-section arb-setores" id="setores">
+    <div class="container">
+      <div class="arb-setores-head">
+        <div class="arb-setores-head-text">
+          <p class="arb-setores-eyebrow" data-i18n="setores.eyebrow">Setores atendidos</p>
+          <h2 class="arb-section-title" data-i18n="setores.title">Possibilidades de atuação</h2>
+          <p class="arb-section-lead" data-i18n="setores.lead">Procedimentos estruturados para os principais setores da economia brasileira.</p>
+        </div>
+        <div class="arb-setores-stat">
+          <strong>9</strong>
+          <span data-i18n="setores.stat.label">áreas especializadas</span>
+        </div>
+      </div>
+      <div class="arb-setores-grid" id="setores-grid">
+        <article class="arb-setor-card" data-setor="Imobiliária">
+          <div class="arb-setor-card-icon"><i class="fas fa-building" aria-hidden="true"></i></div>
+          <h3 class="arb-setor-card-title"><span data-i18n="nav.mega.setores.imobiliaria">Imobiliária</span></h3>
+          <span class="arb-setor-card-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+        </article>
+        <article class="arb-setor-card" data-setor="Infraestrutura">
+          <div class="arb-setor-card-icon"><i class="fas fa-hard-hat" aria-hidden="true"></i></div>
+          <h3 class="arb-setor-card-title"><span data-i18n="nav.mega.setores.infraestrutura">Infraestrutura / Construção</span></h3>
+          <span class="arb-setor-card-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+        </article>
+        <article class="arb-setor-card" data-setor="Societário">
+          <div class="arb-setor-card-icon"><i class="fas fa-chart-pie" aria-hidden="true"></i></div>
+          <h3 class="arb-setor-card-title"><span data-i18n="nav.mega.setores.societario">Societário</span></h3>
+          <span class="arb-setor-card-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+        </article>
+        <article class="arb-setor-card" data-setor="Saúde">
+          <div class="arb-setor-card-icon"><i class="fas fa-heart-pulse" aria-hidden="true"></i></div>
+          <h3 class="arb-setor-card-title"><span data-i18n="nav.mega.setores.saude">Saúde</span></h3>
+          <span class="arb-setor-card-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+        </article>
+        <article class="arb-setor-card" data-setor="Energia">
+          <div class="arb-setor-card-icon"><i class="fas fa-bolt" aria-hidden="true"></i></div>
+          <h3 class="arb-setor-card-title"><span data-i18n="nav.mega.setores.energia">Energia</span></h3>
+          <span class="arb-setor-card-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+        </article>
+        <article class="arb-setor-card" data-setor="Contratual">
+          <div class="arb-setor-card-icon"><i class="fas fa-file-contract" aria-hidden="true"></i></div>
+          <h3 class="arb-setor-card-title"><span data-i18n="nav.mega.setores.contratual">Contratual</span></h3>
+          <span class="arb-setor-card-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+        </article>
+        <article class="arb-setor-card" data-setor="Trabalhista">
+          <div class="arb-setor-card-icon"><i class="fas fa-briefcase" aria-hidden="true"></i></div>
+          <h3 class="arb-setor-card-title"><span data-i18n="nav.mega.setores.trabalhista">Trabalhista</span></h3>
+          <span class="arb-setor-card-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+        </article>
+        <article class="arb-setor-card" data-setor="Administração pública">
+          <div class="arb-setor-card-icon"><i class="fas fa-landmark" aria-hidden="true"></i></div>
+          <h3 class="arb-setor-card-title"><span data-i18n="nav.mega.setores.adminPublica">Administração pública</span></h3>
+          <span class="arb-setor-card-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+        </article>
+        <article class="arb-setor-card" data-setor="Franquias">
+          <div class="arb-setor-card-icon"><i class="fas fa-store" aria-hidden="true"></i></div>
+          <h3 class="arb-setor-card-title"><span data-i18n="nav.mega.setores.franquias">Franquias</span></h3>
+          <span class="arb-setor-card-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre + CTA plataforma -->
+  <section class="arb-section arb-section-alt" id="plataforma-cta">
+    <div class="container">
+      <div class="arb-about-block">
+        <div>
+          <h2 class="arb-section-title" data-i18n="nav.mega.empresa.sobre.title">Sobre a ARBITRAJUS</h2>
+          <p data-i18n="plataformaCta.p1">Somos a infraestrutura nacional de conciliação, mediação e arbitragem online. Acreditamos que conflitos podem ser resolvidos de forma célere, justa e transparente.</p>
+          <p data-i18n="plataformaCta.p2">Democratizamos o acesso aos métodos consensuais com tecnologia, governança e equipe especializada em todo o território nacional.</p>
+        </div>
+        <div class="arb-highlight-box">
+          <h3 data-i18n="plataformaCta.highlight.title">+ de 22.000</h3>
+          <p data-i18n="plataformaCta.highlight.text">processos de conciliação, mediação e arbitragem online</p>
+          <a href="frontend/pages/login.html" class="btn-arb btn-arb-white" style="margin-top:1.5rem;" data-i18n="plataformaCta.cta">CONHECER PLATAFORMA</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipe -->
+  <section class="arb-section arb-professionals" id="equipe">
+    <div class="container">
+      <div class="arb-professionals-head">
+        <div class="arb-professionals-head-text">
+          <p class="arb-professionals-eyebrow" data-i18n="equipe.eyebrow">Corpo técnico</p>
+          <h2 class="arb-section-title" data-i18n="equipe.title">Árbitros e mediadores credenciados</h2>
+          <p class="arb-section-lead" data-i18n="equipe.lead">Profissionais habilitados para conduzir procedimentos arbitrais e de mediação na plataforma, com experiência comprovada em disputas contratuais, societárias e regulatórias.</p>
+        </div>
+        <div class="arb-professionals-stats">
+          <div class="arb-professionals-stat">
+            <strong>120+</strong>
+            <span data-i18n="equipe.stat.rede">Profissionais na rede</span>
+          </div>
+          <div class="arb-professionals-stat">
+            <strong>9</strong>
+            <span data-i18n="equipe.stat.areas">Áreas de atuação</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="arb-professionals-toolbar">
+        <div class="arb-professionals-filters" role="tablist" aria-label="Filtrar profissionais" data-i18n-aria="equipe.filters.aria">
+          <button type="button" class="arb-professionals-filter active" data-filter="all" data-i18n="equipe.filter.all">Todos</button>
+          <button type="button" class="arb-professionals-filter" data-filter="arbitro" data-i18n="equipe.filter.arbitros">Árbitros</button>
+          <button type="button" class="arb-professionals-filter" data-filter="mediador" data-i18n="equipe.filter.mediadores">Mediadores</button>
+        </div>
+        <a href="frontend/pages/login.html" class="arb-professionals-link"><span data-i18n="equipe.link.lista">Acessar lista completa</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+
+      <div class="arb-professionals-grid">
+        <article class="arb-professional-card" data-role="mediador">
+          <div class="arb-professional-card-top">
+            <img src="frontend/assets/img/lagix-demo02/slider-review1.jpg" alt="Helen Carter" class="arb-professional-avatar" width="56" height="56" loading="lazy" decoding="async">
+            <div>
+              <h3 class="arb-professional-name" data-i18n="equipe.card1.name">Helen Carter</h3>
+              <p class="arb-professional-role" data-i18n="equipe.card1.role">Mediação societária e imobiliária</p>
+            </div>
+            <span class="arb-professional-badge arb-professional-badge--mediador" data-i18n="equipe.badge.mediadora">Mediadora</span>
+          </div>
+          <p class="arb-professional-bio" data-i18n="equipe.card1.bio">Especialista em mediação societária e imobiliária, com atuação em acordos complexos entre sócios e incorporadoras.</p>
+          <div class="arb-professional-tags">
+            <span data-i18n="nav.mega.setores.societario">Societário</span>
+            <span data-i18n="equipe.card1.tag2">Imobiliário</span>
+          </div>
+          <div class="arb-professional-meta">
+            <span><i class="fas fa-briefcase" aria-hidden="true"></i> <span data-i18n="equipe.card1.experience">18 anos</span></span>
+          </div>
+        </article>
+
+        <article class="arb-professional-card" data-role="arbitro">
+          <div class="arb-professional-card-top">
+            <img src="frontend/assets/img/lagix-demo02/slider-review2.jpg" alt="Andrew Kinzer" class="arb-professional-avatar" width="56" height="56" loading="lazy" decoding="async">
+            <div>
+              <h3 class="arb-professional-name" data-i18n="equipe.card2.name">Andrew Kinzer</h3>
+              <p class="arb-professional-role" data-i18n="equipe.card2.role">Arbitragem contratual e infraestrutura</p>
+            </div>
+            <span class="arb-professional-badge arb-professional-badge--arbitro" data-i18n="equipe.badge.arbitro">Árbitro</span>
+          </div>
+          <p class="arb-professional-bio" data-i18n="equipe.card2.bio">Árbitro em disputas contratuais e de infraestrutura, com experiência em obras, concessões e cadeias de fornecimento.</p>
+          <div class="arb-professional-tags">
+            <span data-i18n="nav.mega.setores.contratual">Contratual</span>
+            <span data-i18n="equipe.card2.tag2">Infraestrutura</span>
+          </div>
+          <div class="arb-professional-meta">
+            <span><i class="fas fa-briefcase" aria-hidden="true"></i> <span data-i18n="equipe.card2.experience">22 anos</span></span>
+          </div>
+        </article>
+
+        <article class="arb-professional-card" data-role="arbitro">
+          <div class="arb-professional-card-top">
+            <img src="frontend/assets/img/lagix-demo02/slider-review5.jpg" alt="Robert Allen" class="arb-professional-avatar" width="56" height="56" loading="lazy" decoding="async">
+            <div>
+              <h3 class="arb-professional-name" data-i18n="equipe.card3.name">Robert Allen</h3>
+              <p class="arb-professional-role" data-i18n="equipe.card3.role">Arbitragem em energia e setor público</p>
+            </div>
+            <span class="arb-professional-badge arb-professional-badge--arbitro" data-i18n="equipe.badge.arbitro">Árbitro</span>
+          </div>
+          <p class="arb-professional-bio" data-i18n="equipe.card3.bio">Atua em arbitragens envolvendo energia, regulação e contratos com a administração pública, com foco em execução e compliance.</p>
+          <div class="arb-professional-tags">
+            <span data-i18n="nav.mega.setores.energia">Energia</span>
+            <span data-i18n="nav.mega.setores.adminPublica">Administração pública</span>
+          </div>
+          <div class="arb-professional-meta">
+            <span><i class="fas fa-briefcase" aria-hidden="true"></i> <span data-i18n="equipe.card3.experience">25 anos</span></span>
+          </div>
+        </article>
+
+        <article class="arb-professional-card" data-role="mediador">
+          <div class="arb-professional-card-top">
+            <img src="frontend/assets/img/lagix-demo02/slider-review3.jpg" alt="Marina Hayes" class="arb-professional-avatar" width="56" height="56" loading="lazy" decoding="async">
+            <div>
+              <h3 class="arb-professional-name" data-i18n="equipe.card4.name">Marina Hayes</h3>
+              <p class="arb-professional-role" data-i18n="equipe.card4.role">Mediação trabalhista e franquias</p>
+            </div>
+            <span class="arb-professional-badge arb-professional-badge--mediador" data-i18n="equipe.badge.mediadora">Mediadora</span>
+          </div>
+          <p class="arb-professional-bio" data-i18n="equipe.card4.bio">Mediadora em conflitos trabalhistas e de franquias, com histórico de acordos preservando continuidade operacional das partes.</p>
+          <div class="arb-professional-tags">
+            <span data-i18n="nav.mega.setores.trabalhista">Trabalhista</span>
+            <span data-i18n="nav.mega.setores.franquias">Franquias</span>
+          </div>
+          <div class="arb-professional-meta">
+            <span><i class="fas fa-briefcase" aria-hidden="true"></i> <span data-i18n="equipe.card4.experience">15 anos</span></span>
+          </div>
+        </article>
+      </div>
+
+      <div class="arb-professionals-cta">
+        <div>
+          <h3 class="arb-professionals-cta-title" data-i18n="equipe.cta.title">Faça parte do corpo técnico ARBITRAJUS</h3>
+          <p class="arb-professionals-cta-text" data-i18n="equipe.cta.text">Árbitros e mediadores podem solicitar credenciamento para atuar em procedimentos digitais em todo o Brasil.</p>
+        </div>
+        <div class="arb-professionals-cta-actions">
+          <a href="frontend/pages/login.html" class="btn-arb btn-arb-primary" data-i18n="equipe.cta.consultar">Consultar profissionais</a>
+          <a href="frontend/pages/credenciamento.html" class="btn-arb btn-arb-outline" data-i18n="equipe.cta.credenciar">Solicitar credenciamento</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="arb-section arb-section-alt" id="blog">
+    <div class="container">
+      <h2 class="arb-section-title text-center" data-i18n="blog.title">Confira os últimos artigos do nosso blog</h2>
+      <div class="arb-blog-grid" id="blog-grid">
+        <article class="arb-blog-card">
+          <div class="arb-blog-thumb">
+            <img src="frontend/assets/img/blog/blog-arbitros.jpg" alt="" width="800" height="534" loading="lazy" decoding="async">
+          </div>
+          <div class="arb-blog-body">
+            <h4 data-i18n="nav.mega.solucoes.arbitros.title">Soluções para árbitros ad hoc</h4>
+            <p data-i18n="blog.card1.excerpt">Plataforma para árbitros ad hoc resolver disputas com eficiência e tecnologia de ponta.</p>
+            <a href="#blog" class="btn-arb btn-arb-outline" style="padding:0.5rem 1rem;font-size:0.75rem;" data-i18n="blog.readMore">LER MAIS</a>
+          </div>
+        </article>
+        <article class="arb-blog-card">
+          <div class="arb-blog-thumb">
+            <img src="frontend/assets/img/blog/blog-mediacao.jpg" alt="" width="800" height="534" loading="lazy" decoding="async">
+          </div>
+          <div class="arb-blog-body">
+            <h4 data-i18n="blog.card2.title">Mediação online com a ARBITRAJUS</h4>
+            <p data-i18n="blog.card2.excerpt">A forma mais moderna de solucionar conflitos. Economize tempo e preserve relações.</p>
+            <a href="#blog" class="btn-arb btn-arb-outline" style="padding:0.5rem 1rem;font-size:0.75rem;" data-i18n="blog.readMore">LER MAIS</a>
+          </div>
+        </article>
+        <article class="arb-blog-card">
+          <div class="arb-blog-thumb">
+            <img src="frontend/assets/img/blog/blog-clausula.jpg" alt="" width="800" height="534" loading="lazy" decoding="async">
+          </div>
+          <div class="arb-blog-body">
+            <h4 data-i18n="blog.card3.title">Cláusula arbitral nos contratos</h4>
+            <p data-i18n="blog.card3.excerpt">Como incluir a cláusula ARBITRAJUS e garantir resolução extrajudicial eficiente.</p>
+            <a href="#blog" class="btn-arb btn-arb-outline" style="padding:0.5rem 1rem;font-size:0.75rem;" data-i18n="blog.readMore">LER MAIS</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notificação arbitral -->
+  <section class="arb-notif-cta">
+    <div class="container">
+      <h2 data-i18n="notificacaoCta.title">Alguém entrou com um processo arbitral contra você?</h2>
+      <p data-i18n="notificacaoCta.text">Se você recebeu uma notificação arbitral, não há motivo para preocupação. Com apenas algumas etapas, você consegue se defender na plataforma ARBITRAJUS.</p>
+      <a href="frontend/pages/notificacao.html" class="btn-arb btn-arb-white" data-i18n="notificacaoCta.cta">SAIBA COMO RESPONDER</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="arb-section arb-section-alt" id="faq">
+    <div class="container arb-faq-wrap">
+      <h2 class="arb-section-title text-center" data-i18n="nav.mega.empresa.faq.title">Perguntas frequentes</h2>
+      <p class="arb-section-lead text-center mx-auto" data-i18n="faq.lead">Respostas sobre conciliação, mediação, arbitragem e uso da plataforma ARBITRAJUS.</p>
+
+      <div class="arb-faq-list">
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q1">O que é conciliação online?</summary>
+          <div class="arb-faq-answer"><p data-i18n="faq.a1">É o procedimento conduzido na plataforma digital em que um conciliador qualificado auxilia as partes a buscar acordo de forma ágil, conforme os princípios do Código de Processo Civil e da justiça multiportas.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q2">O que é arbitragem online?</summary>
+          <div class="arb-faq-answer"><p data-i18n="faq.a2">É o procedimento arbitral conduzido integralmente na plataforma digital, desde a instauração até a sentença, com segurança jurídica prevista na Lei nº 9.307/1996.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q3">O que é mediação online?</summary>
+          <div class="arb-faq-answer"><p data-i18n="faq.a3">É o método consensual em que um mediador neutro auxilia as partes a construir um acordo, com sessões por videoconferência e documentação digital, conforme a Lei nº 13.140/2015.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q4">Qual a diferença entre conciliação, mediação e arbitragem?</summary>
+          <div class="arb-faq-answer"><p data-i18n="faq.a4">Na conciliação, o foco é um acordo rápido com auxílio do conciliador. Na mediação, as partes constroem a solução com facilitador neutro. Na arbitragem, árbitros designados proferem decisão vinculante. A ARBITRAJUS oferece os três métodos conforme a natureza do conflito.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q5">Qual a diferença entre arbitragem e mediação?</summary>
+          <div class="arb-faq-answer"><p data-i18n="faq.a5">Na mediação, as partes decidem o desfecho com auxílio do mediador. Na arbitragem, árbitros designados proferem decisão vinculante. Em ambos os casos, a plataforma conduz o procedimento de forma digital e segura.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q6">A sentença arbitral tem força de título executivo?</summary>
+          <div class="arb-faq-answer"><p data-i18n="faq.a6">Sim. Cumpridos os requisitos legais, a sentença arbitral constitui título executivo judicial, nos termos do art. 515, VII, do Código de Processo Civil.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q7">Quanto tempo leva um procedimento?</summary>
+          <div class="arb-faq-answer"><p data-i18n="faq.a7">O prazo varia conforme a complexidade do caso, o número de partes e a cooperação na produção de provas. Casos mais simples tendem a ser concluídos em prazo menor; arbitragens complexas podem estender-se por alguns meses, conforme o regulamento aplicável.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q8">Como funcionam as custas?</summary>
+          <div class="arb-faq-answer"><p data-i18n-html="faq.a8">As custas seguem tabela transparente por faixa de valor da causa, informada antes do início do procedimento.<a href="frontend/pages/custas.html" data-i18n="faq.a8.link">Consulte as custas de conciliação, mediação e arbitragem</a>.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q9">Como iniciar um procedimento na ARBITRAJUS?</summary>
+          <div class="arb-faq-answer"><p data-i18n="faq.a9">Cadastre-se na plataforma, informe os dados das partes e do conflito, anexe os documentos necessários e escolha o método adequado (conciliação, mediação ou arbitragem). A equipe orienta os próximos passos após a análise inicial.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q10">Preciso de advogado para utilizar a plataforma?</summary>
+          <div class="arb-faq-answer"><p data-i18n="faq.a10">O acompanhamento por advogado é recomendado, especialmente em arbitragens e acordos de maior complexidade. A plataforma permite que advogados e partes atuem de forma integrada no mesmo ambiente digital.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q11">Recebi uma notificação arbitral. O que devo fazer?</summary>
+          <div class="arb-faq-answer"><p data-i18n-html="faq.a11">Acesse a plataforma, verifique o conteúdo da notificação e apresente sua defesa dentro do prazo indicado.<a href="frontend/pages/notificacao.html" data-i18n="faq.a11.link">Veja o passo a passo para responder</a>.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q12">Os procedimentos são confidenciais?</summary>
+          <div class="arb-faq-answer"><p data-i18n="faq.a12">Sim. Conciliação, mediação e arbitragem têm caráter reservado, salvo hipóteses previstas em lei ou acordadas pelas partes. A plataforma adota controles de acesso e proteção de dados conforme a LGPD.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q13">É possível conduzir todo o procedimento de forma digital?</summary>
+          <div class="arb-faq-answer"><p data-i18n="faq.a13">Sim. Petições, documentos, notificações e audiências podem ser realizados integralmente online, com assinatura e trilha de auditoria dos atos praticados na plataforma.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q14">Quem são os árbitros e mediadores da plataforma?</summary>
+          <div class="arb-faq-answer"><p data-i18n-html="faq.a14">São profissionais credenciados com experiência nas áreas atendidas pela ARBITRAJUS. A lista de árbitros e mediadores está disponível na seção<a href="#equipe" data-i18n="equipe.eyebrow">Corpo técnico</a> e na área logada da plataforma.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q15">A ARBITRAJUS atende pessoas físicas e jurídicas?</summary>
+          <div class="arb-faq-answer"><p data-i18n="faq.a15">Sim. A plataforma é utilizada por empresas, empreendedores, profissionais liberais e pessoas físicas em conflitos contratuais, societários, consumeristas e de outras naturezas admitidas pelos regulamentos.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q16">Como validar laudos e decisões emitidos pela plataforma?</summary>
+          <div class="arb-faq-answer"><p data-i18n-html="faq.a16">Utilize o<a href="frontend/pages/validador.html" data-i18n="nav.mega.plataforma.validador.title">Validador de documentos</a> informando o código de autenticidade constante no documento para confirmar sua origem e integridade.</p></div>
+        </details>
+        <details class="arb-faq-item">
+          <summary class="arb-faq-question" data-i18n="faq.q17">Como entrar em contato com a equipe ARBITRAJUS?</summary>
+          <div class="arb-faq-answer"><p data-i18n-html="faq.a17">Utilize o formulário na seção<a href="#contato" data-i18n="nav.contato">Contato</a> ou consulte os canais indicados no rodapé do site.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="arb-contact" id="contato">
+    <div class="container">
+      <div class="arb-contact-grid">
+        <div class="arb-contact-intro">
+          <p class="arb-contact-eyebrow" data-i18n="nav.contato">Contato</p>
+          <h2 class="arb-section-title" data-i18n="contato.title">Fale com a ARBITRAJUS</h2>
+          <p class="arb-section-lead" data-i18n="contato.lead">Tire dúvidas sobre conciliação, mediação, arbitragem ou credenciamento. Nossa equipe orienta empresas, advogados e partes interessadas em resolver conflitos de forma adequada.</p>
+          <ul class="arb-contact-channels">
+            <li>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <div>
+                <strong data-i18n="contato.channel.email">E-mail</strong>
+                <a href="mailto:contacto@arbitrajus.com">contacto@arbitrajus.com</a>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-globe" aria-hidden="true"></i>
+              <div>
+                <strong data-i18n="contato.channel.atendimento">Atendimento</strong>
+                <span data-i18n="contato.channel.atendimento.value">Online Dispute Resolution</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="arb-contact-panels">
+          <div class="arb-contact-panel">
+            <h3 class="arb-contact-panel-title" data-i18n="contato.form.title">Envie sua mensagem</h3>
+            <p class="arb-contact-panel-lead" data-i18n="contato.form.lead">Retornaremos com orientações sobre procedimentos, custas ou parcerias institucionais.</p>
+            <form id="contact-form" class="arb-contact-form">
+              <div class="arb-form-field">
+                <label for="contact-nome" data-i18n="contato.form.nome">Nome completo</label>
+                <input type="text" id="contact-nome" name="nome" required autocomplete="name">
+              </div>
+              <div class="arb-form-field">
+                <label for="contact-email" data-i18n="contato.channel.email">E-mail</label>
+                <input type="email" id="contact-email" name="email" required autocomplete="email">
+              </div>
+              <div class="arb-form-field">
+                <label for="contact-mensagem" data-i18n="contato.form.mensagem">Mensagem</label>
+                <textarea id="contact-mensagem" name="mensagem" rows="4" required placeholder="Descreva brevemente sua demanda" data-i18n-placeholder="contato.form.placeholder"></textarea>
+              </div>
+              <button type="submit" class="btn-arb btn-arb-primary arb-contact-submit" data-i18n="contato.form.submit">Enviar mensagem</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="arb-footer">
+    <div class="container">
+      <div class="arb-footer-grid">
+        <div class="arb-footer-col arb-footer-contacts">
+          <h4 data-i18n="footer.contacts.title">Nossos contatos</h4>
+          <p><strong data-i18n="contato.channel.email">E-mail</strong><br><a href="mailto:contacto@arbitrajus.com">contacto@arbitrajus.com</a></p>
+          <p><strong data-i18n="footer.contacts.cnpj">CNPJ:</strong><br>65.992.148/0001-03</p>
+        </div>
+        <div class="arb-footer-col">
+          <h4 data-i18n="footer.sitemap.title">Mapa do site</h4>
+          <a href="frontend/pages/login.html" data-i18n="footer.sitemap.plataforma">Acesse a Plataforma</a>
+          <a href="#solucoes" data-i18n="footer.sitemap.clausula">Cláusula de Arbitragem</a>
+          <a href="#solucoes" data-i18n="footer.sitemap.termos">Termos de Uso</a>
+          <a href="#solucoes" data-i18n="footer.sitemap.regulamentos">Regulamentos</a>
+          <a href="frontend/pages/privacidade.html" data-i18n="footer.sitemap.privacidade">Política de Privacidade</a>
+          <a href="frontend/pages/validador.html" data-i18n="nav.mega.plataforma.validador.title">Validador de documentos</a>
+          <a href="frontend/pages/notificacao.html" data-i18n="nav.mega.solucoes.recebi.title">Recebi uma notificação arbitral</a>
+          <a href="#instituicoes" data-i18n="footer.sitemap.instituicoes">Instituições parceiras</a>
+          <a href="#ecossistema" data-i18n="nav.mega.empresa.sobre.title">Sobre a ARBITRAJUS</a>
+          <a href="#equipe" data-i18n="footer.sitemap.arbitros">Lista de árbitros</a>
+        </div>
+        <div class="arb-footer-col arb-footer-platform">
+          <div class="arb-footer-platform-row">
+            <div class="arb-footer-platform-main">
+              <h4 data-i18n="nav.plataforma">Plataforma</h4>
+              <a href="frontend/pages/login.html" data-i18n="footer.platform.area">Área do cliente</a>
+              <a href="frontend/pages/abrir-procedimento.html" data-i18n="nav.mega.plataforma.cadastrar.title">Cadastrar caso</a>
+              <a href="frontend/pages/credenciamento.html" data-i18n="nav.mega.plataforma.trabalhe.title">Trabalhe conosco</a>
+              <div class="arb-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="arb-footer-selo-sustentavel">
+              <img src="frontend/assets/img/ODS-logo_onu.png" alt="Objetivos de Desenvolvimento Sustentável · ONU" data-i18n-alt="footer.ods.alt" width="140" height="140" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arb-footer-bottom">
+        <span class="arb-footer-copy" data-i18n="footer.copy">Copyright © 2026 ARBITRAJUS</span>
+        <span class="arb-footer-cnpj" data-i18n="nav.mega.empresa.feature.tag">CNPJ 65.992.148/0001-03</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal sucesso (como Arbtrato) -->
+  <div class="arb-modal-overlay" id="arb-success-modal">
+    <div class="arb-modal">
+      <button type="button" class="arb-modal-close" data-modal-close aria-label="Fechar" data-i18n-aria="modal.closeAria">&times;</button>
+      <div class="arb-modal-icon"><img src="frontend/assets/img/logo-2.png" alt="" width="80" height="80" style="object-fit:contain;"></div>
+      <h3 data-i18n="modal.success.title">Recebemos a sua mensagem!</h3>
+      <p data-i18n="modal.success.text">Em breve, nosso time entrará em contato com um retorno.</p>
+      <a href="index.html" class="btn-arb btn-arb-primary" data-modal-close style="margin-top:1rem;" data-i18n="modal.success.cta">voltar ao site</a>
+    </div>
+  </div>
+
+  <script type="module" src="frontend/js/widgets.js?v=20260723c"></script>
+  <script type="module" src="frontend/js/arbtrato.js?v=20261007k"></script>
 </body>
 </html>

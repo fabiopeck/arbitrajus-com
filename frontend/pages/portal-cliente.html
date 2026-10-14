@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico?v=20260818" sizes="any">
+  <link rel="icon" type="image/png" href="/frontend/assets/img/favicon-32.png?v=20260818" sizes="32x32">
+  <link rel="apple-touch-icon" href="/frontend/assets/img/apple-touch-icon.png?v=20260818">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal ODR | Unimed Lavras</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="../css/portal-cliente.css">
+</head>
+<body class="app-body">
+  <div class="dashboard portal-shell">
+    <aside class="sidebar">
+      <a href="../../index.html" class="sidebar-logo">ARBITRAJUS</a>
+      <p class="portal-side-client">Unimed Lavras</p>
+      <nav>
+        <a href="portal-cliente.html" class="active"><i class="fas fa-chart-line"></i> Portal ODR</a>
+        <a href="dashboard.html"><i class="fas fa-gauge-high"></i> Painel geral</a>
+        <a href="abrir-procedimento.html"><i class="fas fa-plus"></i> Novo procedimento</a>
+        <a href="#funil"><i class="fas fa-table"></i> Funil operacional</a>
+      </nav>
+    </aside>
+
+    <main class="main-content portal-main">
+      <div class="topbar">
+        <div>
+          <p class="portal-kicker">Portal ODR corporativo, demonstracao comercial</p>
+          <h1>Unimed Lavras</h1>
+          <p class="portal-sub">Comarca de Lavras/MG. CNPJ 23.107.215/0001-10. Captura no TJMG antes da citacao.</p>
+        </div>
+        <div class="user-badge">
+          <i class="fas fa-building" style="color:#003366;"></i>
+          <span>Juridico corporativo</span>
+        </div>
+      </div>
+
+      <section class="portal-block">
+        <h2>Metricas de impacto financeiro</h2>
+        <div class="portal-metrics">
+          <article class="portal-card portal-card-green">
+            <span class="portal-card-label">Economia gerada</span>
+            <strong>R$ 1.847.320,00</strong>
+            <small>Pedidos dos autores menos o valor fechado nos acordos</small>
+          </article>
+          <article class="portal-card portal-card-navy">
+            <span class="portal-card-label">Caixa liberado</span>
+            <strong>R$ 3.215.000,00</strong>
+            <small>Provisao extinta apos encerramento dos casos</small>
+          </article>
+          <article class="portal-card portal-card-gold">
+            <span class="portal-card-label">Taxa de acordo</span>
+            <strong>48% de exito</strong>
+            <small>De 126 casos capturados no trimestre, 61 resolvidos amigavelmente</small>
+          </article>
+          <article class="portal-card portal-card-blue">
+            <span class="portal-card-label">Tempo medio de resolucao</span>
+            <strong>4,2 dias</strong>
+            <small>Da captura no DataJud ao acordo. Na Justica tradicional, meses</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="portal-block">
+        <h2>Graficos de inteligencia competitiva</h2>
+        <div class="portal-charts">
+          <div class="portal-chart-card">
+            <h3>Causas dos processos</h3>
+            <p>Onde o negocio gera litigio. Corrija a raiz, nao so o processo.</p>
+            <canvas id="chart-causas" height="220"></canvas>
+          </div>
+          <div class="portal-chart-card">
+            <h3>Status do funil (mes atual)</h3>
+            <p>Onde estao os 42 casos de agosto em Lavras.</p>
+            <canvas id="chart-funil" height="220"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section class="portal-block" id="funil">
+        <div class="portal-table-head">
+          <div>
+            <h2>Funil operacional</h2>
+            <p>Casos capturados no TJMG para a Unimed Lavras. O selo verde pisca quando o processo ainda nao foi citado.</p>
+          </div>
+        </div>
+        <div class="portal-table-wrap">
+          <table class="portal-table">
+            <thead>
+              <tr>
+                <th>Processo</th>
+                <th>Autor e advogado</th>
+                <th>Valor da causa vs alcada</th>
+                <th>Status</th>
+                <th>Acoes</th>
+              </tr>
+            </thead>
+            <tbody id="portal-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="portal-modal" class="modal-overlay">
+    <div class="modal portal-modal">
+      <div id="portal-modal-body"></div>
+      <button type="button" class="btn btn-outline" id="portal-modal-close">Fechar</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script type="module" src="../js/portal-cliente.js"></script>
+</body>
+</html>
