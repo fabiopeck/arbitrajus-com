@@ -2071,8 +2071,8 @@ export default {
   },
   "login.brand.lead": {
     "pt": "A maior plataforma de conciliação, mediação e arbitragem do Brasil. Acesse seu painel para gerenciar casos, documentos e negociações.",
-    "en": "The leading U.S. platform for conciliation, mediation and arbitration. Access your dashboard to manage cases, documents and negotiations.",
-    "es": "La plataforma líder en EE. UU. de conciliación, mediación y arbitraje. Acceda a su panel para gestionar casos, documentos y negociaciones."
+    "en": "The leading U.S. platform for online dispute resolution. Access your dashboard to manage cases, documents and negotiations.",
+    "es": "La plataforma líder en EE. UU. de resolución de disputas en línea. Acceda a su panel para gestionar casos, documentos y negociaciones."
   },
   "login.feature.gestao": {
     "pt": "Gestão completa de procedimentos",
