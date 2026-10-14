@@ -1523,7 +1523,7 @@ ul { list-style: none; margin: 0; padding: 0; }
     gap: 1.5rem;
   }
 
-  /* Mobile: reviews/customer first, then lead + CTA — full content width */
+  /* Mobile: reviews/customer first, then lead + CTA , full content width */
   .arb-lagix-hero-col--stats,
   .arb-lagix-hero-col--text {
     width: 100%;

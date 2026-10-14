@@ -261,7 +261,7 @@ export default {
   },
   "nav.mega.plataforma.feature.text": {
     "pt": "Protocolo, prazos, audiências, custas e rede credenciada, da abertura do caso ao termo de encerramento.",
-    "en": "Filing, deadlines, hearings, fees and accredited network - from case opening to closing statement.",
+    "en": "Filing, deadlines, hearings, fees and accredited network, from case opening to closing statement.",
     "es": "Protocolo, plazos, audiencias, costas y red acreditada, desde la apertura del caso hasta el acta de cierre."
   },
   "nav.mega.plataforma.feature.cta": {
@@ -426,7 +426,7 @@ export default {
   },
   "nav.mega.setores.intro.text": {
     "pt": "Atuamos em conflitos contratuais, societários e regulatórios com equipes especializadas por segmento.",
-    "en": "We focus on digital verticals with frequent payment and scope disputes - so you can resolve faster without waiting months for enterprise contracts.",
+    "en": "We focus on digital verticals with frequent payment and scope disputes, so you can resolve faster without waiting months for enterprise contracts.",
     "es": "Nos enfocamos en verticales digitales con disputas frecuentes de pago y alcance."
   },
   "nav.mega.setores.imobiliaria": {
@@ -1156,8 +1156,8 @@ export default {
   },
   "solucoes.arbitragem.fundamento": {
     "pt": "Fundamentada na Lei nº 9.307/1996, a arbitragem é método consensual de solução de controvérsias por meio de decisão imparcial de árbitros escolhidos pelas partes, com a mesma eficácia de sentença judicial quando cumpridos os requisitos legais.",
-    "en": "Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. Arbitration is a consensual method of dispute resolution through an impartial decision by arbitrators chosen by the parties. Digital awards issued by ARBITRAJUS have legal effect and may be enforced in U.S. federal courts.",
-    "es": "Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. El arbitraje es un método consensual de resolución de disputas mediante decisión imparcial de árbitros elegidos por las partes. El laudo digital emitido por ARBITRAJUS tiene validez legal y puede ejecutarse en cortes federales de EE. UU."
+    "en": "Fully compliant with the Federal Arbitration Act (FAA), 9 U.S.C. § 1. Arbitration is a consensual method of dispute resolution through an impartial decision by arbitrators chosen by the parties. Digital awards issued by ARBITRAJUS have legal effect and may be enforced in U.S. federal courts.",
+    "es": "Fully compliant with the Federal Arbitration Act (FAA), 9 U.S.C. § 1. El arbitraje es un método consensual de resolución de disputas mediante decisión imparcial de árbitros elegidos por las partes. El laudo digital emitido por ARBITRAJUS tiene validez legal y puede ejecutarse en cortes federales de EE. UU."
   },
   "solucoes.arbitragem.cta.more": {
     "pt": "abrir procedimento",
@@ -1181,7 +1181,7 @@ export default {
   },
   "solucoes.mediacao.fundamento": {
     "pt": "Prevista na Lei nº 13.140/2015, a mediação é autocompositiva, voluntária e confidencial. O acordo homologado pode ser executado judicialmente, reduzindo custos, prazos e desgaste entre as partes, especialmente em disputas comerciais e contratuais.",
-    "en": "Standard Commercial Mediation Framework. Mediation is voluntary, confidential and party-driven. Settlements can be documented and enforced under applicable law, reducing costs, timelines and strain - especially in commercial and contractual disputes.",
+    "en": "Standard Commercial Mediation Framework. Mediation is voluntary, confidential and party-driven. Settlements can be documented and enforced under applicable law, reducing costs, timelines and strain, especially in commercial and contractual disputes.",
     "es": "Standard Commercial Mediation Framework. La mediación es voluntaria, confidencial y orientada por las partes. El acuerdo alcanzado puede documentarse y ejecutarse conforme al derecho aplicable."
   },
   "solucoes.mediacao.li1": {
@@ -1661,8 +1661,8 @@ export default {
   },
   "faq.a2": {
     "pt": "É o procedimento arbitral conduzido integralmente na plataforma digital, desde a instauração até a sentença, com segurança jurídica prevista na Lei nº 9.307/1996.",
-    "en": "It is a fully digital arbitral proceeding, from filing to award. Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. ARBITRAJUS digital awards have legal effect and may be enforced in U.S. federal courts.",
-    "es": "Es el procedimiento arbitral 100% digital, desde la instauración hasta el laudo. Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1."
+    "en": "It is a fully digital arbitral proceeding, from filing to award. Fully compliant with the Federal Arbitration Act (FAA), 9 U.S.C. § 1. ARBITRAJUS digital awards have legal effect and may be enforced in U.S. federal courts.",
+    "es": "Es el procedimiento arbitral 100% digital, desde la instauración hasta el laudo. Fully compliant with the Federal Arbitration Act (FAA), 9 U.S.C. § 1."
   },
   "faq.q3": {
     "pt": "O que é mediação online?",
@@ -1701,8 +1701,8 @@ export default {
   },
   "faq.a6": {
     "pt": "Sim. Cumpridos os requisitos legais, a sentença arbitral constitui título executivo judicial, nos termos do art. 515, VII, do Código de Processo Civil.",
-    "en": "Yes. Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. Digital awards issued by ARBITRAJUS have legal effect and may be enforced in U.S. federal courts.",
-    "es": "Sí. Fully compliant with the Federal Arbitration Act (FAA) - 9 U.S.C. § 1. El laudo digital emitido por ARBITRAJUS tiene validez legal y puede ejecutarse en cortes federales de EE. UU."
+    "en": "Yes. Fully compliant with the Federal Arbitration Act (FAA), 9 U.S.C. § 1. Digital awards issued by ARBITRAJUS have legal effect and may be enforced in U.S. federal courts.",
+    "es": "Sí. Fully compliant with the Federal Arbitration Act (FAA), 9 U.S.C. § 1. El laudo digital emitido por ARBITRAJUS tiene validez legal y puede ejecutarse en cortes federales de EE. UU."
   },
   "faq.q7": {
     "pt": "Quanto tempo leva um procedimento?",
@@ -1771,8 +1771,8 @@ export default {
   },
   "faq.a12": {
     "pt": "Sim. Conciliação, mediação e arbitragem têm caráter reservado, salvo hipóteses previstas em lei ou acordadas pelas partes. A plataforma adota controles de acesso e proteção de dados conforme a LGPD.",
-    "en": "Yes. Conciliation, mediation and arbitration are confidential, except as provided by law or agreed by the parties. The platform applies access controls and data protection - GDPR & US Data Privacy Compliant (including California CCPA).",
-    "es": "Sí. Conciliación, mediación y arbitraje son confidenciales, salvo previsión legal o acuerdo de las partes. La plataforma aplica controles de acceso y protección de datos - GDPR & US Data Privacy Compliant (incluida la CCPA de California)."
+    "en": "Yes. Conciliation, mediation and arbitration are confidential, except as provided by law or agreed by the parties. The platform applies access controls and data protection: GDPR & US Data Privacy Compliant (including California CCPA).",
+    "es": "Sí. Conciliación, mediación y arbitraje son confidenciales, salvo previsión legal o acuerdo de las partes. La plataforma aplica controles de acceso y protección de datos: GDPR & US Data Privacy Compliant (incluida la CCPA de California)."
   },
   "faq.q13": {
     "pt": "É possível conduzir todo o procedimento de forma digital?",
@@ -2571,7 +2571,7 @@ export default {
   },
   "landing.security.reply": {
     "pt": "Operamos sob Lei 9.307/96, Lei 13.140/15 e LGPD, com criptografia e auditoria.",
-    "en": "We operate under the Federal Arbitration Act (FAA) - 9 U.S.C. § 1, the Standard Commercial Mediation Framework, and GDPR & US Data Privacy Compliant standards (including CCPA), with encryption and audit trails.",
+    "en": "We operate under the Federal Arbitration Act (FAA), 9 U.S.C. § 1, the Standard Commercial Mediation Framework, and GDPR & US Data Privacy Compliant standards (including CCPA), with encryption and audit trails.",
     "es": "Operamos bajo el Federal Arbitration Act (FAA), el Standard Commercial Mediation Framework y GDPR & US Data Privacy Compliant."
   },
   "landing.chat.about": {
