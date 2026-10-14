@@ -1445,24 +1445,24 @@
     "es": "Helen Carter"
   },
   "equipe.card1.role": {
-    "pt": "Mediação societária e imobiliária",
-    "en": "Corporate and real-estate mediation",
-    "es": "Mediación societaria e inmobiliaria"
+    "pt": "Commercial & Real Estate Mediation Expert",
+    "en": "Commercial & Real Estate Mediation Expert",
+    "es": "Commercial & Real Estate Mediation Expert"
   },
   "equipe.card1.bio": {
-    "pt": "Especialista em mediação societária e imobiliária, com atuação em acordos complexos entre sócios e incorporadoras.",
-    "en": "Specialist in corporate and real-estate mediation, with experience in complex agreements between partners and developers.",
-    "es": "Especialista en mediación societaria e inmobiliaria, con actuación en acuerdos complejos entre socios e incorporadoras."
+    "pt": "Especialista em mediação comercial e imobiliária, com atuação em acordos complexos entre sócios, investidores e incorporadoras.",
+    "en": "Specialist in commercial and real-estate mediation, with experience in complex agreements between partners, investors and developers.",
+    "es": "Especialista en mediación comercial e inmobiliaria, con experiencia en acuerdos complejos entre socios, inversores e incorporadoras."
   },
   "equipe.card1.tag1": {
-    "pt": "Societário",
-    "en": "Corporate",
-    "es": "Societario"
+    "pt": "Commercial",
+    "en": "Commercial",
+    "es": "Commercial"
   },
   "equipe.card1.tag2": {
-    "pt": "Imobiliário",
+    "pt": "Real estate",
     "en": "Real estate",
-    "es": "Inmobiliario"
+    "es": "Real estate"
   },
   "equipe.card1.experience": {
     "pt": "18 anos",
@@ -1475,24 +1475,24 @@
     "es": "Andrew Kinzer"
   },
   "equipe.card2.role": {
-    "pt": "Arbitragem contratual e infraestrutura",
-    "en": "Contractual and infrastructure arbitration",
-    "es": "Arbitraje contractual e infraestructura"
+    "pt": "B2B Contract & Supply Chain Arbitrator",
+    "en": "B2B Contract & Supply Chain Arbitrator",
+    "es": "B2B Contract & Supply Chain Arbitrator"
   },
   "equipe.card2.bio": {
-    "pt": "Árbitro em disputas contratuais e de infraestrutura, com experiência em obras, concessões e cadeias de fornecimento.",
-    "en": "Arbitrator in contractual and infrastructure disputes, with experience in construction works, concessions and supply chains.",
-    "es": "Árbitro en disputas contractuales y de infraestructura, con experiencia en obras, concesiones y cadenas de suministro."
+    "pt": "Árbitro em disputas contratuais B2B e cadeias de fornecimento, com experiência em obras, concessões e contratos comerciais complexos.",
+    "en": "Arbitrator in B2B contractual and supply-chain disputes, with experience in construction works, concessions and complex commercial contracts.",
+    "es": "Árbitro en disputas contractuales B2B y cadenas de suministro, con experiencia en obras, concesiones y contratos comerciales complejos."
   },
   "equipe.card2.tag1": {
-    "pt": "Contratual",
-    "en": "Contractual",
-    "es": "Contractual"
+    "pt": "B2B Contracts",
+    "en": "B2B Contracts",
+    "es": "B2B Contracts"
   },
   "equipe.card2.tag2": {
-    "pt": "Infraestrutura",
-    "en": "Infrastructure",
-    "es": "Infraestructura"
+    "pt": "Supply chain",
+    "en": "Supply chain",
+    "es": "Supply chain"
   },
   "equipe.card2.experience": {
     "pt": "22 anos",
@@ -1505,14 +1505,14 @@
     "es": "Robert Allen"
   },
   "equipe.card3.role": {
-    "pt": "Arbitragem em energia e setor público",
-    "en": "Energy and public-sector arbitration",
-    "es": "Arbitraje en energía y sector público"
+    "pt": "Regulatory & Energy Sector Arbitrator",
+    "en": "Regulatory & Energy Sector Arbitrator",
+    "es": "Regulatory & Energy Sector Arbitrator"
   },
   "equipe.card3.bio": {
-    "pt": "Atua em arbitragens envolvendo energia, regulação e contratos com a administração pública, com foco em execução e compliance.",
-    "en": "Acts in arbitrations involving energy, regulation and contracts with the public administration, with a focus on performance and compliance.",
-    "es": "Actúa en arbitrajes que involucran energía, regulación y contratos con la administración pública, con foco en ejecución y compliance."
+    "pt": "Atua em arbitragens envolvendo energia, regulação e contratos do setor, com foco em desempenho, compliance e resolução eficiente.",
+    "en": "Acts in arbitrations involving energy, regulation and sector contracts, with a focus on performance, compliance and efficient resolution.",
+    "es": "Actúa en arbitrajes que involucran energía, regulación y contratos del sector, con foco en desempeño, compliance y resolución eficiente."
   },
   "equipe.card3.tag1": {
     "pt": "Energia",
@@ -1520,9 +1520,9 @@
     "es": "Energía"
   },
   "equipe.card3.tag2": {
-    "pt": "Administração pública",
-    "en": "Public administration",
-    "es": "Administración pública"
+    "pt": "Regulatório",
+    "en": "Regulatory",
+    "es": "Regulatorio"
   },
   "equipe.card3.experience": {
     "pt": "25 anos",
