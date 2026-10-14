@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="frontend/css/arbtrato.css?v=20261014s">
+  <link rel="stylesheet" href="frontend/css/arbtrato.css?v=20261014t">
   <link rel="stylesheet" href="frontend/css/widgets.css?v=20261014r">
   <link rel="preload" as="image" href="frontend/assets/img/lagix-demo02/hero-mediation-poster.jpg?v=20260627" fetchpriority="high">
   <script>
@@ -483,9 +483,10 @@
       </div>
 
       <div class="arb-lagix-hero-col arb-lagix-hero-col--stats">
-        <p class="arb-lagix-hero-counter">
-          +<span data-stat="100">0</span><span class="arb-lagix-hero-counter-suffix">k</span>
-        </p>
+        <ul class="arb-lagix-hero-highlights">
+          <li data-i18n="hero.highlight.speed"><strong>Fast turnaround:</strong> Cases resolved within days, not years.</li>
+          <li data-i18n="hero.highlight.savings"><strong>Significant savings:</strong> Reduce alternative dispute costs by up to 80% compared to traditional litigation.</li>
+        </ul>
         <div class="arb-lagix-hero-reviews">
           <img src="frontend/assets/img/lagix-demo02/slider-review1.jpg?v=20260627" alt="" width="65" height="65" decoding="async">
           <img src="frontend/assets/img/lagix-demo02/slider-review2.jpg?v=20260627" alt="" width="65" height="65" decoding="async">
@@ -494,7 +495,7 @@
           <img src="frontend/assets/img/lagix-demo02/slider-review5.jpg?v=20260627" alt="" width="65" height="65" decoding="async">
           <span class="arb-lagix-hero-reviews-plus" aria-hidden="true"><i class="fas fa-plus"></i></span>
         </div>
-        <p class="arb-lagix-hero-rating" data-i18n-html="hero.rating">A satisfação dos clientes reflete<br>nosso compromisso com acordos justos</p>
+        <p class="arb-lagix-hero-rating" data-i18n-html="hero.rating">Customer trust reflects<br>our commitment to fair agreements</p>
       </div>
     </div>
   </section>
@@ -559,17 +560,11 @@
   <section class="arb-impact" id="impacto">
     <div class="container arb-impact-wrap">
       <div class="arb-impact-metrics">
-        <div class="arb-impact-metric arb-impact-metric--dark">
-          <span class="arb-impact-metric-label" data-i18n="impacto.metric.satisfaction">A classificação de satisfação do cliente reflete nosso compromisso</span>
-          <p class="arb-impact-metric-value">
-            <span data-stat="10">0</span><span class="arb-impact-metric-suffix">*</span>
-          </p>
+        <div class="arb-impact-metric arb-impact-metric--dark arb-impact-metric--copy">
+          <p class="arb-impact-metric-copy" data-i18n-html="impacto.metric.speed"><strong>Fast turnaround:</strong> Cases resolved within days, not years.</p>
         </div>
-        <div class="arb-impact-metric arb-impact-metric--light">
-          <span class="arb-impact-metric-label" data-i18n="impacto.metric.success">Taxa de sucesso do cliente entregando Cliente confiável</span>
-          <p class="arb-impact-metric-value">
-            <span data-stat="97">0</span><span class="arb-impact-metric-suffix">%</span>
-          </p>
+        <div class="arb-impact-metric arb-impact-metric--light arb-impact-metric--copy">
+          <p class="arb-impact-metric-copy" data-i18n-html="impacto.metric.savings"><strong>Significant savings:</strong> Reduce alternative dispute costs by up to 80% compared to traditional litigation.</p>
         </div>
       </div>
 
@@ -1223,7 +1218,7 @@
     </div>
   </div>
 
-  <script type="module" src="frontend/js/widgets.js?v=20261014a"></script>
+  <script type="module" src="frontend/js/widgets.js?v=20261014t"></script>
   <script type="module" src="frontend/js/arbtrato.js?v=20261007k"></script>
 </body>
 </html>

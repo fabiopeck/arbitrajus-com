@@ -137,7 +137,7 @@ function injectWidgets() {
             <label for="arb-chat-nome">Nome</label>
             <input id="arb-chat-nome" name="nome" required autocomplete="name" placeholder="Seu nome">
             <label for="arb-chat-email">E-mail</label>
-            <input id="arb-chat-email" name="email" type="email" required autocomplete="email" placeholder="seu@email.com">
+            <input id="arb-chat-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com">
             <label for="arb-chat-msg">Mensagem</label>
             <textarea id="arb-chat-msg" name="mensagem" required placeholder="Como podemos ajudar?"></textarea>
             <button type="submit" class="arb-chat-submit" id="arb-chat-submit">

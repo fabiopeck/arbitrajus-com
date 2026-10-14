@@ -900,9 +900,9 @@ export default {
     "es": "Conciliación, mediación y arbitraje 100% digitales, con la cercanía y el diálogo que el derecho de EE. UU. exige."
   },
   "hero.rating": {
-    "pt": "A satisfação dos clientes reflete<br>nosso compromisso com acordos justos",
-    "en": "Customer satisfaction reflects<br>our commitment to fair agreements",
-    "es": "La satisfacción de los clientes refleja<br>nuestro compromiso con acuerdos justos"
+    "pt": "A confiança dos clientes reflete<br>nosso compromisso com acordos justos",
+    "en": "Customer trust reflects<br>our commitment to fair agreements",
+    "es": "La confianza de los clientes refleja<br>nuestro compromiso con acuerdos justos"
   },
   "marquee.aria": {
     "pt": "Notícias do setor",
@@ -2548,5 +2548,25 @@ export default {
     "pt": "SaaS & Freelancers",
     "en": "SaaS & Freelancers",
     "es": "SaaS & Freelancers"
+  },
+  "hero.highlight.speed": {
+    "pt": "Fast turnaround: Cases resolved within days, not years.",
+    "en": "Fast turnaround: Cases resolved within days, not years.",
+    "es": "Fast turnaround: Cases resolved within days, not years."
+  },
+  "hero.highlight.savings": {
+    "pt": "Significant savings: Reduce alternative dispute costs by up to 80% compared to traditional litigation.",
+    "en": "Significant savings: Reduce alternative dispute costs by up to 80% compared to traditional litigation.",
+    "es": "Significant savings: Reduce alternative dispute costs by up to 80% compared to traditional litigation."
+  },
+  "impacto.metric.speed": {
+    "pt": "<strong>Fast turnaround:</strong> Cases resolved within days, not years.",
+    "en": "<strong>Fast turnaround:</strong> Cases resolved within days, not years.",
+    "es": "<strong>Fast turnaround:</strong> Cases resolved within days, not years."
+  },
+  "impacto.metric.savings": {
+    "pt": "<strong>Significant savings:</strong> Reduce alternative dispute costs by up to 80% compared to traditional litigation.",
+    "en": "<strong>Significant savings:</strong> Reduce alternative dispute costs by up to 80% compared to traditional litigation.",
+    "es": "<strong>Significant savings:</strong> Reduce alternative dispute costs by up to 80% compared to traditional litigation."
   }
 };
