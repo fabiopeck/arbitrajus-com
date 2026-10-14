@@ -2528,5 +2528,10 @@ export default {
     "pt": "Continuar navegando",
     "en": "Continue browsing",
     "es": "Seguir navegando"
+  },
+  "hero.cta": {
+    "pt": "Resolver uma disputa agora",
+    "en": "Resolve a Dispute Now",
+    "es": "Resolver una disputa ahora"
   }
 };
