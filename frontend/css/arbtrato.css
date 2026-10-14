@@ -1517,13 +1517,57 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 
 @media (max-width: 900px) {
-  .arb-lagix-hero-inner {
+  /* Mobile: video band full-width on top; copy stacked below (not over the video) */
+  .arb-lagix-hero {
+    display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 1.5rem;
+    min-height: auto;
+    padding: 0;
+    overflow: visible;
   }
 
-  /* Mobile: reviews/customer first, then lead + CTA , full content width */
+  .arb-lagix-hero-media {
+    position: relative;
+    inset: auto;
+    z-index: 0;
+    width: 100%;
+    height: calc(100svh - var(--arb-header-h, 120px));
+    min-height: 320px;
+    flex-shrink: 0;
+  }
+
+  .arb-lagix-hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .arb-lagix-hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(5, 4, 49, 0.12) 0%,
+      transparent 45%,
+      rgba(5, 4, 49, 0.2) 100%
+    );
+  }
+
+  .arb-lagix-hero-inner {
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 1.5rem 1.25rem 2rem;
+    box-sizing: border-box;
+    background: #050431;
+  }
+
   .arb-lagix-hero-col--stats,
   .arb-lagix-hero-col--text {
     width: 100%;
@@ -4266,21 +4310,6 @@ body.arb-theme {
 
   .arb-header-topbar a {
     white-space: normal;
-  }
-
-  .arb-lagix-hero {
-    min-height: auto;
-    padding: 2.5rem 0 2.25rem;
-    align-items: flex-end;
-  }
-
-  .arb-lagix-hero-overlay {
-    background: linear-gradient(
-      180deg,
-      rgba(5, 4, 49, 0.28) 0%,
-      rgba(5, 4, 49, 0.72) 52%,
-      rgba(5, 4, 49, 0.9) 100%
-    );
   }
 
   .arb-lagix-hero-lead {
