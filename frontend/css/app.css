@@ -418,25 +418,221 @@
 
 .desc-btn-danger { background: #c53030 !important; }
 
+.legal-body {
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(0, 102, 161, 0.07), transparent 55%),
+    linear-gradient(180deg, #f7fafc 0%, #ffffff 40%, #f8fafc 100%);
+  min-height: 100vh;
+  color: #2d3748;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+}
+
+.legal-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.legal-topbar-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.legal-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #001f3f;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.legal-brand img {
+  border-radius: 8px;
+}
+
+.legal-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.legal-toc {
+  position: sticky;
+  top: 5rem;
+  padding: 1rem 0;
+}
+
+.legal-toc-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin: 0 0 0.85rem;
+}
+
+.legal-toc-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1.25rem;
+}
+
+.legal-toc-nav a {
+  color: #475569;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.35rem 0.55rem;
+  border-left: 2px solid transparent;
+  border-radius: 0 6px 6px 0;
+  transition: color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.legal-toc-nav a:hover {
+  color: #0066a1;
+  background: rgba(0, 102, 161, 0.06);
+  border-left-color: #0066a1;
+}
+
+.legal-toc-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  color: #0066a1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .legal-page {
   max-width: 760px;
-  padding: 2rem 1.5rem 4rem;
+  padding: 0.5rem 0 2rem;
   line-height: 1.75;
-  color: #2d3748;
+  color: #334155;
+}
+
+.legal-eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0066a1;
 }
 
 .legal-page h1 {
   font-family: 'Cinzel', serif;
   color: #001f3f;
+  font-size: clamp(1.55rem, 3.2vw, 2.05rem);
+  line-height: 1.25;
+  margin: 0 0 0.65rem;
+  letter-spacing: 0.01em;
 }
 
 .legal-page h2 {
-  font-size: 1.1rem;
-  margin-top: 2rem;
+  font-size: 1.15rem;
+  margin: 2.35rem 0 1rem;
+  padding-bottom: 0.55rem;
   color: #001f3f;
+  border-bottom: 1px solid #e2e8f0;
+  scroll-margin-top: 5.5rem;
 }
 
-.legal-updated { color: #718096; font-size: 0.9rem; }
+.legal-page h3 {
+  font-size: 0.98rem;
+  margin: 0 0 0.35rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.legal-updated {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0 0 1.35rem;
+}
+
+.legal-lead {
+  font-size: 1.05rem;
+  color: #475569;
+  margin: 0 0 0.5rem;
+  padding: 1.1rem 1.2rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.legal-clause {
+  margin: 0 0 1.15rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid #e2e8f0;
+}
+
+.legal-clause p {
+  margin: 0;
+}
+
+.legal-footer {
+  margin-top: 2.75rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 0.92rem;
+}
+
+.legal-footer a {
+  color: #0066a1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.legal-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .legal-shell {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .legal-toc {
+    position: static;
+    padding: 0;
+  }
+
+  .legal-toc-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .legal-toc-nav a {
+    border-left: none;
+    background: #f1f5f9;
+    border-radius: 999px;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.82rem;
+  }
+
+  .legal-toc-nav a:hover {
+    border-left-color: transparent;
+  }
+}
 
 .admin-page { max-width: 960px; padding: 2rem 1rem 4rem; }
 .admin-lead { color: #718096; margin-bottom: 1.5rem; }
